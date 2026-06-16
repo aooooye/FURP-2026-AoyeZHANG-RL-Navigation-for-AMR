@@ -1,4 +1,4 @@
-# FURP Project Repository
+# FURP-2026: RL Navigation for AMR
 
 > **Faculty Undergraduate Research Practice (FURP)**
 > Undergraduate Research Group · Faculty of Science and Engineering · University of Nottingham Ningbo China
@@ -12,8 +12,8 @@ This is your project home for the FURP programme. **Fork this template**, rename
 1. **Fork / use this template** to create your own repository.
 2. **Rename your repo** following the naming convention:
    ```
-   FURP-2025/YourName-ProjectTag
-   # e.g. furp-2025/Jason-ROSBootcamp
+   FURP-2026/YourName-ProjectTag
+   # e.g. FURP-2026/AoyeZHANG-RL-Navigation-for-AMR
    ```
 3. **Give us access:** either make the repo **public**, or **share it** with the research group accounts (ask your project lead for the usernames to add as collaborators).
 4. **Fill in this README** — replace the placeholders in the *Project Info* section below.
@@ -21,20 +21,20 @@ This is your project home for the FURP programme. **Fork this template**, rename
 
 ---
 
-## Project Info — *fill this in*
+## Project Info
 
 | Field | Your entry |
 |---|---|
-| Student name(s) | _e.g. Jason Zhang_ |
-| Project title | _..._ |
-| Project tag | _e.g. ROSBootcamp_ |
+| Student name(s) | Aoye ZHANG |
+| Project title | End-to-End Navigation for an AMR with Reinforcement Learning |
+| Project tag | RL-Navigation-for-AMR |
 | Track | Research |
-| Supervising faculty | _..._ |
-| Project lead | _..._ |
-| Team or individual | _..._ |
-| Cited paper being replicated | _title + link/DOI_ |
+| Supervising faculty | TBD |
+| Project lead | TBD |
+| Team or individual | Individual |
+| Cited paper being replicated | TBD in Week 2; initial baseline target: Habitat PointNav / Habitat-Baselines |
 
-**One-line summary:** _What is your project about? (1–2 sentences)_
+**One-line summary:** This project will reproduce a Habitat PointNav navigation baseline for AMR-style navigation, then study how reward design, observations, and evaluation metrics affect success rate, SPL, collisions, and path efficiency.
 
 ---
 
@@ -97,10 +97,10 @@ Any **leave of absence** or **withdrawal** must be notified to us **by email** �
 
 ## Quick checklist
 
-- [ ] Forked the template and renamed the repo (`FURP-2025/YourName-ProjectTag`)
-- [ ] Made the repo public **or** shared it with the research group
-- [ ] Filled in the *Project Info* table above
-- [ ] Started `docs/00_weekly.md`
+- [x] Forked the template and renamed the repo (`FURP-2026-AoyeZHANG-RL-Navigation-for-AMR`)
+- [x] Made the repo public **or** shared it with the research group
+- [x] Filled in the *Project Info* table above
+- [x] Started `docs/00_weekly.md`
 - [ ] Created my first file in `docs/meeting_notes/`
 - [ ] (By Showcase) Added `FURP_Showcase.pdf` to the repo root
 
