@@ -1,0 +1,10 @@
+Week 1 Habitat PointNav smoke test
+config: habitat-lab/habitat/config/benchmark/nav/pointnav/pointnav_habitat_test.yaml
+episodes_loaded: 10000
+current_episode_id: 3662
+scene_id: data/scene_datasets/habitat-test-scenes/skokloster-castle.glb
+steps_executed: 5
+actions: ["{'action': 'turn_left', 'action_args': {}}", "{'action': 'move_forward', 'action_args': {}}", "{'action': 'move_forward', 'action_args': {}}", "{'action': 'turn_left', 'action_args': {}}", "{'action': 'turn_right', 'action_args': {}}"]
+episode_over: False
+metrics: {'distance_to_goal': 11.814451217651367, 'success': 0.0, 'spl': 0.0, 'distance_to_goal_reward': -0.0}
+rgb_saved: week01_evidence/pointnav_smoke_frame.png

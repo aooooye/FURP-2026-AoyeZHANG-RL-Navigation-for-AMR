@@ -1,0 +1,15 @@
+Habitat-Sim test scene render smoke test
+python: 3.9.19
+habitat_sim: /home/ubuntu/micromamba/envs/habitat/lib/python3.9/site-packages/habitat_sim-0.3.3-py3.9-linux-x86_64.egg/habitat_sim/__init__.py
+scene: /home/ubuntu/habitat-lab/data/scene_datasets/habitat-test-scenes/skokloster-castle.glb
+scene_present: True
+navmesh: /home/ubuntu/habitat-lab/data/scene_datasets/habitat-test-scenes/skokloster-castle.navmesh
+navmesh_present: True
+pathfinder_loaded: True
+agent_position: [-3.0133917331695557, 0.046230241656303406, 7.306454658508301]
+rgb_shape: [256, 256, 4]
+rgb_dtype: uint8
+rgb_min: 0
+rgb_max: 255
+frame_saved: /home/ubuntu/week01_habitat_evidence/habitat_test_scene_frame.png
+result: ok

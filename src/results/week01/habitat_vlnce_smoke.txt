@@ -1,0 +1,14 @@
+Week 1 Habitat / VLN-CE smoke test
+python: 3.9.19
+torch: 2.8.0+cu128
+torch_cuda_available: True
+habitat: 0.3.3
+habitat_baselines: 0.3.3
+habitat_sim: 0.3.3
+habitat_file: /home/ubuntu/habitat-lab/habitat-lab/habitat/__init__.py
+habitat_baselines_file: /home/ubuntu/habitat-lab/habitat-baselines/habitat_baselines/__init__.py
+habitat_sim_file: /home/ubuntu/micromamba/envs/habitat/lib/python3.9/site-packages/habitat_sim-0.3.3-py3.9-linux-x86_64.egg/habitat_sim/__init__.py
+habitat_lab_repo: True /home/ubuntu/habitat-lab
+vlnce_repo: True /home/ubuntu/VLN-CE
+habitat_test_scene_present: True /home/ubuntu/habitat-lab/data/scene_datasets/habitat-test-scenes/skokloster-castle.glb
+result: ok
