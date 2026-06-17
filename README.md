@@ -101,8 +101,8 @@ Any **leave of absence** or **withdrawal** must be notified to us **by email** â
 - [x] Made the repo public **or** shared it with the research group
 - [x] Filled in the *Project Info* table above
 - [x] Started `docs/00_weekly.md`
-- [ ] Created my first file in `docs/meeting_notes/`
-- [ ] (By Showcase) Added `FURP_Showcase.pdf` to the repo root
+- [X] Created my first file in `docs/meeting_notes/`
+- [X] (By Showcase) Added `FURP_Showcase.pdf` to the repo root
 
 ---
 
