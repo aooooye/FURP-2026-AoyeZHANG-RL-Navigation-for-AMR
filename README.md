@@ -29,10 +29,10 @@ This is your project home for the FURP programme. **Fork this template**, rename
 | Project title | End-to-End Navigation for an AMR with Reinforcement Learning |
 | Project tag | RL-Navigation-for-AMR |
 | Track | Research |
-| Supervising faculty | TBD |
-| Project lead | TBD |
+| Supervising faculty | Tianxiang Cui |
+| Project lead | Aoye ZHANG |
 | Team or individual | Individual |
-| Cited paper being replicated | TBD in Week 2; initial baseline target: Habitat PointNav / Habitat-Baselines |
+| Cited paper being replicated | TBD in Week 2 |
 
 **One-line summary:** This project will reproduce a Habitat PointNav navigation baseline for AMR-style navigation, then study how reward design, observations, and evaluation metrics affect success rate, SPL, collisions, and path efficiency.
 
