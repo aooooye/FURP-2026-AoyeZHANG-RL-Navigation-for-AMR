@@ -1,0 +1,7 @@
+torch=2.8.0+cu128
+torch_cuda_available=True
+torch_cuda_version=12.8
+torch_gpu=NVIDIA GeForce RTX 3060
+habitat-lab=0.3.3
+habitat-baselines=0.3.3
+habitat-sim=0.3.3

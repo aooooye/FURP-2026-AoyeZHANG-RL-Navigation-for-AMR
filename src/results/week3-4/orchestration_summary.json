@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "status": "week3-4_complete_with_documented_fallback",
+  "generated_date": "2026-07-16",
+  "primary_gate": {
+    "profile": "gibson",
+    "status": "blocked",
+    "reason": "authorized Gibson scenes and PointNav Gibson train/validation archives were absent",
+    "evidence": "src/results/week3-4/remote_20260716T074249Z/gibson_gate"
+  },
+  "closeout_review": {
+    "status": "complete",
+    "engineering_baseline_gate": "pass",
+    "formal_rgbd_vs_depth_ablation_gate": "hold",
+    "decision_reasons": [
+      "the fallback validation profile contains only two scenes",
+      "only training seed 100 has completed the learned baseline"
+    ],
+    "required_before_formal_ablation": [
+      "a documented multi-scene PointNav train and validation profile",
+      "a completed RGB-D baseline on that profile",
+      "at least one repeat baseline training seed",
+      "an ablation that changes only the observation input"
+    ],
+    "evidence": "src/results/week3-4/README.md"
+  },
+  "fallback": {
+    "profile": "habitat_test",
+    "claim_boundary": "Habitat test-scenes learned-policy fallback; not a Gibson result",
+    "habitat_revision": "cdbb4880519505adf45fba0f0c0c3a3fd18a2a55",
+    "training_seed": 100,
+    "evaluation_seed": 2026,
+    "training_steps": 1000000,
+    "training_environments": 5,
+    "evaluation_environments": 2,
+    "checkpoints": 10,
+    "final_checkpoint": "ckpt.9.pth",
+    "final_checkpoint_sha256": "e662c5e2f5546266ebcf8765ef61a743fd9416969c3bd6755561ad0d6133bed0",
+    "evaluation_split": "val",
+    "evaluation_episodes": 100,
+    "metrics": {
+      "success": 0.92,
+      "spl": 0.8389,
+      "reward": 7.7472,
+      "distance_to_goal_m": 0.1062,
+      "collision": "unavailable",
+      "extra_path_statistic": "unavailable"
+    },
+    "video_evaluation": {
+      "episodes": 100,
+      "saved_videos": 99,
+      "saved_successes": 91,
+      "saved_failures": 8,
+      "selected_success_cases": 3,
+      "selected_failure_cases": 3
+    }
+  },
+  "evidence_root": "src/results/week3-4/remote_20260716T074249Z"
+}

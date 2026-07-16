@@ -1,0 +1,7 @@
+# Large runtime artifacts stay inside the project working tree but are not committed.
+**/checkpoints/*.pth
+**/tb/
+**/video/*.mp4
+**/video/*.gif
+**/video/*.png
+**/selected_cases/*.mp4

@@ -1,0 +1,4 @@
+mode=train
+run_id=week03_habitat_test_seed100_1m_env5
+pid=67847
+utc_start=2026-07-16T08:12:19+00:00

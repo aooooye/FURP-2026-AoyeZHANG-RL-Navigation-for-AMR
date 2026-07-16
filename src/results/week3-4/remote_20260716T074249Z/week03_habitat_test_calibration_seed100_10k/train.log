@@ -1,0 +1,565 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+2026-07-16 07:47:00,314 config: habitat:
+  seed: 100
+  env_task: GymHabitatEnv
+  env_task_gym_dependencies: []
+  env_task_gym_id: ''
+  environment:
+    max_episode_steps: 500
+    max_episode_seconds: 10000000
+    iterator_options:
+      cycle: true
+      shuffle: true
+      group_by_scene: true
+      num_episode_sample: -1
+      max_scene_repeat_episodes: -1
+      max_scene_repeat_steps: 10000
+      step_repetition_range: 0.2
+  simulator:
+    type: Sim-v0
+    forward_step_size: 0.25
+    turn_angle: 10
+    create_renderer: false
+    requires_textures: true
+    auto_sleep: false
+    step_physics: true
+    concur_render: false
+    needs_markers: true
+    update_articulated_agent: true
+    scene: data/scene_datasets/habitat-test-scenes/van-gogh-room.glb
+    scene_dataset: default
+    additional_object_paths: []
+    seed: ${habitat.seed}
+    default_agent_id: 0
+    debug_render: false
+    debug_render_articulated_agent: false
+    kinematic_mode: false
+    should_setup_semantic_ids: true
+    debug_render_goal: true
+    robot_joint_start_noise: 0.0
+    ctrl_freq: 120.0
+    ac_freq_ratio: 4
+    load_objs: true
+    hold_thresh: 0.15
+    grasp_impulse: 10000.0
+    agents:
+      main_agent:
+        height: 1.5
+        radius: 0.1
+        max_climb: 0.2
+        max_slope: 45.0
+        grasp_managers: 1
+        sim_sensors:
+          rgb_sensor:
+            type: HabitatSimRGBSensor
+            height: 256
+            width: 256
+            position:
+            - 0.0
+            - 1.25
+            - 0.0
+            orientation:
+            - 0.0
+            - 0.0
+            - 0.0
+            hfov: 90
+            sensor_subtype: PINHOLE
+            noise_model: None
+            noise_model_kwargs: {}
+          depth_sensor:
+            type: HabitatSimDepthSensor
+            height: 256
+            width: 256
+            position:
+            - 0.0
+            - 1.25
+            - 0.0
+            orientation:
+            - 0.0
+            - 0.0
+            - 0.0
+            hfov: 90
+            sensor_subtype: PINHOLE
+            noise_model: None
+            noise_model_kwargs: {}
+            min_depth: 0.0
+            max_depth: 10.0
+            normalize_depth: true
+        is_set_start_state: false
+        start_position:
+        - 0.0
+        - 0.0
+        - 0.0
+        start_rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        joint_start_noise: 0.1
+        joint_that_can_control: null
+        joint_start_override: null
+        articulated_agent_urdf: null
+        articulated_agent_type: null
+        ik_arm_urdf: null
+        motion_data_path: ''
+        auto_update_sensor_transform: true
+    agents_order:
+    - main_agent
+    default_agent_navmesh: true
+    navmesh_include_static_objects: false
+    habitat_sim_v0:
+      gpu_device_id: 0
+      gpu_gpu: false
+      allow_sliding: true
+      frustum_culling: true
+      enable_physics: false
+      enable_hbao: false
+      physics_config_file: ./data/default.physics_config.json
+      leave_context_with_background_renderer: false
+      enable_gfx_replay_save: false
+    ep_info: null
+    object_ids_start: 100
+    renderer:
+      enable_batch_renderer: false
+      composite_files: null
+      classic_replay_renderer: false
+  task:
+    physics_target_sps: 60.0
+    reward_measure: distance_to_goal_reward
+    success_measure: spl
+    success_reward: 2.5
+    slack_reward: -0.01
+    end_on_success: true
+    type: Nav-v0
+    lab_sensors:
+      pointgoal_with_gps_compass_sensor:
+        type: PointGoalWithGPSCompassSensor
+        goal_format: POLAR
+        dimensionality: 2
+    measurements:
+      distance_to_goal:
+        type: DistanceToGoal
+        distance_to: POINT
+      success:
+        type: Success
+        success_distance: 0.2
+      spl:
+        type: SPL
+      distance_to_goal_reward:
+        type: DistanceToGoalReward
+    rank0_env0_measure_names:
+    - habitat_perf
+    rank0_measure_names: []
+    goal_sensor_uuid: pointgoal_with_gps_compass
+    count_obj_collisions: true
+    settle_steps: 5
+    constraint_violation_ends_episode: true
+    constraint_violation_drops_object: false
+    force_regenerate: false
+    should_save_to_cache: false
+    object_in_hand_sample_prob: 0.167
+    min_start_distance: 3.0
+    render_target: true
+    filter_colliding_states: true
+    num_spawn_attempts: 200
+    spawn_max_dist_to_obj: 2.0
+    base_angle_noise: 0.523599
+    spawn_max_dist_to_obj_delta: 0.02
+    recep_place_shrink_factor: 0.8
+    ee_sample_factor: 0.2
+    ee_exclude_region: 0.0
+    base_noise: 0.05
+    spawn_region_scale: 0.2
+    joint_max_impulse: -1.0
+    desired_resting_position:
+    - 0.5
+    - 0.0
+    - 1.0
+    use_marker_t: true
+    cache_robot_init: false
+    success_state: 0.0
+    should_enforce_target_within_reach: false
+    task_spec_base_path: habitat/task/rearrange/pddl/
+    task_spec: ''
+    pddl_domain_def: replica_cad
+    obj_succ_thresh: 0.3
+    enable_safe_drop: false
+    art_succ_thresh: 0.15
+    robot_at_thresh: 2.0
+    min_distance_start_agents: -1.0
+    actions:
+      stop:
+        type: StopAction
+      move_forward:
+        type: MoveForwardAction
+        tilt_angle: 15
+      turn_left:
+        type: TurnLeftAction
+        tilt_angle: 15
+      turn_right:
+        type: TurnRightAction
+        tilt_angle: 15
+  dataset:
+    type: PointNav-v1
+    split: train
+    scenes_dir: data/scene_datasets
+    content_scenes:
+    - '*'
+    data_path: data/datasets/pointnav/habitat-test-scenes/v1/{split}/{split}.json.gz
+    metadata: null
+  gym:
+    obs_keys: null
+    action_keys: null
+    achieved_goal_keys: []
+    desired_goal_keys: []
+habitat_baselines:
+  evaluate: false
+  trainer_name: ppo
+  updater_name: PPO
+  distrib_updater_name: DDPPO
+  torch_gpu_id: 0
+  tensorboard_dir: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_calibration_seed100_10k/tb
+  writer_type: tb
+  video_dir: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_calibration_seed100_10k/video
+  video_fps: 10
+  test_episode_count: 2
+  eval_ckpt_path_dir: data/new_checkpoints
+  num_environments: 1
+  num_processes: -1
+  rollout_storage_name: RolloutStorage
+  checkpoint_folder: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_calibration_seed100_10k/checkpoints
+  num_updates: -1
+  num_checkpoints: 1
+  checkpoint_interval: -1
+  total_num_steps: 10000.0
+  log_interval: 10
+  log_file: train.log
+  force_blind_policy: false
+  verbose: true
+  vector_env_factory:
+    _target_: habitat_baselines.common.HabitatVectorEnvFactory
+  evaluator:
+    _target_: habitat_baselines.rl.ppo.habitat_evaluator.HabitatEvaluator
+  eval_keys_to_include_in_name: []
+  force_torch_single_threaded: true
+  wb:
+    project_name: ''
+    entity: ''
+    group: ''
+    run_name: ''
+  load_resume_state_config: true
+  eval:
+    split: val
+    use_ckpt_config: true
+    should_load_ckpt: true
+    evals_per_ep: 1
+    video_option:
+    - disk
+    - tensorboard
+    extra_sim_sensors: {}
+  profiling:
+    capture_start_step: -1
+    num_steps_to_capture: -1
+  should_log_single_proc_infos: false
+  on_save_ckpt_callback: null
+  rl:
+    agent:
+      type: SingleAgentAccessMgr
+      num_agent_types: 1
+      num_active_agents_per_type:
+      - 1
+      num_pool_agents_per_type:
+      - 1
+      agent_sample_interval: 20
+      force_partner_sample_idx: -1
+      behavior_latent_dim: -1
+      force_all_agents: false
+      discrim_reward_weight: 1.0
+      allow_self_play: false
+      self_play_batched: false
+      load_type1_pop_ckpts: null
+    preemption:
+      append_slurm_job_id: false
+      save_resume_state_interval: 100
+      save_state_batch_only: false
+    policy:
+      main_agent:
+        name: PointNavResNetPolicy
+        action_distribution_type: categorical
+        action_dist:
+          use_log_std: true
+          use_softplus: false
+          std_init: ???
+          log_std_init: 0.0
+          use_std_param: false
+          clamp_std: true
+          min_std: 1.0e-06
+          max_std: 1
+          min_log_std: -5
+          max_log_std: 2
+          action_activation: tanh
+          scheduled_std: false
+        obs_transforms: {}
+        hierarchical_policy: ???
+    ppo:
+      clip_param: 0.1
+      ppo_epoch: 1
+      num_mini_batch: 1
+      value_loss_coef: 0.5
+      entropy_coef: 0.01
+      lr: 0.00025
+      eps: 1.0e-05
+      max_grad_norm: 0.5
+      num_steps: 32
+      use_gae: true
+      use_linear_lr_decay: true
+      use_linear_clip_decay: true
+      gamma: 0.99
+      tau: 0.95
+      reward_window_size: 50
+      use_normalized_advantage: false
+      hidden_size: 512
+      entropy_target_factor: 0.0
+      use_adaptive_entropy_pen: false
+      use_clipped_value_loss: true
+      use_double_buffered_sampler: false
+    ddppo:
+      sync_frac: 0.6
+      distrib_backend: GLOO
+      rnn_type: GRU
+      num_recurrent_layers: 1
+      backbone: resnet18
+      pretrained_weights: data/ddppo-models/gibson-2plus-resnet50.pth
+      pretrained: false
+      pretrained_encoder: false
+      train_encoder: true
+      reset_critic: true
+      force_distributed: false
+    ver:
+      variable_experience: true
+      num_inference_workers: 2
+      overlap_rollouts_and_learn: false
+    auxiliary_losses: {}
+
+2026-07-16 07:47:00,315 Initializing dataset PointNav-v1
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+2026-07-16 07:47:02,708 Initializing dataset PointNav-v1
+2026-07-16 07:47:02,904 initializing sim Sim-v0
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 595.71.05
+Using optional features:
+    GL_ARB_vertex_array_object
+    GL_ARB_separate_shader_objects
+    GL_ARB_robustness
+    GL_ARB_texture_storage
+    GL_ARB_texture_view
+    GL_ARB_framebuffer_no_attachments
+    GL_ARB_invalidate_subdata
+    GL_ARB_texture_storage_multisample
+    GL_ARB_multi_bind
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_texture_filter_anisotropic
+    GL_KHR_debug
+    GL_KHR_parallel_shader_compile
+    GL_NV_depth_buffer_float
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+[07:47:03:005434]:[Warning]:[Metadata] SceneDatasetAttributes.cpp(107)::addNewSceneInstanceToDataset : Dataset : 'default' : Lighting Layout Attributes 'no_lights' specified in Scene Attributes but does not exist in dataset, so creating default.
+[07:47:03:005546]:[Warning]:[Scene] SemanticScene.h(331)::checkFileExists : ::loadSemanticSceneDescriptor: File `data/scene_datasets/habitat-test-scenes/skokloster-castle.scn` does not exist.  Aborting load.
+[07:47:03:005554]:[Warning]:[Scene] SemanticScene.cpp(123)::loadSemanticSceneDescriptor : SSD File Naming Issue! Neither SemanticAttributes-provided name : `data/scene_datasets/habitat-test-scenes/skokloster-castle.scn` nor constructed filename : `data/scene_datasets/habitat-test-scenes/info_semantic.json` exist on disk.
+[07:47:03:005559]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `data/scene_datasets/habitat-test-scenes/skokloster-castle.scn` exists but failed to load.
+[07:47:03:591625]:[Warning]:[Sim] Simulator.cpp(595)::instanceStageForSceneAttributes : The active scene does not contain semantic annotations : activeSemanticSceneID_ = 0
+2026-07-16 07:47:03,592 Initializing task Nav-v0
+2026-07-16 07:47:04,014 Number of params to train: 5821797
+2026-07-16 07:47:04,014 Agent number of parameters: 5821797
+2026-07-16 07:47:06,768 update: 10	fps: 116.675	
+2026-07-16 07:47:06,768 Num updates: 10	Num frames 320
+2026-07-16 07:47:06,768 Average window size: 10  distance_to_goal: 8.794  distance_to_goal_reward: 0.000  reward: -0.057  spl: 0.000  success: 0.000
+2026-07-16 07:47:06,768 	Perf Stats: trainer.rollout_collect: 0.233 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.035
+2026-07-16 07:47:09,033 update: 20	fps: 127.809	
+2026-07-16 07:47:09,033 Num updates: 20	Num frames 640
+2026-07-16 07:47:09,033 Average window size: 20  distance_to_goal: 8.736  distance_to_goal_reward: 0.000  reward: -0.032  spl: 0.000  success: 0.000
+2026-07-16 07:47:09,033 	Perf Stats: trainer.rollout_collect: 0.219 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.028
+2026-07-16 07:47:11,342 update: 30	fps: 131.213	
+2026-07-16 07:47:11,342 Num updates: 30	Num frames 960
+2026-07-16 07:47:11,342 Average window size: 30  distance_to_goal: 8.601  distance_to_goal_reward: 0.000  reward: -0.022  spl: 0.000  success: 0.000
+2026-07-16 07:47:11,342 	Perf Stats: trainer.rollout_collect: 0.215 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.026
+2026-07-16 07:47:13,683 update: 40	fps: 132.537	
+2026-07-16 07:47:13,683 Num updates: 40	Num frames 1280
+2026-07-16 07:47:13,683 Average window size: 40  distance_to_goal: 8.674  distance_to_goal_reward: 0.000  reward: -0.022  spl: 0.000  success: 0.000
+2026-07-16 07:47:13,683 	Perf Stats: trainer.rollout_collect: 0.214 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.024
+2026-07-16 07:47:16,045 update: 50	fps: 133.117	
+2026-07-16 07:47:16,045 Num updates: 50	Num frames 1600
+2026-07-16 07:47:16,045 Average window size: 50  distance_to_goal: 8.859  distance_to_goal_reward: 0.000  reward: -0.018  spl: 0.000  success: 0.000
+2026-07-16 07:47:16,045 	Perf Stats: trainer.rollout_collect: 0.214 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.024
+2026-07-16 07:47:18,384 update: 60	fps: 133.717	
+2026-07-16 07:47:18,384 Num updates: 60	Num frames 1920
+2026-07-16 07:47:18,384 Average window size: 50  distance_to_goal: 8.942  distance_to_goal_reward: 0.000  reward: -0.001  spl: 0.000  success: 0.000
+2026-07-16 07:47:18,384 	Perf Stats: trainer.rollout_collect: 0.214 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.023
+2026-07-16 07:47:20,691 update: 70	fps: 134.411	
+2026-07-16 07:47:20,691 Num updates: 70	Num frames 2240
+2026-07-16 07:47:20,691 Average window size: 50  distance_to_goal: 8.871  distance_to_goal_reward: 0.000  reward: -0.011  spl: 0.000  success: 0.000
+2026-07-16 07:47:20,691 	Perf Stats: trainer.rollout_collect: 0.213 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.023
+2026-07-16 07:47:23,026 update: 80	fps: 134.727	
+2026-07-16 07:47:23,027 Num updates: 80	Num frames 2560
+2026-07-16 07:47:23,027 Average window size: 50  distance_to_goal: 8.891  distance_to_goal_reward: 0.000  reward: -0.012  spl: 0.000  success: 0.000
+2026-07-16 07:47:23,027 	Perf Stats: trainer.rollout_collect: 0.213 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.023
+2026-07-16 07:47:25,365 update: 90	fps: 134.959	
+2026-07-16 07:47:25,365 Num updates: 90	Num frames 2880
+2026-07-16 07:47:25,365 Average window size: 50  distance_to_goal: 9.006  distance_to_goal_reward: 0.000  reward: -0.017  spl: 0.000  success: 0.000
+2026-07-16 07:47:25,365 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.023
+2026-07-16 07:47:27,764 update: 100	fps: 134.802	
+2026-07-16 07:47:27,764 Num updates: 100	Num frames 3200
+2026-07-16 07:47:27,764 Average window size: 50  distance_to_goal: 9.081  distance_to_goal_reward: 0.000  reward: -0.028  spl: 0.000  success: 0.000
+2026-07-16 07:47:27,764 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:30,109 update: 110	fps: 134.948	
+2026-07-16 07:47:30,110 Num updates: 110	Num frames 3520
+2026-07-16 07:47:30,110 Average window size: 50  distance_to_goal: 9.106  distance_to_goal_reward: 0.000  reward: -0.021  spl: 0.000  success: 0.000
+2026-07-16 07:47:30,110 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:32,463 update: 120	fps: 135.038	
+2026-07-16 07:47:32,463 Num updates: 120	Num frames 3840
+2026-07-16 07:47:32,463 Average window size: 50  distance_to_goal: 9.247  distance_to_goal_reward: 0.000  reward: -0.004  spl: 0.000  success: 0.000
+2026-07-16 07:47:32,463 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:34,678 update: 130	fps: 135.712	
+2026-07-16 07:47:34,679 Num updates: 130	Num frames 4160
+2026-07-16 07:47:34,679 Average window size: 50  distance_to_goal: 9.282  distance_to_goal_reward: 0.000  reward: -0.004  spl: 0.000  success: 0.000
+2026-07-16 07:47:34,679 	Perf Stats: trainer.rollout_collect: 0.211 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:36,947 update: 140	fps: 136.079	
+2026-07-16 07:47:36,947 Num updates: 140	Num frames 4480
+2026-07-16 07:47:36,947 Average window size: 50  distance_to_goal: 9.233  distance_to_goal_reward: 0.000  reward: -0.005  spl: 0.000  success: 0.000
+2026-07-16 07:47:36,947 	Perf Stats: trainer.rollout_collect: 0.211 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:39,295 update: 150	fps: 136.093	
+2026-07-16 07:47:39,295 Num updates: 150	Num frames 4800
+2026-07-16 07:47:39,295 Average window size: 50  distance_to_goal: 9.074  distance_to_goal_reward: 0.000  reward: -0.015  spl: 0.000  success: 0.000
+2026-07-16 07:47:39,296 	Perf Stats: trainer.rollout_collect: 0.211 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:41,642 update: 160	fps: 136.111	
+2026-07-16 07:47:41,642 Num updates: 160	Num frames 5120
+2026-07-16 07:47:41,642 Average window size: 50  distance_to_goal: 9.144  distance_to_goal_reward: 0.000  reward: -0.016  spl: 0.000  success: 0.000
+2026-07-16 07:47:41,642 	Perf Stats: trainer.rollout_collect: 0.211 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:43,998 update: 170	fps: 136.094	
+2026-07-16 07:47:43,998 Num updates: 170	Num frames 5440
+2026-07-16 07:47:43,998 Average window size: 50  distance_to_goal: 9.096  distance_to_goal_reward: 0.000  reward: -0.019  spl: 0.000  success: 0.000
+2026-07-16 07:47:43,998 	Perf Stats: trainer.rollout_collect: 0.211 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:46,326 update: 180	fps: 136.167	
+2026-07-16 07:47:46,326 Num updates: 180	Num frames 5760
+2026-07-16 07:47:46,326 Average window size: 50  distance_to_goal: 9.215  distance_to_goal_reward: 0.000  reward: -0.017  spl: 0.000  success: 0.000
+2026-07-16 07:47:46,327 	Perf Stats: trainer.rollout_collect: 0.211 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:48,750 update: 190	fps: 135.942	
+2026-07-16 07:47:48,750 Num updates: 190	Num frames 6080
+2026-07-16 07:47:48,751 Average window size: 50  distance_to_goal: 8.998  distance_to_goal_reward: 0.000  reward: -0.012  spl: 0.000  success: 0.000
+2026-07-16 07:47:48,751 	Perf Stats: trainer.rollout_collect: 0.211 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:51,912 update: 200	fps: 133.649	
+2026-07-16 07:47:51,912 Num updates: 200	Num frames 6400
+2026-07-16 07:47:51,912 Average window size: 50  distance_to_goal: 9.069  distance_to_goal_reward: 0.000  reward: -0.006  spl: 0.000  success: 0.000
+2026-07-16 07:47:51,912 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.003 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:54,264 update: 210	fps: 133.763	
+2026-07-16 07:47:54,264 Num updates: 210	Num frames 6720
+2026-07-16 07:47:54,264 Average window size: 50  distance_to_goal: 8.926  distance_to_goal_reward: 0.000  reward: -0.010  spl: 0.000  success: 0.000
+2026-07-16 07:47:54,264 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:56,692 update: 220	fps: 133.672	
+2026-07-16 07:47:56,692 Num updates: 220	Num frames 7040
+2026-07-16 07:47:56,692 Average window size: 50  distance_to_goal: 9.041  distance_to_goal_reward: 0.000  reward: -0.018  spl: 0.000  success: 0.000
+2026-07-16 07:47:56,692 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:47:59,027 update: 230	fps: 133.814	
+2026-07-16 07:47:59,027 Num updates: 230	Num frames 7360
+2026-07-16 07:47:59,027 Average window size: 50  distance_to_goal: 8.849  distance_to_goal_reward: 0.000  reward: 0.001  spl: 0.000  success: 0.000
+2026-07-16 07:47:59,027 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:48:01,381 update: 240	fps: 133.902	
+2026-07-16 07:48:01,381 Num updates: 240	Num frames 7680
+2026-07-16 07:48:01,381 Average window size: 50  distance_to_goal: 8.802  distance_to_goal_reward: 0.000  reward: 0.012  spl: 0.000  success: 0.000
+2026-07-16 07:48:01,381 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:48:03,723 update: 250	fps: 134.007	
+2026-07-16 07:48:03,724 Num updates: 250	Num frames 8000
+2026-07-16 07:48:03,724 Average window size: 50  distance_to_goal: 8.853  distance_to_goal_reward: 0.000  reward: 0.025  spl: 0.000  success: 0.000
+2026-07-16 07:48:03,724 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:48:06,018 update: 260	fps: 134.210	
+2026-07-16 07:48:06,018 Num updates: 260	Num frames 8320
+2026-07-16 07:48:06,018 Average window size: 50  distance_to_goal: 9.021  distance_to_goal_reward: 0.000  reward: 0.030  spl: 0.000  success: 0.000
+2026-07-16 07:48:06,018 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:48:08,264 update: 270	fps: 134.497	
+2026-07-16 07:48:08,264 Num updates: 270	Num frames 8640
+2026-07-16 07:48:08,264 Average window size: 50  distance_to_goal: 8.914  distance_to_goal_reward: 0.000  reward: 0.043  spl: 0.000  success: 0.000
+2026-07-16 07:48:08,264 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.022
+2026-07-16 07:48:10,479 update: 280	fps: 134.832	
+2026-07-16 07:48:10,479 Num updates: 280	Num frames 8960
+2026-07-16 07:48:10,479 Average window size: 50  distance_to_goal: 9.087  distance_to_goal_reward: 0.000  reward: 0.019  spl: 0.000  success: 0.000
+2026-07-16 07:48:10,479 	Perf Stats: trainer.rollout_collect: 0.211 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.021
+2026-07-16 07:48:12,728 update: 290	fps: 135.077	
+2026-07-16 07:48:12,728 Num updates: 290	Num frames 9280
+2026-07-16 07:48:12,728 Average window size: 50  distance_to_goal: 9.311  distance_to_goal_reward: 0.000  reward: 0.031  spl: 0.000  success: 0.000
+2026-07-16 07:48:12,728 	Perf Stats: trainer.rollout_collect: 0.211 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.021
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 595.71.05
+Using optional features:
+    GL_ARB_vertex_array_object
+    GL_ARB_separate_shader_objects
+    GL_ARB_robustness
+    GL_ARB_texture_storage
+    GL_ARB_texture_view
+    GL_ARB_framebuffer_no_attachments
+    GL_ARB_invalidate_subdata
+    GL_ARB_texture_storage_multisample
+    GL_ARB_multi_bind
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_texture_filter_anisotropic
+    GL_KHR_debug
+    GL_KHR_parallel_shader_compile
+    GL_NV_depth_buffer_float
+Using driver workarounds:
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+[07:48:14:638456]:[Warning]:[Scene] SemanticScene.h(331)::checkFileExists : ::loadSemanticSceneDescriptor: File `data/scene_datasets/habitat-test-scenes/van-gogh-room.scn` does not exist.  Aborting load.
+[07:48:14:638529]:[Warning]:[Scene] SemanticScene.cpp(123)::loadSemanticSceneDescriptor : SSD File Naming Issue! Neither SemanticAttributes-provided name : `data/scene_datasets/habitat-test-scenes/van-gogh-room.scn` nor constructed filename : `data/scene_datasets/habitat-test-scenes/info_semantic.json` exist on disk.
+[07:48:14:638549]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `data/scene_datasets/habitat-test-scenes/van-gogh-room.scn` exists but failed to load.
+[07:48:15:363152]:[Warning]:[Sim] Simulator.cpp(595)::instanceStageForSceneAttributes : The active scene does not contain semantic annotations : activeSemanticSceneID_ = 0
+2026-07-16 07:48:16,605 update: 300	fps: 132.268	
+2026-07-16 07:48:16,605 Num updates: 300	Num frames 9600
+2026-07-16 07:48:16,606 Average window size: 50  distance_to_goal: 8.983  distance_to_goal_reward: 0.000  reward: 0.017  spl: 0.000  success: 0.000
+2026-07-16 07:48:16,606 	Perf Stats: trainer.rollout_collect: 0.213 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.004 trainer.update_stats: 0.000 trainer.update_agent: 0.021
+2026-07-16 07:48:18,654 update: 310	fps: 132.926	
+2026-07-16 07:48:18,654 Num updates: 310	Num frames 9920
+2026-07-16 07:48:18,654 Average window size: 50  distance_to_goal: 7.155  distance_to_goal_reward: 0.000  reward: 0.022  spl: 0.000  success: 0.000
+2026-07-16 07:48:18,654 	Perf Stats: trainer.rollout_collect: 0.212 trainer.sample_action: 0.002 trainer.obs_insert: 0.000 trainer.step_env: 0.003 trainer.update_stats: 0.000 trainer.update_agent: 0.021

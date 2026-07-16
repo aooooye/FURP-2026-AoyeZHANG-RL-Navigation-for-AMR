@@ -1,0 +1,23 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+2026-07-15 13:07:56,466 Initializing dataset PointNav-v1
+2026-07-15 13:07:56,667 initializing sim Sim-v0
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+[13:07:57:105358]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `data/scene_datasets/habitat-test-scenes/skokloster-castle.scn` exists but failed to load.
+2026-07-15 13:07:58,325 Initializing task Nav-v0
+{"episode_id": "3662", "final_frame": "/home/ubuntu/week02_codex_20260715T130658Z/results/shortest_path/episode_01_final.png", "geodesic_distance": 11.39383316040039, "index": 1, "metrics": {"distance_to_goal": 0.156880185008049, "distance_to_goal_reward": -0.0, "spl": 1.0, "success": 1.0}, "no_path": false, "scene_id": "data/scene_datasets/habitat-test-scenes/skokloster-castle.glb", "steps": 77, "success": true}
+{"episode_id": "4171", "final_frame": "/home/ubuntu/week02_codex_20260715T130658Z/results/shortest_path/episode_02_final.png", "geodesic_distance": 1.9838473796844482, "index": 2, "metrics": {"distance_to_goal": 0.024866636842489243, "distance_to_goal_reward": -0.0, "spl": 0.9888746889826622, "success": 1.0}, "no_path": false, "scene_id": "data/scene_datasets/habitat-test-scenes/skokloster-castle.glb", "steps": 10, "success": true}
+{"episode_id": "1354", "final_frame": "/home/ubuntu/week02_codex_20260715T130658Z/results/shortest_path/episode_03_final.png", "geodesic_distance": 3.9184181690216064, "index": 3, "metrics": {"distance_to_goal": 0.13347764313220978, "distance_to_goal_reward": -0.0, "spl": 1.0, "success": 1.0}, "no_path": false, "scene_id": "data/scene_datasets/habitat-test-scenes/skokloster-castle.glb", "steps": 31, "success": true}
+{"config": "habitat-lab/habitat/config/benchmark/nav/pointnav/pointnav_habitat_test.yaml", "episodes_requested": 3, "episodes_run": 3, "passed": true, "required_successes": 2, "successes": 3}

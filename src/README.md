@@ -15,3 +15,19 @@ Suggested (not mandatory) layout:
 ```
 
 > Don't commit large datasets or secrets/credentials. Link to data sources instead.
+
+## Current experiment layout
+
+```text
+src/
+├── experiments/
+│   ├── week01/                 # Habitat PointNav random-action smoke test
+│   ├── week02/                 # preflight, deterministic follower, tiny PPO run
+│   └── week3-4/                # fixed-budget PPO training and evaluation workflow
+└── results/
+    ├── week01/                 # verified environment and smoke-test evidence
+    ├── week02/                 # completed Week 2 evidence and metric record
+    └── week3-4/                # Weeks 3 & 4 baseline, metrics, and case evidence
+```
+
+Execution instructions are in `src/experiments/week02/README.md` and `src/experiments/week3-4/README.md`. Verified runs are stored under the matching `src/results/` week directories; Habitat training itself ran on the Ubuntu/Habitat host.

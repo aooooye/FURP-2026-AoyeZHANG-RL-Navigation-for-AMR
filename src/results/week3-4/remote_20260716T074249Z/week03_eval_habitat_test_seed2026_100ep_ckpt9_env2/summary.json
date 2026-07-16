@@ -1,0 +1,32 @@
+{
+  "checkpoint": "/home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_seed100_1m_env5/checkpoints/ckpt.9.pth",
+  "checkpoint_sha256": "e662c5e2f5546266ebcf8765ef61a743fd9416969c3bd6755561ad0d6133bed0",
+  "claim_boundary": "Metrics are parsed from a separate fixed evaluation. They are not rolling training-window diagnostics.",
+  "config": "pointnav/ppo_pointnav_example",
+  "episodes_requested": 100,
+  "generated_utc": "2026-07-16T08:57:42.901442+00:00",
+  "metric_occurrence_counts": {
+    "distance_to_goal": 1,
+    "distance_to_goal_reward": 1,
+    "reward": 1,
+    "spl": 1,
+    "success": 1
+  },
+  "metrics": {
+    "distance_to_goal": 0.1062,
+    "distance_to_goal_reward": 0.0,
+    "reward": 7.7472,
+    "spl": 0.8389,
+    "success": 0.92
+  },
+  "optional_metric_status": {
+    "collision": "unavailable",
+    "path_length_or_efficiency": "unavailable"
+  },
+  "profile": "habitat_test",
+  "schema_version": 1,
+  "seed": 2026,
+  "source_log": "/home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_eval_habitat_test_seed2026_100ep_ckpt9_env2/eval.log",
+  "split": "val",
+  "status": "complete"
+}

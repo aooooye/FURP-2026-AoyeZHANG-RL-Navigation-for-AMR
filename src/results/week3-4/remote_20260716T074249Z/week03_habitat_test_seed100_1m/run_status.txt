@@ -1,0 +1,3 @@
+status=failed
+exit_code=143
+utc_end=2026-07-16T08:10:22+00:00

@@ -1,0 +1,7 @@
+habitat-lab=0.3.3
+habitat-baselines=0.3.3
+habitat-sim=0.3.3
+torch=2.8.0+cu128
+python_torch_cuda=12.8
+torch_cuda_available=True
+torch_gpu=NVIDIA GeForce RTX 3060

@@ -1,0 +1,14 @@
+# Weeks 3 & 4 Learned-Policy Cases
+
+These cases come from the separate video-enabled evaluation of the final 1,000,000-step learned-policy checkpoint. The deterministic shortest-path follower and Week 1 random smoke test are not used.
+
+| Case id | Outcome | Scene / episode id | Train seed | Eval seed | Checkpoint | Final metrics | Evidence path | Short diagnosis |
+|---|---|---|---:|---:|---|---|---|---|
+| success_001 | Success | `skokloster-castle.glb` / episode `14` | 100 | 2026 | `ckpt.9.pth` | success `1.00`; SPL `1.00`; final distance `0.10 m` | `src/results/week3-4/selected_cases/success_001.mp4`; `src/results/week3-4/selected_cases/success_001_contact.png` | Direct, high-efficiency traversal of the large hall; STOP occurred inside the success radius. |
+| success_002 | Success | `skokloster-castle.glb` / episode `0` | 100 | 2026 | `ckpt.9.pth` | success `1.00`; SPL `0.71`; final distance `0.15 m` | `src/results/week3-4/selected_cases/success_002.mp4`; `src/results/week3-4/selected_cases/success_002_contact.png` | Navigated around tables and chairs and reached the goal, but the detour reduced path efficiency. |
+| success_003 | Success | `van-gogh-room.glb` / episode `0` | 100 | 2026 | `ckpt.9.pth` | success `1.00`; SPL `0.90`; final distance `0.04 m` | `src/results/week3-4/selected_cases/success_003.mp4`; `src/results/week3-4/selected_cases/success_003_contact.png` | Short room-scale route with a clean approach and STOP well inside the threshold. |
+| failure_001 | Failure | `van-gogh-room.glb` / episode `13` | 100 | 2026 | `ckpt.9.pth` | success `0.00`; SPL `0.00`; final distance `0.21 m` | `src/results/week3-4/selected_cases/failure_001.mp4`; `src/results/week3-4/selected_cases/failure_001_contact.png` | Premature STOP / threshold miss: the policy stopped only `0.01 m` outside the configured `0.20 m` success radius. |
+| failure_002 | Failure | `skokloster-castle.glb` / episode `15` | 100 | 2026 | `ckpt.9.pth` | success `0.00`; SPL `0.00`; final distance `0.23 m` | `src/results/week3-4/selected_cases/failure_002.mp4`; `src/results/week3-4/selected_cases/failure_002_contact.png` | Premature STOP after a long hall traversal; the final pose remained `0.03 m` outside the success radius. |
+| failure_003 | Failure | `van-gogh-room.glb` / episode `41` | 100 | 2026 | `ckpt.9.pth` | success `0.00`; SPL `0.00`; final distance `0.30 m` | `src/results/week3-4/selected_cases/failure_003.mp4`; `src/results/week3-4/selected_cases/failure_003_contact.png` | Premature STOP near the doorway/bed area; the route approached the goal but terminated `0.10 m` outside the threshold. |
+
+The video inventory contains 91 saved successes and 8 saved failures. One additional aggregate success did not produce a saved MP4, so the video count is 99 while the 100-episode aggregate success count is 92.

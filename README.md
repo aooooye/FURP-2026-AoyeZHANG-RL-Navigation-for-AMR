@@ -32,7 +32,7 @@ This is your project home for the FURP programme. **Fork this template**, rename
 | Supervising faculty | Tianxiang Cui |
 | Project lead | Aoye ZHANG |
 | Team or individual | Individual |
-| Cited paper being replicated | TBD in Week 2 |
+| Cited paper being replicated | *Habitat: A Platform for Embodied AI Research* (Savva et al., ICCV 2019), with PPO training context from *DD-PPO* (Wijmans et al., ICLR 2020) |
 
 **One-line summary:** This project will reproduce a Habitat PointNav navigation baseline for AMR-style navigation, then study how reward design, observations, and evaluation metrics affect success rate, SPL, collisions, and path efficiency.
 

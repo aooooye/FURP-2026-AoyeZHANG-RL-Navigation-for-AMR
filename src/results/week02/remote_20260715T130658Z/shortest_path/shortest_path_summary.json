@@ -1,0 +1,8 @@
+{
+  "config": "habitat-lab/habitat/config/benchmark/nav/pointnav/pointnav_habitat_test.yaml",
+  "episodes_requested": 3,
+  "episodes_run": 3,
+  "passed": true,
+  "required_successes": 2,
+  "successes": 3
+}

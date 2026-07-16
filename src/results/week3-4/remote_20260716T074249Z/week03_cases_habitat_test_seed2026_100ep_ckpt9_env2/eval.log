@@ -1,0 +1,773 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+/home/ubuntu/habitat-lab/habitat-baselines/habitat_baselines/rl/ppo/ppo_trainer.py:341: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(checkpoint_path, *args, **kwargs)
+2026-07-16 08:59:53,456 Loaded checkpoint trained for 1000000 steps
+2026-07-16 08:59:53,474 env config: habitat:
+  seed: 2026
+  env_task: GymHabitatEnv
+  env_task_gym_dependencies: []
+  env_task_gym_id: ''
+  environment:
+    max_episode_steps: 500
+    max_episode_seconds: 10000000
+    iterator_options:
+      cycle: true
+      shuffle: true
+      group_by_scene: true
+      num_episode_sample: -1
+      max_scene_repeat_episodes: -1
+      max_scene_repeat_steps: 10000
+      step_repetition_range: 0.2
+  simulator:
+    type: Sim-v0
+    forward_step_size: 0.25
+    turn_angle: 10
+    create_renderer: false
+    requires_textures: true
+    auto_sleep: false
+    step_physics: true
+    concur_render: false
+    needs_markers: true
+    update_articulated_agent: true
+    scene: data/scene_datasets/habitat-test-scenes/van-gogh-room.glb
+    scene_dataset: default
+    additional_object_paths: []
+    seed: ${habitat.seed}
+    default_agent_id: 0
+    debug_render: false
+    debug_render_articulated_agent: false
+    kinematic_mode: false
+    should_setup_semantic_ids: true
+    debug_render_goal: true
+    robot_joint_start_noise: 0.0
+    ctrl_freq: 120.0
+    ac_freq_ratio: 4
+    load_objs: true
+    hold_thresh: 0.15
+    grasp_impulse: 10000.0
+    agents:
+      main_agent:
+        height: 1.5
+        radius: 0.1
+        max_climb: 0.2
+        max_slope: 45.0
+        grasp_managers: 1
+        sim_sensors:
+          rgb_sensor:
+            type: HabitatSimRGBSensor
+            height: 256
+            width: 256
+            position:
+            - 0.0
+            - 1.25
+            - 0.0
+            orientation:
+            - 0.0
+            - 0.0
+            - 0.0
+            hfov: 90
+            sensor_subtype: PINHOLE
+            noise_model: None
+            noise_model_kwargs: {}
+          depth_sensor:
+            type: HabitatSimDepthSensor
+            height: 256
+            width: 256
+            position:
+            - 0.0
+            - 1.25
+            - 0.0
+            orientation:
+            - 0.0
+            - 0.0
+            - 0.0
+            hfov: 90
+            sensor_subtype: PINHOLE
+            noise_model: None
+            noise_model_kwargs: {}
+            min_depth: 0.0
+            max_depth: 10.0
+            normalize_depth: true
+        is_set_start_state: false
+        start_position:
+        - 0.0
+        - 0.0
+        - 0.0
+        start_rotation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        joint_start_noise: 0.1
+        joint_that_can_control: null
+        joint_start_override: null
+        articulated_agent_urdf: null
+        articulated_agent_type: null
+        ik_arm_urdf: null
+        motion_data_path: ''
+        auto_update_sensor_transform: true
+    agents_order:
+    - main_agent
+    default_agent_navmesh: true
+    navmesh_include_static_objects: false
+    habitat_sim_v0:
+      gpu_device_id: 0
+      gpu_gpu: false
+      allow_sliding: true
+      frustum_culling: true
+      enable_physics: false
+      enable_hbao: false
+      physics_config_file: ./data/default.physics_config.json
+      leave_context_with_background_renderer: false
+      enable_gfx_replay_save: false
+    ep_info: null
+    object_ids_start: 100
+    renderer:
+      enable_batch_renderer: false
+      composite_files: null
+      classic_replay_renderer: false
+  task:
+    physics_target_sps: 60.0
+    reward_measure: distance_to_goal_reward
+    success_measure: spl
+    success_reward: 2.5
+    slack_reward: -0.01
+    end_on_success: true
+    type: Nav-v0
+    lab_sensors:
+      pointgoal_with_gps_compass_sensor:
+        type: PointGoalWithGPSCompassSensor
+        goal_format: POLAR
+        dimensionality: 2
+    measurements:
+      distance_to_goal:
+        type: DistanceToGoal
+        distance_to: POINT
+      success:
+        type: Success
+        success_distance: 0.2
+      spl:
+        type: SPL
+      distance_to_goal_reward:
+        type: DistanceToGoalReward
+    rank0_env0_measure_names:
+    - habitat_perf
+    rank0_measure_names: []
+    goal_sensor_uuid: pointgoal_with_gps_compass
+    count_obj_collisions: true
+    settle_steps: 5
+    constraint_violation_ends_episode: true
+    constraint_violation_drops_object: false
+    force_regenerate: false
+    should_save_to_cache: false
+    object_in_hand_sample_prob: 0.167
+    min_start_distance: 3.0
+    render_target: true
+    filter_colliding_states: true
+    num_spawn_attempts: 200
+    spawn_max_dist_to_obj: 2.0
+    base_angle_noise: 0.523599
+    spawn_max_dist_to_obj_delta: 0.02
+    recep_place_shrink_factor: 0.8
+    ee_sample_factor: 0.2
+    ee_exclude_region: 0.0
+    base_noise: 0.05
+    spawn_region_scale: 0.2
+    joint_max_impulse: -1.0
+    desired_resting_position:
+    - 0.5
+    - 0.0
+    - 1.0
+    use_marker_t: true
+    cache_robot_init: false
+    success_state: 0.0
+    should_enforce_target_within_reach: false
+    task_spec_base_path: habitat/task/rearrange/pddl/
+    task_spec: ''
+    pddl_domain_def: replica_cad
+    obj_succ_thresh: 0.3
+    enable_safe_drop: false
+    art_succ_thresh: 0.15
+    robot_at_thresh: 2.0
+    min_distance_start_agents: -1.0
+    actions:
+      stop:
+        type: StopAction
+      move_forward:
+        type: MoveForwardAction
+        tilt_angle: 15
+      turn_left:
+        type: TurnLeftAction
+        tilt_angle: 15
+      turn_right:
+        type: TurnRightAction
+        tilt_angle: 15
+  dataset:
+    type: PointNav-v1
+    split: val
+    scenes_dir: data/scene_datasets
+    content_scenes:
+    - '*'
+    data_path: data/datasets/pointnav/habitat-test-scenes/v1/{split}/{split}.json.gz
+    metadata: null
+  gym:
+    obs_keys: null
+    action_keys: null
+    achieved_goal_keys: []
+    desired_goal_keys: []
+habitat_baselines:
+  evaluate: true
+  trainer_name: ppo
+  updater_name: PPO
+  distrib_updater_name: DDPPO
+  torch_gpu_id: 0
+  tensorboard_dir: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/tb
+  writer_type: tb
+  video_dir: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video
+  video_fps: 10
+  test_episode_count: 100
+  eval_ckpt_path_dir: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_seed100_1m_env5/checkpoints/ckpt.9.pth
+  num_environments: 2
+  num_processes: -1
+  rollout_storage_name: RolloutStorage
+  checkpoint_folder: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/eval_state
+  num_updates: -1
+  num_checkpoints: 50
+  checkpoint_interval: -1
+  total_num_steps: 1000000.0
+  log_interval: 10
+  log_file: train.log
+  force_blind_policy: false
+  verbose: true
+  vector_env_factory:
+    _target_: habitat_baselines.common.HabitatVectorEnvFactory
+  evaluator:
+    _target_: habitat_baselines.rl.ppo.habitat_evaluator.HabitatEvaluator
+  eval_keys_to_include_in_name: []
+  force_torch_single_threaded: true
+  wb:
+    project_name: ''
+    entity: ''
+    group: ''
+    run_name: ''
+  load_resume_state_config: false
+  eval:
+    split: val
+    use_ckpt_config: true
+    should_load_ckpt: true
+    evals_per_ep: 1
+    video_option:
+    - disk
+    extra_sim_sensors: {}
+  profiling:
+    capture_start_step: -1
+    num_steps_to_capture: -1
+  should_log_single_proc_infos: false
+  on_save_ckpt_callback: null
+  rl:
+    agent:
+      type: SingleAgentAccessMgr
+      num_agent_types: 1
+      num_active_agents_per_type:
+      - 1
+      num_pool_agents_per_type:
+      - 1
+      agent_sample_interval: 20
+      force_partner_sample_idx: -1
+      behavior_latent_dim: -1
+      force_all_agents: false
+      discrim_reward_weight: 1.0
+      allow_self_play: false
+      self_play_batched: false
+      load_type1_pop_ckpts: null
+    preemption:
+      append_slurm_job_id: false
+      save_resume_state_interval: 100
+      save_state_batch_only: false
+    policy:
+      main_agent:
+        name: PointNavResNetPolicy
+        action_distribution_type: categorical
+        action_dist:
+          use_log_std: true
+          use_softplus: false
+          std_init: ???
+          log_std_init: 0.0
+          use_std_param: false
+          clamp_std: true
+          min_std: 1.0e-06
+          max_std: 1
+          min_log_std: -5
+          max_log_std: 2
+          action_activation: tanh
+          scheduled_std: false
+        obs_transforms: {}
+        hierarchical_policy: ???
+    ppo:
+      clip_param: 0.1
+      ppo_epoch: 1
+      num_mini_batch: 1
+      value_loss_coef: 0.5
+      entropy_coef: 0.01
+      lr: 0.00025
+      eps: 1.0e-05
+      max_grad_norm: 0.5
+      num_steps: 32
+      use_gae: true
+      use_linear_lr_decay: true
+      use_linear_clip_decay: true
+      gamma: 0.99
+      tau: 0.95
+      reward_window_size: 50
+      use_normalized_advantage: false
+      hidden_size: 512
+      entropy_target_factor: 0.0
+      use_adaptive_entropy_pen: false
+      use_clipped_value_loss: true
+      use_double_buffered_sampler: false
+    ddppo:
+      sync_frac: 0.6
+      distrib_backend: GLOO
+      rnn_type: GRU
+      num_recurrent_layers: 1
+      backbone: resnet18
+      pretrained_weights: data/ddppo-models/gibson-2plus-resnet50.pth
+      pretrained: false
+      pretrained_encoder: false
+      train_encoder: true
+      reset_critic: true
+      force_distributed: false
+    ver:
+      variable_experience: true
+      num_inference_workers: 2
+      overlap_rollouts_and_learn: false
+    auxiliary_losses: {}
+
+2026-07-16 08:59:53,475 Initializing dataset PointNav-v1
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+2026-07-16 08:59:55,486 Initializing dataset PointNav-v1
+2026-07-16 08:59:55,486 Initializing dataset PointNav-v1
+2026-07-16 08:59:55,488 initializing sim Sim-v0
+2026-07-16 08:59:55,488 initializing sim Sim-v0
+PluginManager::Manager: duplicate static pluginPluginManager::Manager: duplicate static plugin  StbImageImporterStbImageImporter, ignoring, ignoring
+
+PluginManager::Manager: duplicate static pluginPluginManager::Manager: duplicate static plugin  GltfImporterGltfImporter, ignoring, ignoring
+
+PluginManager::Manager: duplicate static pluginPluginManager::Manager: duplicate static plugin  BasisImporterBasisImporter, ignoring, ignoring
+
+PluginManager::Manager: duplicate static pluginPluginManager::Manager: duplicate static plugin  AssimpImporterAssimpImporter, ignoring, ignoring
+
+PluginManager::Manager: duplicate static pluginPluginManager::Manager: duplicate static plugin  AnySceneImporterAnySceneImporter, ignoring, ignoring
+
+PluginManager::Manager: duplicate static pluginPluginManager::Manager: duplicate static plugin  AnyImageImporterAnyImageImporter, ignoring, ignoring
+
+Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2 by NVIDIA Corporation
+Renderer: NVIDIA GeForce RTX 3060/PCIe/SSE2 by NVIDIA Corporation
+OpenGL version: 4.6.0 NVIDIA 595.71.05
+OpenGL version: 4.6.0 NVIDIA 595.71.05
+Using optional features:
+Using optional features:
+    GL_ARB_vertex_array_object
+    GL_ARB_vertex_array_object
+    GL_ARB_separate_shader_objects
+    GL_ARB_separate_shader_objects
+    GL_ARB_robustness
+    GL_ARB_robustness
+    GL_ARB_texture_storage
+    GL_ARB_texture_storage
+    GL_ARB_texture_view
+    GL_ARB_texture_view
+    GL_ARB_framebuffer_no_attachments
+    GL_ARB_framebuffer_no_attachments
+    GL_ARB_invalidate_subdata
+    GL_ARB_invalidate_subdata
+    GL_ARB_texture_storage_multisample
+    GL_ARB_texture_storage_multisample
+    GL_ARB_multi_bind
+    GL_ARB_multi_bind
+    GL_ARB_direct_state_access
+    GL_ARB_direct_state_access
+    GL_ARB_get_texture_sub_image
+    GL_ARB_get_texture_sub_image
+    GL_ARB_texture_filter_anisotropic
+    GL_ARB_texture_filter_anisotropic
+    GL_KHR_debug
+    GL_KHR_debug
+    GL_KHR_parallel_shader_compile
+    GL_KHR_parallel_shader_compile
+    GL_NV_depth_buffer_float
+    GL_NV_depth_buffer_float
+Using driver workarounds:
+Using driver workarounds:
+    no-forward-compatible-core-context
+    no-forward-compatible-core-context
+    nv-egl-incorrect-gl11-function-pointers
+    nv-egl-incorrect-gl11-function-pointers
+    no-layout-qualifiers-on-old-glsl
+    no-layout-qualifiers-on-old-glsl
+    nv-zero-context-profile-mask
+    nv-zero-context-profile-mask
+    nv-implementation-color-read-format-dsa-broken
+    nv-implementation-color-read-format-dsa-broken
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-inconsistent-compressed-image-size
+    nv-cubemap-broken-full-compressed-image-query
+    nv-cubemap-broken-full-compressed-image-query
+    nv-compressed-block-size-in-bits
+    nv-compressed-block-size-in-bits
+[08:59:55:674869]:[Warning]:[Metadata] SceneDatasetAttributes.cpp(107)::addNewSceneInstanceToDataset : [08:59:55:674869]:[Warning]:[Metadata] SceneDatasetAttributes.cpp(107)::addNewSceneInstanceToDataset : Dataset : 'default' : Dataset : 'default' : Lighting Layout Attributes 'Lighting Layout Attributes 'no_lightsno_lights' specified in Scene Attributes but does not exist in dataset, so creating default.' specified in Scene Attributes but does not exist in dataset, so creating default.
+
+[08:59:55:674940]:[Warning]:[Scene] SemanticScene.h(331)::checkFileExists : ::loadSemanticSceneDescriptor: File `data/scene_datasets/habitat-test-scenes/van-gogh-room.scn` does not exist.  Aborting load.
+[08:59:55:674948]:[Warning]:[Scene] SemanticScene.cpp(123)::loadSemanticSceneDescriptor : SSD File Naming Issue! Neither SemanticAttributes-provided name : `data/scene_datasets/habitat-test-scenes/van-gogh-room.scn` nor constructed filename : `data/scene_datasets/habitat-test-scenes/info_semantic.json` exist on disk.
+[08:59:55:674953]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `data/scene_datasets/habitat-test-scenes/van-gogh-room.scn` exists but failed to load.
+[08:59:55:674969]:[Warning]:[Scene] SemanticScene.h(331)::checkFileExists : ::loadSemanticSceneDescriptor: File `data/scene_datasets/habitat-test-scenes/skokloster-castle.scn` does not exist.  Aborting load.
+[08:59:55:674977]:[Warning]:[Scene] SemanticScene.cpp(123)::loadSemanticSceneDescriptor : SSD File Naming Issue! Neither SemanticAttributes-provided name : `data/scene_datasets/habitat-test-scenes/skokloster-castle.scn` nor constructed filename : `data/scene_datasets/habitat-test-scenes/info_semantic.json` exist on disk.
+[08:59:55:674981]:[Error]:[Scene] SemanticScene.cpp(139)::loadSemanticSceneDescriptor : SSD Load Failure! File with SemanticAttributes-provided name `data/scene_datasets/habitat-test-scenes/skokloster-castle.scn` exists but failed to load.
+[08:59:56:154019]:[Warning]:[Sim] Simulator.cpp(595)::instanceStageForSceneAttributes : The active scene does not contain semantic annotations : activeSemanticSceneID_ = 0
+2026-07-16 08:59:56,155 Initializing task Nav-v0
+[08:59:56:277953]:[Warning]:[Sim] Simulator.cpp(595)::instanceStageForSceneAttributes : The active scene does not contain semantic annotations : activeSemanticSceneID_ = 0
+2026-07-16 08:59:56,279 Initializing task Nav-v0
+2026-07-16 08:59:56,659 Number of params to train: 5821797
+2026-07-16 08:59:56,660 Agent number of parameters: 5821797
+  0%|          | 0/100 [00:00<?, ?it/s]  1%|          | 1/100 [00:00<00:40,  2.46it/s]2026-07-16 08:59:57,205 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=37_1-ckpt=9-distance_to_goal=0.10-success=1.00-spl=0.81-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/18 [00:00<?, ?it/s][A
+  6%|▌         | 1/18 [00:00<00:15,  1.08it/s][A100%|██████████| 18/18 [00:00<00:00, 19.45it/s]
+  2%|▏         | 2/100 [00:01<01:30,  1.09it/s]2026-07-16 08:59:58,364 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=23_1-ckpt=9-distance_to_goal=0.05-success=1.00-spl=0.89-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/21 [00:00<?, ?it/s][A100%|██████████| 21/21 [00:00<00:00, 703.12it/s]
+  3%|▎         | 3/100 [00:01<00:58,  1.64it/s]2026-07-16 08:59:58,599 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=29_1-ckpt=9-distance_to_goal=0.09-success=1.00-spl=0.98-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/19 [00:00<?, ?it/s][A100%|██████████| 19/19 [00:00<00:00, 699.49it/s]
+  4%|▍         | 4/100 [00:02<00:47,  2.02it/s]2026-07-16 08:59:58,919 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=31_1-ckpt=9-distance_to_goal=0.07-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/87 [00:00<?, ?it/s][A100%|██████████| 87/87 [00:00<00:00, 1129.86it/s]
+  5%|▌         | 5/100 [00:02<00:42,  2.24it/s]2026-07-16 08:59:59,280 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=24_1-ckpt=9-distance_to_goal=0.12-success=1.00-spl=0.86-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/52 [00:00<?, ?it/s][A100%|██████████| 52/52 [00:00<00:00, 1503.73it/s]
+  6%|▌         | 6/100 [00:02<00:33,  2.78it/s]2026-07-16 08:59:59,473 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=22_1-ckpt=9-distance_to_goal=0.19-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/9 [00:00<?, ?it/s][A100%|██████████| 9/9 [00:00<00:00, 346.51it/s]
+  7%|▋         | 7/100 [00:03<00:30,  3.07it/s]2026-07-16 08:59:59,727 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=33_1-ckpt=9-distance_to_goal=0.05-success=1.00-spl=0.84-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/52 [00:00<?, ?it/s][A100%|██████████| 52/52 [00:00<00:00, 1468.92it/s]
+  8%|▊         | 8/100 [00:03<00:25,  3.58it/s]2026-07-16 08:59:59,907 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=13_1-ckpt=9-distance_to_goal=0.21-success=0.00-spl=0.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/27 [00:00<?, ?it/s][A100%|██████████| 27/27 [00:00<00:00, 871.88it/s]
+  9%|▉         | 9/100 [00:03<00:29,  3.10it/s]2026-07-16 09:00:00,326 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=16_1-ckpt=9-distance_to_goal=0.03-success=1.00-spl=0.98-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/40 [00:00<?, ?it/s][A100%|██████████| 40/40 [00:00<00:00, 1218.43it/s]
+ 10%|█         | 10/100 [00:03<00:24,  3.64it/s]2026-07-16 09:00:00,494 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=28_1-ckpt=9-distance_to_goal=0.13-success=1.00-spl=0.95-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/47 [00:00<?, ?it/s][A100%|██████████| 47/47 [00:00<00:00, 1391.14it/s]
+ 11%|█         | 11/100 [00:04<00:24,  3.65it/s]2026-07-16 09:00:00,765 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=42_1-ckpt=9-distance_to_goal=0.21-success=0.00-spl=0.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/21 [00:00<?, ?it/s][A100%|██████████| 21/21 [00:00<00:00, 715.04it/s]
+ 12%|█▏        | 12/100 [00:04<00:25,  3.43it/s]2026-07-16 09:00:01,096 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=30_1-ckpt=9-distance_to_goal=0.16-success=1.00-spl=0.78-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/31 [00:00<?, ?it/s][A100%|██████████| 31/31 [00:00<00:00, 978.70it/s]
+ 13%|█▎        | 13/100 [00:04<00:26,  3.29it/s]2026-07-16 09:00:01,429 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=4_1-ckpt=9-distance_to_goal=0.09-success=1.00-spl=0.92-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/28 [00:00<?, ?it/s][A100%|██████████| 28/28 [00:00<00:00, 891.24it/s]
+ 14%|█▍        | 14/100 [00:05<00:26,  3.29it/s]2026-07-16 09:00:01,734 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=27_1-ckpt=9-distance_to_goal=0.07-success=1.00-spl=0.95-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/25 [00:00<?, ?it/s][A100%|██████████| 25/25 [00:00<00:00, 813.15it/s]
+ 15%|█▌        | 15/100 [00:05<00:21,  3.98it/s]2026-07-16 09:00:01,862 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=36_1-ckpt=9-distance_to_goal=0.08-success=1.00-spl=0.92-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/102 [00:00<?, ?it/s][A100%|██████████| 102/102 [00:00<00:00, 1022.04it/s]
+ 16%|█▌        | 16/100 [00:05<00:24,  3.36it/s]2026-07-16 09:00:02,267 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=19_1-ckpt=9-distance_to_goal=0.07-success=1.00-spl=0.99-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/28 [00:00<?, ?it/s][A100%|██████████| 28/28 [00:00<00:00, 875.37it/s]
+ 17%|█▋        | 17/100 [00:05<00:23,  3.52it/s]2026-07-16 09:00:02,520 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=1_1-ckpt=9-distance_to_goal=0.05-success=1.00-spl=0.99-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/20 [00:00<?, ?it/s][A100%|██████████| 20/20 [00:00<00:00, 695.41it/s]
+ 18%|█▊        | 18/100 [00:06<00:24,  3.33it/s]2026-07-16 09:00:02,859 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=46_1-ckpt=9-distance_to_goal=0.10-success=1.00-spl=0.87-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/33 [00:00<?, ?it/s][A100%|██████████| 33/33 [00:00<00:00, 1028.04it/s]
+ 19%|█▉        | 19/100 [00:06<00:20,  4.04it/s]2026-07-16 09:00:02,983 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=2_1-ckpt=9-distance_to_goal=0.15-success=1.00-spl=0.97-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/76 [00:00<?, ?it/s][A100%|██████████| 76/76 [00:00<00:00, 1212.72it/s]
+ 20%|██        | 20/100 [00:06<00:22,  3.52it/s]2026-07-16 09:00:03,353 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=17_1-ckpt=9-distance_to_goal=0.01-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/24 [00:00<?, ?it/s][A100%|██████████| 24/24 [00:00<00:00, 781.86it/s]
+ 21%|██        | 21/100 [00:06<00:22,  3.45it/s]2026-07-16 09:00:03,656 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=2_1-ckpt=9-distance_to_goal=0.18-success=1.00-spl=0.86-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/27 [00:00<?, ?it/s][A100%|██████████| 27/27 [00:00<00:00, 868.99it/s]
+ 22%|██▏       | 22/100 [00:07<00:21,  3.56it/s]2026-07-16 09:00:03,916 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=46_1-ckpt=9-distance_to_goal=0.06-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/70 [00:00<?, ?it/s][A100%|██████████| 70/70 [00:00<00:00, 1262.22it/s]
+ 23%|██▎       | 23/100 [00:07<00:20,  3.82it/s]2026-07-16 09:00:04,133 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=48_1-ckpt=9-distance_to_goal=0.11-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/26 [00:00<?, ?it/s][A100%|██████████| 26/26 [00:00<00:00, 837.16it/s]
+ 24%|██▍       | 24/100 [00:07<00:22,  3.38it/s]2026-07-16 09:00:04,509 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=18_1-ckpt=9-distance_to_goal=0.11-success=1.00-spl=0.97-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/35 [00:00<?, ?it/s][A100%|██████████| 35/35 [00:00<00:00, 1075.54it/s]
+ 25%|██▌       | 25/100 [00:08<00:21,  3.57it/s]2026-07-16 09:00:04,752 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=11_1-ckpt=9-distance_to_goal=0.02-success=1.00-spl=0.80-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/18 [00:00<?, ?it/s][A100%|██████████| 18/18 [00:00<00:00, 633.61it/s]
+ 26%|██▌       | 26/100 [00:08<00:20,  3.69it/s]2026-07-16 09:00:05,002 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=8_1-ckpt=9-distance_to_goal=0.05-success=1.00-spl=0.87-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/23 [00:00<?, ?it/s][A100%|██████████| 23/23 [00:00<00:00, 770.99it/s]
+ 27%|██▋       | 27/100 [00:08<00:21,  3.32it/s]2026-07-16 09:00:05,373 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=12_1-ckpt=9-distance_to_goal=0.08-success=1.00-spl=0.72-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/35 [00:00<?, ?it/s][A100%|██████████| 35/35 [00:00<00:00, 1081.83it/s]
+ 28%|██▊       | 28/100 [00:08<00:21,  3.36it/s]2026-07-16 09:00:05,663 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=49_1-ckpt=9-distance_to_goal=0.04-success=1.00-spl=0.75-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/134 [00:00<?, ?it/s][A
+ 90%|█████████ | 121/134 [00:00<00:00, 1199.28it/s][A100%|██████████| 134/134 [00:00<00:00, 1150.20it/s]
+ 29%|██▉       | 29/100 [00:09<00:21,  3.24it/s]2026-07-16 09:00:05,997 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=44_1-ckpt=9-distance_to_goal=0.04-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/35 [00:00<?, ?it/s][A100%|██████████| 35/35 [00:00<00:00, 1073.29it/s]
+ 30%|███       | 30/100 [00:09<00:21,  3.19it/s]2026-07-16 09:00:06,322 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=10_1-ckpt=9-distance_to_goal=0.16-success=1.00-spl=0.92-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/25 [00:00<?, ?it/s][A100%|██████████| 25/25 [00:00<00:00, 811.32it/s]
+ 31%|███       | 31/100 [00:09<00:20,  3.40it/s]2026-07-16 09:00:06,570 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=3_1-ckpt=9-distance_to_goal=0.13-success=1.00-spl=0.96-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/56 [00:00<?, ?it/s][A100%|██████████| 56/56 [00:00<00:00, 1519.53it/s]
+ 32%|███▏      | 32/100 [00:10<00:18,  3.74it/s]2026-07-16 09:00:06,774 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=25_1-ckpt=9-distance_to_goal=0.04-success=1.00-spl=0.95-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/27 [00:00<?, ?it/s][A100%|██████████| 27/27 [00:00<00:00, 859.88it/s]
+ 33%|███▎      | 33/100 [00:10<00:21,  3.18it/s]2026-07-16 09:00:07,199 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=34_1-ckpt=9-distance_to_goal=0.04-success=1.00-spl=0.98-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/41 [00:00<?, ?it/s][A100%|██████████| 41/41 [00:00<00:00, 1195.13it/s]
+ 34%|███▍      | 34/100 [00:10<00:21,  3.07it/s]2026-07-16 09:00:07,550 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=21_1-ckpt=9-distance_to_goal=0.15-success=1.00-spl=0.95-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/27 [00:00<?, ?it/s][A100%|██████████| 27/27 [00:00<00:00, 832.11it/s]
+ 35%|███▌      | 35/100 [00:11<00:19,  3.25it/s]2026-07-16 09:00:07,815 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=33_1-ckpt=9-distance_to_goal=0.08-success=1.00-spl=0.95-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/21 [00:00<?, ?it/s][A100%|██████████| 21/21 [00:00<00:00, 717.76it/s]
+ 36%|███▌      | 36/100 [00:11<00:19,  3.20it/s]2026-07-16 09:00:08,139 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=43_1-ckpt=9-distance_to_goal=0.11-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/30 [00:00<?, ?it/s][A100%|██████████| 30/30 [00:00<00:00, 948.07it/s]
+ 37%|███▋      | 37/100 [00:11<00:16,  3.83it/s]2026-07-16 09:00:08,281 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=1_1-ckpt=9-distance_to_goal=0.00-success=1.00-spl=0.81-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/129 [00:00<?, ?it/s][A
+ 91%|█████████▏| 118/129 [00:00<00:00, 1149.59it/s][A100%|██████████| 129/129 [00:00<00:00, 1173.53it/s]
+ 38%|███▊      | 38/100 [00:11<00:18,  3.38it/s]2026-07-16 09:00:08,658 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=3_1-ckpt=9-distance_to_goal=0.10-success=1.00-spl=0.93-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/25 [00:00<?, ?it/s][A100%|██████████| 25/25 [00:00<00:00, 805.59it/s]
+ 39%|███▉      | 39/100 [00:12<00:17,  3.54it/s]2026-07-16 09:00:08,910 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=45_1-ckpt=9-distance_to_goal=0.05-success=1.00-spl=0.98-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/21 [00:00<?, ?it/s][A100%|██████████| 21/21 [00:00<00:00, 701.73it/s]
+ 40%|████      | 40/100 [00:12<00:14,  4.06it/s]2026-07-16 09:00:09,071 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=9_1-ckpt=9-distance_to_goal=0.23-success=0.00-spl=0.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/47 [00:00<?, ?it/s][A100%|██████████| 47/47 [00:00<00:00, 1387.13it/s]
+ 41%|████      | 41/100 [00:12<00:15,  3.76it/s]2026-07-16 09:00:09,383 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=9_1-ckpt=9-distance_to_goal=0.18-success=1.00-spl=0.92-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/31 [00:00<?, ?it/s][A100%|██████████| 31/31 [00:00<00:00, 952.37it/s]
+ 42%|████▏     | 42/100 [00:13<00:17,  3.30it/s]2026-07-16 09:00:09,773 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=49_1-ckpt=9-distance_to_goal=0.13-success=1.00-spl=0.83-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/36 [00:00<?, ?it/s][A100%|██████████| 36/36 [00:00<00:00, 1096.77it/s]
+ 43%|████▎     | 43/100 [00:13<00:15,  3.68it/s]2026-07-16 09:00:09,972 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=27_1-ckpt=9-distance_to_goal=0.02-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/67 [00:00<?, ?it/s][A100%|██████████| 67/67 [00:00<00:00, 1773.06it/s]
+ 44%|████▍     | 44/100 [00:13<00:16,  3.40it/s]2026-07-16 09:00:10,317 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=5_1-ckpt=9-distance_to_goal=0.01-success=1.00-spl=0.88-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/31 [00:00<?, ?it/s][A100%|██████████| 31/31 [00:00<00:00, 977.01it/s]
+ 45%|████▌     | 45/100 [00:13<00:15,  3.52it/s]2026-07-16 09:00:10,578 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=0_1-ckpt=9-distance_to_goal=0.04-success=1.00-spl=0.90-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/21 [00:00<?, ?it/s][A100%|██████████| 21/21 [00:00<00:00, 709.70it/s]
+ 46%|████▌     | 46/100 [00:14<00:14,  3.72it/s]2026-07-16 09:00:10,812 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=15_1-ckpt=9-distance_to_goal=0.10-success=1.00-spl=0.95-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/20 [00:00<?, ?it/s][A100%|██████████| 20/20 [00:00<00:00, 691.99it/s]
+ 47%|████▋     | 47/100 [00:14<00:11,  4.55it/s]2026-07-16 09:00:10,917 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=15_1-ckpt=9-distance_to_goal=0.23-success=0.00-spl=0.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/63 [00:00<?, ?it/s][A100%|██████████| 63/63 [00:00<00:00, 1632.75it/s]
+ 48%|████▊     | 48/100 [00:14<00:16,  3.22it/s]2026-07-16 09:00:11,440 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=28_1-ckpt=9-distance_to_goal=0.07-success=1.00-spl=0.61-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/48 [00:00<?, ?it/s][A100%|██████████| 48/48 [00:00<00:00, 963.90it/s]
+ 49%|████▉     | 49/100 [00:15<00:17,  2.96it/s]2026-07-16 09:00:11,843 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=31_1-ckpt=9-distance_to_goal=0.16-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/32 [00:00<?, ?it/s][A100%|██████████| 32/32 [00:00<00:00, 993.00it/s]
+ 50%|█████     | 50/100 [00:15<00:15,  3.26it/s]2026-07-16 09:00:12,077 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=32_1-ckpt=9-distance_to_goal=0.06-success=1.00-spl=0.96-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/93 [00:00<?, ?it/s][A100%|██████████| 93/93 [00:00<00:00, 1119.34it/s]
+ 51%|█████     | 51/100 [00:15<00:14,  3.34it/s]2026-07-16 09:00:12,357 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=40_1-ckpt=9-distance_to_goal=0.07-success=1.00-spl=0.98-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/25 [00:00<?, ?it/s][A100%|██████████| 25/25 [00:00<00:00, 818.70it/s]
+ 52%|█████▏    | 52/100 [00:15<00:13,  3.47it/s]2026-07-16 09:00:12,620 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=36_1-ckpt=9-distance_to_goal=0.07-success=1.00-spl=0.73-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/21 [00:00<?, ?it/s][A100%|██████████| 21/21 [00:00<00:00, 712.51it/s]
+ 53%|█████▎    | 53/100 [00:16<00:13,  3.49it/s]2026-07-16 09:00:12,902 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=26_1-ckpt=9-distance_to_goal=0.06-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/25 [00:00<?, ?it/s][A100%|██████████| 25/25 [00:00<00:00, 818.25it/s]
+ 54%|█████▍    | 54/100 [00:16<00:13,  3.52it/s]2026-07-16 09:00:13,181 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=48_1-ckpt=9-distance_to_goal=0.06-success=1.00-spl=0.90-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/76 [00:00<?, ?it/s][A100%|██████████| 76/76 [00:00<00:00, 1258.56it/s]
+ 55%|█████▌    | 55/100 [00:16<00:12,  3.64it/s]2026-07-16 09:00:13,435 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=35_1-ckpt=9-distance_to_goal=0.11-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/34 [00:00<?, ?it/s][A100%|██████████| 34/34 [00:00<00:00, 1038.09it/s]
+ 56%|█████▌    | 56/100 [00:17<00:12,  3.62it/s]2026-07-16 09:00:13,715 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=39_1-ckpt=9-distance_to_goal=0.12-success=1.00-spl=0.91-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/22 [00:00<?, ?it/s][A100%|██████████| 22/22 [00:00<00:00, 736.82it/s]
+ 57%|█████▋    | 57/100 [00:17<00:11,  3.75it/s]2026-07-16 09:00:13,958 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=38_1-ckpt=9-distance_to_goal=0.09-success=1.00-spl=0.95-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/20 [00:00<?, ?it/s][A100%|██████████| 20/20 [00:00<00:00, 672.88it/s]
+ 58%|█████▊    | 58/100 [00:17<00:11,  3.73it/s]2026-07-16 09:00:14,230 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=14_1-ckpt=9-distance_to_goal=0.14-success=1.00-spl=0.99-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/24 [00:00<?, ?it/s][A100%|██████████| 24/24 [00:00<00:00, 797.22it/s]
+ 59%|█████▉    | 59/100 [00:17<00:10,  4.09it/s]2026-07-16 09:00:14,419 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=6_1-ckpt=9-distance_to_goal=0.13-success=1.00-spl=0.92-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/12 [00:00<?, ?it/s][A100%|██████████| 12/12 [00:00<00:00, 451.59it/s]
+ 60%|██████    | 60/100 [00:18<00:11,  3.60it/s]2026-07-16 09:00:14,775 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=41_1-ckpt=9-distance_to_goal=0.30-success=0.00-spl=0.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/35 [00:00<?, ?it/s][A100%|██████████| 35/35 [00:00<00:00, 1056.93it/s]
+ 61%|██████    | 61/100 [00:18<00:10,  3.56it/s]2026-07-16 09:00:15,063 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=42_1-ckpt=9-distance_to_goal=0.16-success=1.00-spl=0.85-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/141 [00:00<?, ?it/s][A
+ 80%|████████  | 113/141 [00:00<00:00, 1112.41it/s][A100%|██████████| 141/141 [00:00<00:00, 1064.36it/s]
+ 62%|██████▏   | 62/100 [00:18<00:10,  3.57it/s]2026-07-16 09:00:15,341 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=47_1-ckpt=9-distance_to_goal=0.17-success=1.00-spl=0.80-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/25 [00:00<?, ?it/s][A100%|██████████| 25/25 [00:00<00:00, 795.83it/s]
+ 63%|██████▎   | 63/100 [00:19<00:11,  3.35it/s]2026-07-16 09:00:15,683 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=38_1-ckpt=9-distance_to_goal=0.14-success=1.00-spl=0.88-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/32 [00:00<?, ?it/s][A100%|██████████| 32/32 [00:00<00:00, 985.99it/s]
+ 64%|██████▍   | 64/100 [00:19<00:09,  3.86it/s]2026-07-16 09:00:15,849 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=32_1-ckpt=9-distance_to_goal=0.04-success=1.00-spl=0.95-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/36 [00:00<?, ?it/s][A100%|██████████| 36/36 [00:00<00:00, 1091.43it/s]
+ 65%|██████▌   | 65/100 [00:19<00:10,  3.44it/s]2026-07-16 09:00:16,214 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=20_1-ckpt=9-distance_to_goal=0.18-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/31 [00:00<?, ?it/s][A100%|██████████| 31/31 [00:00<00:00, 953.10it/s]
+ 66%|██████▌   | 66/100 [00:19<00:10,  3.24it/s]2026-07-16 09:00:16,565 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=7_1-ckpt=9-distance_to_goal=0.09-success=1.00-spl=0.92-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/30 [00:00<?, ?it/s][A100%|██████████| 30/30 [00:00<00:00, 921.25it/s]
+ 67%|██████▋   | 67/100 [00:20<00:08,  3.78it/s]2026-07-16 09:00:16,726 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=35_1-ckpt=9-distance_to_goal=0.05-success=1.00-spl=0.93-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/74 [00:00<?, ?it/s][A100%|██████████| 74/74 [00:00<00:00, 1211.47it/s]
+ 68%|██████▊   | 68/100 [00:20<00:13,  2.35it/s]2026-07-16 09:00:17,528 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=14_1-ckpt=9-distance_to_goal=0.10-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/103 [00:00<?, ?it/s][A
+ 99%|█████████▉| 102/103 [00:00<00:00, 1010.28it/s][A100%|██████████| 103/103 [00:00<00:00, 995.24it/s] 
+ 69%|██████▉   | 69/100 [00:21<00:16,  1.92it/s]2026-07-16 09:00:18,270 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=12_1-ckpt=9-distance_to_goal=0.13-success=1.00-spl=0.90-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/87 [00:00<?, ?it/s][A100%|██████████| 87/87 [00:00<00:00, 1069.19it/s]
+ 70%|███████   | 70/100 [00:22<00:21,  1.42it/s]2026-07-16 09:00:19,408 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=23_1-ckpt=9-distance_to_goal=0.14-success=1.00-spl=0.87-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/153 [00:00<?, ?it/s][A
+ 67%|██████▋   | 103/153 [00:00<00:00, 1006.09it/s][A100%|██████████| 153/153 [00:00<00:00, 878.89it/s] 
+ 71%|███████   | 71/100 [00:23<00:24,  1.19it/s]2026-07-16 09:00:20,572 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=37_1-ckpt=9-distance_to_goal=0.09-success=1.00-spl=0.83-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/146 [00:00<?, ?it/s][A
+ 75%|███████▍  | 109/146 [00:00<00:00, 1088.63it/s][A100%|██████████| 146/146 [00:00<00:00, 1091.90it/s]
+ 72%|███████▏  | 72/100 [00:24<00:21,  1.32it/s]2026-07-16 09:00:21,131 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=10_1-ckpt=9-distance_to_goal=0.09-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/55 [00:00<?, ?it/s][A100%|██████████| 55/55 [00:00<00:00, 1489.98it/s]
+ 73%|███████▎  | 73/100 [00:24<00:18,  1.47it/s]2026-07-16 09:00:21,631 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=47_1-ckpt=9-distance_to_goal=0.12-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/57 [00:00<?, ?it/s][A100%|██████████| 57/57 [00:00<00:00, 1564.84it/s]
+ 74%|███████▍  | 74/100 [00:25<00:17,  1.52it/s]2026-07-16 09:00:22,241 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=7_1-ckpt=9-distance_to_goal=0.06-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/77 [00:00<?, ?it/s][A100%|██████████| 77/77 [00:00<00:00, 1178.26it/s]
+ 75%|███████▌  | 75/100 [00:26<00:16,  1.52it/s]2026-07-16 09:00:22,895 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=16_1-ckpt=9-distance_to_goal=0.04-success=1.00-spl=0.96-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/75 [00:00<?, ?it/s][A100%|██████████| 75/75 [00:00<00:00, 1218.78it/s]
+ 76%|███████▌  | 76/100 [00:26<00:14,  1.63it/s]2026-07-16 09:00:23,406 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=13_1-ckpt=9-distance_to_goal=0.18-success=1.00-spl=0.92-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/55 [00:00<?, ?it/s][A100%|██████████| 55/55 [00:00<00:00, 1537.66it/s]
+ 77%|███████▋  | 77/100 [00:27<00:13,  1.65it/s]2026-07-16 09:00:23,991 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=30_1-ckpt=9-distance_to_goal=0.15-success=1.00-spl=0.93-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/73 [00:00<?, ?it/s][A100%|██████████| 73/73 [00:00<00:00, 1838.20it/s]
+ 78%|███████▊  | 78/100 [00:27<00:12,  1.75it/s]2026-07-16 09:00:24,481 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=44_1-ckpt=9-distance_to_goal=0.20-success=1.00-spl=0.89-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/51 [00:00<?, ?it/s][A100%|██████████| 51/51 [00:00<00:00, 1411.20it/s]
+ 79%|███████▉  | 79/100 [00:28<00:11,  1.83it/s]2026-07-16 09:00:24,973 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=26_1-ckpt=9-distance_to_goal=0.06-success=1.00-spl=0.97-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/58 [00:00<?, ?it/s][A100%|██████████| 58/58 [00:00<00:00, 1556.41it/s]
+ 80%|████████  | 80/100 [00:28<00:10,  1.89it/s]2026-07-16 09:00:25,462 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=24_1-ckpt=9-distance_to_goal=0.07-success=1.00-spl=0.85-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/55 [00:00<?, ?it/s][A100%|██████████| 55/55 [00:00<00:00, 1480.77it/s]
+ 81%|████████  | 81/100 [00:29<00:09,  1.92it/s]2026-07-16 09:00:25,964 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=8_1-ckpt=9-distance_to_goal=0.11-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/57 [00:00<?, ?it/s][A100%|██████████| 57/57 [00:00<00:00, 1532.24it/s]
+ 82%|████████▏ | 82/100 [00:30<00:11,  1.56it/s]2026-07-16 09:00:26,879 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=34_1-ckpt=9-distance_to_goal=0.19-success=1.00-spl=0.91-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/125 [00:00<?, ?it/s][A
+ 81%|████████  | 101/125 [00:00<00:00, 980.66it/s][A100%|██████████| 125/125 [00:00<00:00, 892.18it/s]
+ 83%|████████▎ | 83/100 [00:30<00:10,  1.61it/s]2026-07-16 09:00:27,453 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=19_1-ckpt=9-distance_to_goal=0.23-success=0.00-spl=0.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/52 [00:00<?, ?it/s][A100%|██████████| 52/52 [00:00<00:00, 1404.10it/s]
+ 84%|████████▍ | 84/100 [00:31<00:09,  1.69it/s]2026-07-16 09:00:27,973 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=21_1-ckpt=9-distance_to_goal=0.11-success=1.00-spl=0.96-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/64 [00:00<?, ?it/s][A100%|██████████| 64/64 [00:00<00:00, 1664.56it/s]
+ 85%|████████▌ | 85/100 [00:31<00:08,  1.71it/s]2026-07-16 09:00:28,542 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=4_1-ckpt=9-distance_to_goal=0.06-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/65 [00:00<?, ?it/s][A100%|██████████| 65/65 [00:00<00:00, 1694.48it/s]
+ 86%|████████▌ | 86/100 [00:32<00:08,  1.74it/s]2026-07-16 09:00:29,096 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=18_1-ckpt=9-distance_to_goal=0.18-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/65 [00:00<?, ?it/s][A100%|██████████| 65/65 [00:00<00:00, 1675.01it/s]
+ 87%|████████▋ | 87/100 [00:33<00:07,  1.63it/s]2026-07-16 09:00:29,797 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=17_1-ckpt=9-distance_to_goal=0.02-success=1.00-spl=0.99-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/90 [00:00<?, ?it/s][A100%|██████████| 90/90 [00:00<00:00, 1069.27it/s]
+ 88%|████████▊ | 88/100 [00:33<00:07,  1.62it/s]2026-07-16 09:00:30,423 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=39_1-ckpt=9-distance_to_goal=0.06-success=1.00-spl=0.90-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/71 [00:00<?, ?it/s][A100%|██████████| 71/71 [00:00<00:00, 1755.64it/s]
+ 89%|████████▉ | 89/100 [00:34<00:07,  1.49it/s]2026-07-16 09:00:31,219 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=22_1-ckpt=9-distance_to_goal=0.10-success=1.00-spl=0.86-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/102 [00:00<?, ?it/s][A100%|██████████| 102/102 [00:00<00:00, 1121.70it/s]
+ 90%|█████████ | 90/100 [00:35<00:06,  1.47it/s]2026-07-16 09:00:31,922 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=45_1-ckpt=9-distance_to_goal=0.09-success=1.00-spl=0.94-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/82 [00:00<?, ?it/s][A100%|██████████| 82/82 [00:00<00:00, 1156.87it/s]
+ 91%|█████████ | 91/100 [00:35<00:05,  1.55it/s]2026-07-16 09:00:32,490 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=43_1-ckpt=9-distance_to_goal=0.11-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/62 [00:00<?, ?it/s][A100%|██████████| 62/62 [00:00<00:00, 1640.52it/s]
+ 92%|█████████▏| 92/100 [00:36<00:05,  1.57it/s]2026-07-16 09:00:33,100 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=11_1-ckpt=9-distance_to_goal=0.06-success=1.00-spl=0.93-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/76 [00:00<?, ?it/s][A100%|██████████| 76/76 [00:00<00:00, 1209.97it/s]
+ 93%|█████████▎| 93/100 [00:37<00:04,  1.62it/s]2026-07-16 09:00:33,679 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=40_1-ckpt=9-distance_to_goal=0.21-success=0.00-spl=0.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/65 [00:00<?, ?it/s][A100%|██████████| 65/65 [00:00<00:00, 1645.99it/s]
+ 94%|█████████▍| 94/100 [00:38<00:05,  1.05it/s]2026-07-16 09:00:35,403 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=25_1-ckpt=9-distance_to_goal=0.09-success=1.00-spl=0.52-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/258 [00:00<?, ?it/s][A
+ 42%|████▏     | 108/258 [00:00<00:00, 1036.63it/s][A
+ 82%|████████▏ | 212/258 [00:00<00:00, 918.80it/s] [A100%|██████████| 258/258 [00:00<00:00, 916.64it/s]
+ 95%|█████████▌| 95/100 [00:39<00:04,  1.12it/s]2026-07-16 09:00:36,154 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=20_1-ckpt=9-distance_to_goal=0.09-success=1.00-spl=1.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/58 [00:00<?, ?it/s][A100%|██████████| 58/58 [00:00<00:00, 1529.71it/s]
+ 96%|█████████▌| 96/100 [00:40<00:03,  1.24it/s]2026-07-16 09:00:36,774 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=41_1-ckpt=9-distance_to_goal=0.21-success=0.00-spl=0.00-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/75 [00:00<?, ?it/s][A100%|██████████| 75/75 [00:00<00:00, 1225.40it/s]
+ 97%|█████████▋| 97/100 [00:40<00:02,  1.26it/s]2026-07-16 09:00:37,538 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=0_1-ckpt=9-distance_to_goal=0.15-success=1.00-spl=0.71-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/98 [00:00<?, ?it/s][A100%|██████████| 98/98 [00:00<00:00, 1048.98it/s]
+ 98%|█████████▊| 98/100 [00:41<00:01,  1.29it/s]2026-07-16 09:00:38,261 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=5_1-ckpt=9-distance_to_goal=0.10-success=1.00-spl=0.93-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/85 [00:00<?, ?it/s][A100%|██████████| 85/85 [00:00<00:00, 1111.57it/s]
+ 99%|█████████▉| 99/100 [00:42<00:00,  1.37it/s]2026-07-16 09:00:38,890 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=29_1-ckpt=9-distance_to_goal=0.12-success=1.00-spl=0.97-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/71 [00:00<?, ?it/s][A100%|██████████| 71/71 [00:00<00:00, 1802.49it/s]
+100%|██████████| 100/100 [00:43<00:00,  1.24it/s]2026-07-16 09:00:39,871 Video created: /home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_cases_habitat_test_seed2026_100ep_ckpt9_env2/video/episode=6_1-ckpt=9-distance_to_goal=0.13-success=1.00-spl=0.84-distance_to_goal_reward=-0.00.mp4
+
+  0%|          | 0/134 [00:00<?, ?it/s][A
+ 77%|███████▋  | 103/134 [00:00<00:00, 990.82it/s][A100%|██████████| 134/134 [00:00<00:00, 890.35it/s]
+100%|██████████| 100/100 [00:43<00:00,  2.30it/s]
+2026-07-16 09:00:40,135 Average episode distance_to_goal_reward: 0.0000
+2026-07-16 09:00:40,135 Average episode success: 0.9200
+2026-07-16 09:00:40,135 Average episode distance_to_goal: 0.1062
+2026-07-16 09:00:40,135 Average episode spl: 0.8389
+2026-07-16 09:00:40,135 Average episode reward: 7.7472

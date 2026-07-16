@@ -1,0 +1,9 @@
+utc_start=2026-07-16T07:46:57+00:00
+run_id=week03_habitat_test_calibration_seed100_10k
+profile=habitat_test
+training_seed=100
+total_steps=10000
+num_environments=1
+num_checkpoints=1
+habitat_root=/home/ubuntu/habitat-lab
+command=/home/ubuntu/micromamba/envs/habitat/bin/python -u -m habitat_baselines.run --config-name=pointnav/ppo_pointnav_example habitat.seed=100 habitat_baselines.evaluate=False habitat_baselines.total_num_steps=10000 habitat_baselines.num_updates=-1 habitat_baselines.num_environments=1 habitat_baselines.num_checkpoints=1 habitat_baselines.checkpoint_interval=-1 habitat_baselines.checkpoint_folder=/home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_calibration_seed100_10k/checkpoints habitat_baselines.tensorboard_dir=/home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_calibration_seed100_10k/tb habitat_baselines.video_dir=/home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_calibration_seed100_10k/video 

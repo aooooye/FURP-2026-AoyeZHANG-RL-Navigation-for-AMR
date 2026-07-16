@@ -1,0 +1,4 @@
+mode=eval
+run_id=week03_eval_habitat_test_seed2026_100ep_ckpt9
+pid=73278
+utc_start=2026-07-16T08:54:20+00:00

@@ -1,0 +1,15 @@
+{
+  "checkpoint": "/home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_calibration_seed100_10k_v2/checkpoints/ckpt.0.pth",
+  "checkpoint_sha256": "4d31bbab922081b664190daeda710c14a00d2a79483657c58bbba2a6f4bccb54",
+  "configured_total_num_steps": 10000,
+  "dataset_path": "data/datasets/pointnav/habitat-test-scenes/v1/{split}/{split}.json.gz",
+  "expected_min_steps": 10000,
+  "expected_profile": "habitat_test",
+  "expected_training_seed": 100,
+  "observed_profile": "habitat_test",
+  "profile_matches": true,
+  "status": "complete",
+  "step": 10016,
+  "training_seed": 100,
+  "training_seed_matches": true
+}

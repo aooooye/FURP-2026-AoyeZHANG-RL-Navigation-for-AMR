@@ -1,0 +1,5 @@
+utc_start=2026-07-15T13:07:59+00:00
+habitat_root=/home/ubuntu/habitat-lab
+seed=100
+total_steps=1000
+command=python -u -m habitat_baselines.run --config-name=pointnav/ppo_pointnav_example.yaml habitat.seed=100 habitat_baselines.total_num_steps=1000 habitat_baselines.num_environments=1 habitat_baselines.num_checkpoints=1 habitat_baselines.checkpoint_folder=/home/ubuntu/week02_codex_20260715T130658Z/results/tiny_ppo_seed100_1000/checkpoints habitat_baselines.tensorboard_dir=/home/ubuntu/week02_codex_20260715T130658Z/results/tiny_ppo_seed100_1000/tb habitat_baselines.video_dir=/home/ubuntu/week02_codex_20260715T130658Z/results/tiny_ppo_seed100_1000/video 

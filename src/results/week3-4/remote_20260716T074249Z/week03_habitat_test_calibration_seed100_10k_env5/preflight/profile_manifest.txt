@@ -1,0 +1,7 @@
+profile=habitat_test
+config_name=pointnav/ppo_pointnav_example
+habitat_revision=cdbb4880519505adf45fba0f0c0c3a3fd18a2a55
+scene_count=3
+train_episodes=/home/ubuntu/habitat-lab/data/datasets/pointnav/habitat-test-scenes/v1/train/train.json.gz
+val_episodes=/home/ubuntu/habitat-lab/data/datasets/pointnav/habitat-test-scenes/v1/val/val.json.gz
+scene_dataset_config=

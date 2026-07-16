@@ -1,0 +1,40 @@
+Week 3 PointNav preflight
+utc_start: 2026-07-16T08:02:27+00:00
+hostname: DESKTOP-FVE9SUP
+profile: habitat_test
+habitat_root: /home/ubuntu/habitat-lab
+python_bin: /home/ubuntu/micromamba/envs/habitat/bin/python
+expected_habitat_revision: cdbb4880519505adf45fba0f0c0c3a3fd18a2a55
+PASS directory: /home/ubuntu/habitat-lab
+actual_habitat_revision: cdbb4880519505adf45fba0f0c0c3a3fd18a2a55
+NVIDIA GeForce RTX 3060, 595.71.05, 12288 MiB, 11810 MiB
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+habitat-lab=0.3.3
+habitat-baselines=0.3.3
+habitat-sim=0.3.3
+torch=2.8.0+cu128
+python_torch_cuda=12.8
+torch_cuda_available=True
+torch_gpu=NVIDIA GeForce RTX 3060
+config_name: pointnav/ppo_pointnav_example
+PASS file: /home/ubuntu/habitat-lab/habitat-baselines/habitat_baselines/config/pointnav/ppo_pointnav_example.yaml
+PASS file: /home/ubuntu/habitat-lab/habitat-lab/habitat/config/benchmark/nav/pointnav/pointnav_habitat_test.yaml
+PASS file: /home/ubuntu/habitat-lab/habitat-lab/habitat/config/habitat/dataset/pointnav/habitat_test.yaml
+PASS directory: /home/ubuntu/habitat-lab/data/scene_datasets/habitat-test-scenes
+PASS file: /home/ubuntu/habitat-lab/data/datasets/pointnav/habitat-test-scenes/v1/train/train.json.gz
+PASS file: /home/ubuntu/habitat-lab/data/datasets/pointnav/habitat-test-scenes/v1/val/val.json.gz
+PASS gzip: /home/ubuntu/habitat-lab/data/datasets/pointnav/habitat-test-scenes/v1/train/train.json.gz
+PASS gzip: /home/ubuntu/habitat-lab/data/datasets/pointnav/habitat-test-scenes/v1/val/val.json.gz
+scene_glb_count: 3
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2       915G   22G  847G   3% /
+status=passed
+utc_end=2026-07-16T08:02:28+00:00

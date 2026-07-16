@@ -1,0 +1,10 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+PluginManager::Manager: duplicate static plugin StbImageImporter, ignoring
+PluginManager::Manager: duplicate static plugin GltfImporter, ignoring
+PluginManager::Manager: duplicate static plugin BasisImporter, ignoring
+PluginManager::Manager: duplicate static plugin AssimpImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnySceneImporter, ignoring
+PluginManager::Manager: duplicate static plugin AnyImageImporter, ignoring
+{"checkpoint": "/home/ubuntu/week03_codex_20260716T074249Z/src/results/week03/week03_habitat_test_seed100_1m_env5/checkpoints/ckpt.9.pth", "checkpoint_sha256": "e662c5e2f5546266ebcf8765ef61a743fd9416969c3bd6755561ad0d6133bed0", "configured_total_num_steps": 1000000, "dataset_path": "data/datasets/pointnav/habitat-test-scenes/v1/{split}/{split}.json.gz", "expected_min_steps": 1000000, "expected_profile": "habitat_test", "expected_training_seed": 100, "observed_profile": "habitat_test", "profile_matches": true, "status": "complete", "step": 1000000, "training_seed": 100, "training_seed_matches": true}
