@@ -1,0 +1,62 @@
+{
+  "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+  "episodes": 100,
+  "episodes_jsonl_sha256": "3edadfbb137fd2833a668dfc8d49a9b8369e83c1c845a655fde83da8e47af54c",
+  "evaluator_rounding_absolute_differences": {
+    "distance_to_goal": 4.955712184312455e-05,
+    "non_stop_failure": 0.0,
+    "premature_stop": 0.0,
+    "reward": 4.986342565072022e-05,
+    "spl": 2.4642487989945394e-05,
+    "stop_called": 0.0,
+    "success": 0.0
+  },
+  "generated_utc": "2026-08-11T15:47:53.749782+00:00",
+  "metrics": {
+    "distance_to_goal": 0.3644495571218431,
+    "non_stop_failure": 0.03,
+    "premature_stop": 0.13,
+    "reward": 7.050249863425651,
+    "spl": 0.70362464248799,
+    "stop_called": 0.97,
+    "success": 0.84
+  },
+  "run": {
+    "actuation_enabled": false,
+    "checkpoint": "/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_baseline_trainseed300_1m_env5/checkpoints/ckpt.9.pth",
+    "checkpoint_manifest_sha256": "95dc6b1e8340388f0ccb2e564f94733f273c9051ec0d705e9630470855794ce9",
+    "checkpoint_relative_path": "src/results/closeout_dsr/closeout_baseline_trainseed300_1m_env5/checkpoints/ckpt.9.pth",
+    "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+    "condition": "clean",
+    "episodes": 100,
+    "evaluation_num_environments": 2,
+    "evaluation_seed": 2026,
+    "evaluation_split": "val",
+    "localization_enabled": false,
+    "noise_manifest_sha256": "75e71d6815a5c903169422172062287135a8c2d696c637e8aa175a3dd702ac4b",
+    "noise_seed": 0,
+    "phase": "zero_noise",
+    "protocol_sha256": "76668a728cf58e85bfb123283ba668b71dd2ff86eeb523da47e7d708abf0596e",
+    "run_identity_sha256": "a1a58323c6171fd54cf42fee34da6570913f1e48ee95650413402e29b997dff0",
+    "training_method": "baseline",
+    "training_seed": 300
+  },
+  "schema_version": 1,
+  "status": "complete",
+  "zero_noise_gate": {
+    "aggregate_absolute_differences": {
+      "distance_to_goal": 0.0,
+      "non_stop_failure": 0.0,
+      "premature_stop": 0.0,
+      "reward": 0.0,
+      "spl": 0.0,
+      "stop_called": 0.0,
+      "success": 0.0
+    },
+    "aggregate_tolerance": 1e-06,
+    "historical_episode_level_available": false,
+    "historical_episode_level_note": "The frozen first-stage evaluator recorded aggregate metrics only. The new clean run is the episode-level reference for paired noisy analyses.",
+    "reference_summary_sha256": "f7ee3195f197a8f4c85f64d39bc402e8f8c286666ce349b2d3b9f6c41f87d1a1",
+    "status": "passed"
+  }
+}

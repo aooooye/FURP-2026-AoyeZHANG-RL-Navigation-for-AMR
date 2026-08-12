@@ -1,0 +1,12 @@
+8d36f1aa021e44b21e1ab71cff7c82eafa5df5579419c06c8e93ded73476d191  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/.habitat-resume-state.pth
+57db835475947a6ef04cb647d97b4216a946c00a972dd6e203b8d5c8c5c9c49f  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.0.pth
+b3f239aa46b41f4f9ac97ad5749e00390737d21ca48e10860ed1d21c330b3c58  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.1.pth
+de4abb8e0102e25a1143aa47b41fda3df49fdf1f6c5fd372213f2330f1bd53a8  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.2.pth
+aa5c839b5a679704e39b52b5269c6579d4be4077a36989c3ebc08c58be91c3ce  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.3.pth
+2cee90398aaa17da3053837bb820c60b20129bc79cd731e2b5cb5a53113ed747  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.4.pth
+22dfebf0935eb97548e1e0cc45cda3d1536b1fd3ef207ad076876d13311b604f  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.5.pth
+e354cff1e449896fe3f845fba0d1b7fa03ebf8245810e76b24f2da0406258bbd  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.6.pth
+9543c8b79d67554f719428d02481c076799f7e6b83bb7ea7998b7065c4659353  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.7.pth
+211f7ea8372f49204634193f613b69c96f3b91b0348d0d922a82a160cf6a8f26  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.8.pth
+99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.9.pth
+8fc71e1b74435febff501dc83766de3f5deea2246741340ed7047e583ae8f0c3  /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/latest.pth

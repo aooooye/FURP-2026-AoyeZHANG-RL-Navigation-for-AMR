@@ -1,0 +1,9 @@
+utc_start=2026-08-11T16:10:50+00:00
+run_id=robustness_formal_actuation_baseline_trainseed200_noise41003
+profile=habitat_test
+evaluation_seed=2026
+eval_split=val
+eval_episodes=100
+save_video=0
+checkpoint=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_baseline_trainseed200_1m_env5/checkpoints/ckpt.9.pth
+command=/home/furp/micromamba/envs/habitat/bin/python -u /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/experiments/closeout_dsr_robustness/run_habitat_with_robustness.py --config-name=pointnav/ppo_pointnav_example habitat.seed=2026 habitat_baselines.evaluate=True habitat_baselines.load_resume_state_config=False habitat_baselines.eval_ckpt_path_dir=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_baseline_trainseed200_1m_env5/checkpoints/ckpt.9.pth habitat_baselines.checkpoint_folder=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed200_noise41003_100ep/eval_state habitat_baselines.tensorboard_dir=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed200_noise41003_100ep/tb habitat_baselines.video_dir=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed200_noise41003_100ep/video habitat_baselines.test_episode_count=100 habitat_baselines.num_environments=2 habitat_baselines.eval.split=val habitat_baselines.eval.video_option=\[\] habitat.env_task=RobustnessGymHabitatEnv 

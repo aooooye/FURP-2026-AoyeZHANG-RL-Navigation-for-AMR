@@ -1,0 +1,1 @@
+/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_smoke_dsr_trainseed100_10k_env5/checkpoints/ckpt.0.pth

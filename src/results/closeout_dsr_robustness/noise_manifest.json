@@ -1,0 +1,104 @@
+{
+  "formal_noise_seeds": [
+    41001,
+    41002,
+    41003
+  ],
+  "noise_models": {
+    "actuation": {
+      "forward_distance_m": {
+        "clip": [
+          0.235,
+          0.265
+        ],
+        "nominal": 0.25,
+        "std": 0.005
+      },
+      "lateral_slip": false,
+      "sampling_scope": "per_action_step",
+      "stop_noise": false,
+      "translation_during_turn": false,
+      "turn_angle_deg": {
+        "clip": [
+          9.5,
+          10.5
+        ],
+        "nominal": 10.0,
+        "std": 0.16666666666666666
+      }
+    },
+    "localization": {
+      "bearing_bias_deg": {
+        "clip": [
+          -6.0,
+          6.0
+        ],
+        "std": 2.0
+      },
+      "distance_bias_m": {
+        "clip": [
+          -0.15,
+          0.15
+        ],
+        "std": 0.05
+      },
+      "ground_truth_metrics_unchanged": true,
+      "sampling_scope": "episode_constant"
+    }
+  },
+  "pointgoal_sensor_uuid": "pointgoal_with_gps_compass",
+  "rng": {
+    "algorithm": "sha256-box-muller-v1",
+    "canonical_key": [
+      "noise_seed",
+      "scene_id",
+      "episode_id",
+      "channel",
+      "step_index"
+    ],
+    "golden_vectors": [
+      {
+        "key": [
+          41001,
+          "data/scene_datasets/habitat-test-scenes/skokloster-castle.glb",
+          "0",
+          "localization_distance_bias",
+          null
+        ],
+        "standard_normal": -0.8064582240748438
+      },
+      {
+        "key": [
+          41001,
+          "data/scene_datasets/habitat-test-scenes/skokloster-castle.glb",
+          "0",
+          "localization_bearing_bias",
+          null
+        ],
+        "standard_normal": 0.8321207209220622
+      },
+      {
+        "key": [
+          41003,
+          "van-gogh-room.glb",
+          "42",
+          "forward_distance",
+          17
+        ],
+        "standard_normal": -0.541392817932682
+      },
+      {
+        "key": [
+          41002,
+          "van-gogh-room.glb",
+          "42",
+          "turn_angle",
+          17
+        ],
+        "standard_normal": 1.1261008713675578
+      }
+    ],
+    "method_and_training_seed_excluded": true,
+    "step_index_origin": 0
+  }
+}

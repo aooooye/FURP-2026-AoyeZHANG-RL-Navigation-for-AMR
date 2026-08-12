@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source_protocol": "closeout_dsr fresh same-server 1M-step training matrix",
+  "entries": [
+    {
+      "method": "baseline",
+      "training_seed": 100,
+      "path": "src/results/closeout_dsr/closeout_baseline_trainseed100_1m_env5/checkpoints/ckpt.9.pth",
+      "sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7"
+    },
+    {
+      "method": "baseline",
+      "training_seed": 200,
+      "path": "src/results/closeout_dsr/closeout_baseline_trainseed200_1m_env5/checkpoints/ckpt.9.pth",
+      "sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566"
+    },
+    {
+      "method": "baseline",
+      "training_seed": 300,
+      "path": "src/results/closeout_dsr/closeout_baseline_trainseed300_1m_env5/checkpoints/ckpt.9.pth",
+      "sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a"
+    },
+    {
+      "method": "dsr",
+      "training_seed": 100,
+      "path": "src/results/closeout_dsr/closeout_dsr_trainseed100_1m_env5/checkpoints/ckpt.9.pth",
+      "sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816"
+    },
+    {
+      "method": "dsr",
+      "training_seed": 200,
+      "path": "src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.9.pth",
+      "sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449"
+    },
+    {
+      "method": "dsr",
+      "training_seed": 300,
+      "path": "src/results/closeout_dsr/closeout_dsr_trainseed300_1m_env5/checkpoints/ckpt.9.pth",
+      "sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c"
+    }
+  ]
+}

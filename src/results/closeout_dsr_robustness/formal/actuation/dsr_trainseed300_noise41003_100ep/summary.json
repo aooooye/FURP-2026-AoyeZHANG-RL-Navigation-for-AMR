@@ -1,0 +1,38 @@
+{
+  "checkpoint": "/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed300_1m_env5/checkpoints/ckpt.9.pth",
+  "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+  "claim_boundary": "Metrics are parsed from a separate fixed evaluation. They are not rolling training-window diagnostics.",
+  "config": "pointnav/ppo_pointnav_example",
+  "episodes_requested": 100,
+  "generated_utc": "2026-08-11T16:20:27.237557+00:00",
+  "metric_occurrence_counts": {
+    "distance_to_goal": 1,
+    "distance_to_goal_reward": 1,
+    "non_stop_failure": 1,
+    "premature_stop": 1,
+    "reward": 1,
+    "spl": 1,
+    "stop_called": 1,
+    "success": 1
+  },
+  "metrics": {
+    "distance_to_goal": 0.3293,
+    "distance_to_goal_reward": 0.0,
+    "non_stop_failure": 0.02,
+    "premature_stop": 0.07,
+    "reward": 7.3864,
+    "spl": 0.8175,
+    "stop_called": 0.98,
+    "success": 0.91
+  },
+  "optional_metric_status": {
+    "collision": "unavailable",
+    "path_length_or_efficiency": "unavailable"
+  },
+  "profile": "habitat_test",
+  "schema_version": 1,
+  "seed": 2026,
+  "source_log": "/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed300_noise41003_100ep/eval.log",
+  "split": "val",
+  "status": "complete"
+}

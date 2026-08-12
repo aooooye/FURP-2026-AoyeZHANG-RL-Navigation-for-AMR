@@ -1,0 +1,15 @@
+{
+  "checkpoint": "/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_dsr_trainseed200_1m_env5/checkpoints/ckpt.9.pth",
+  "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+  "configured_total_num_steps": 1000000,
+  "dataset_path": "data/datasets/pointnav/habitat-test-scenes/v1/{split}/{split}.json.gz",
+  "expected_min_steps": 0,
+  "expected_profile": "habitat_test",
+  "expected_training_seed": null,
+  "observed_profile": "habitat_test",
+  "profile_matches": true,
+  "status": "complete",
+  "step": 1000000,
+  "training_seed": 200,
+  "training_seed_matches": true
+}

@@ -1,0 +1,20 @@
+{
+  "actuation_enabled": false,
+  "checkpoint": "/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_baseline_trainseed300_1m_env5/checkpoints/ckpt.9.pth",
+  "checkpoint_manifest_sha256": "95dc6b1e8340388f0ccb2e564f94733f273c9051ec0d705e9630470855794ce9",
+  "checkpoint_relative_path": "src/results/closeout_dsr/closeout_baseline_trainseed300_1m_env5/checkpoints/ckpt.9.pth",
+  "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+  "condition": "localization",
+  "episodes": 100,
+  "evaluation_num_environments": 2,
+  "evaluation_seed": 2026,
+  "evaluation_split": "val",
+  "localization_enabled": true,
+  "noise_manifest_sha256": "75e71d6815a5c903169422172062287135a8c2d696c637e8aa175a3dd702ac4b",
+  "noise_seed": 41001,
+  "phase": "formal",
+  "protocol_sha256": "76668a728cf58e85bfb123283ba668b71dd2ff86eeb523da47e7d708abf0596e",
+  "run_identity_sha256": "311007e6963e1aa7dc3ffb95d2d07f134a1c7fa5390be940cb4011207d321707",
+  "training_method": "baseline",
+  "training_seed": 300
+}

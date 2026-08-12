@@ -1,0 +1,8 @@
+profile=habitat_test
+training_seeds=100 200 300
+evaluation_seed=2026
+total_steps=1000000
+evaluation_episodes=100
+dsr_env_task=DynamicSuccessRewardGymHabitatEnv
+diagnostic_env_task=StopDiagnosticGymHabitatEnv
+dsr_formula=success_reward * exp((success_distance - final_distance) / success_distance)

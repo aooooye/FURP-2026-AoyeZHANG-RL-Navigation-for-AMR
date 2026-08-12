@@ -1,0 +1,5 @@
+condition=baseline
+training_seed=200
+formula=standard Habitat 0.3.3 reward
+failed_stop_penalty=none
+protocol_change_allowed=false

@@ -1,0 +1,4013 @@
+{
+  "claim_boundary": "Controlled test-time robustness on two Habitat test scenes; descriptive only, without significance or deployment claims.",
+  "condition_summaries": {
+    "actuation": {
+      "distance_to_goal": {
+        "mean_over_training_seeds": -0.0047979650411030155,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.07508226782336747,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": -0.04624822457631428,
+            "noise_seed_values": [
+              0.17223912879824638,
+              -0.2313965974468738,
+              -0.07958720508031542
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": 0.08187224740783378,
+            "noise_seed_values": [
+              0.14741849283222114,
+              0.07439914889633656,
+              0.02379910049494363
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.050017917954828545,
+            "noise_seed_values": [
+              -0.08619223011424759,
+              -0.04257348607527087,
+              -0.021288037674967175
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "non_stop_failure": {
+        "mean_over_training_seeds": -0.0033333333333333353,
+        "positive_training_seed_count": 0,
+        "sample_std_over_training_seeds": 0.0033333333333333327,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": -2.8912057932946786e-18,
+            "noise_seed_values": [
+              0.03,
+              -0.030000000000000002,
+              -5.204170427930421e-18
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.006666666666666668,
+            "noise_seed_values": [
+              0.010000000000000004,
+              -0.010000000000000004,
+              -0.020000000000000004
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.0033333333333333344,
+            "noise_seed_values": [
+              -0.010000000000000002,
+              0.0,
+              -1.734723475976807e-18
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "premature_stop": {
+        "mean_over_training_seeds": 0.024444444444444453,
+        "positive_training_seed_count": 2,
+        "sample_std_over_training_seeds": 0.06149375156454094,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": -0.04333333333333333,
+            "noise_seed_values": [
+              -0.049999999999999996,
+              -0.07999999999999999,
+              0.0
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": 0.04000000000000001,
+            "noise_seed_values": [
+              0.04000000000000001,
+              0.04000000000000001,
+              0.04000000000000001
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": 0.07666666666666667,
+            "noise_seed_values": [
+              0.02,
+              0.1,
+              0.11000000000000001
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "reward": {
+        "mean_over_training_seeds": -0.009013146070008816,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.11094259930427235,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.11421489124298094,
+            "noise_seed_values": [
+              -0.2770391287982461,
+              0.5573965974468731,
+              0.06228720508031582
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.040305580741170154,
+            "noise_seed_values": [
+              -0.20991849283222308,
+              -0.014299148896339986,
+              0.10330089950505261
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.10094874871183723,
+            "noise_seed_values": [
+              0.09639223011424747,
+              -0.16852651392472762,
+              -0.23071196232503155
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "spl": {
+        "mean_over_training_seeds": -0.015598998196887726,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.051757444179307534,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.03890712374983326,
+            "noise_seed_values": [
+              0.023075220244126227,
+              0.09676039058463803,
+              -0.0031142395792644884
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.0216236576590411,
+            "noise_seed_values": [
+              -0.03163803079284255,
+              -0.022701291426915682,
+              -0.010531650757365063
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.06408046068145534,
+            "noise_seed_values": [
+              -0.011566973389196988,
+              -0.0791728703849166,
+              -0.10150153827025243
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "stop_called": {
+        "mean_over_training_seeds": 0.003333333333333324,
+        "positive_training_seed_count": 3,
+        "sample_std_over_training_seeds": 0.0033333333333332806,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 3.700743415417188e-17,
+            "noise_seed_values": [
+              -0.029999999999999916,
+              0.030000000000000027,
+              0.0
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": 0.006666666666666599,
+            "noise_seed_values": [
+              -0.010000000000000009,
+              0.009999999999999898,
+              0.019999999999999907
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": 0.003333333333333336,
+            "noise_seed_values": [
+              0.010000000000000009,
+              0.0,
+              0.0
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "success": {
+        "mean_over_training_seeds": -0.02111111111111114,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.05928587365312927,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.043333333333333224,
+            "noise_seed_values": [
+              0.019999999999999907,
+              0.10999999999999988,
+              -1.1102230246251565e-16
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.033333333333333326,
+            "noise_seed_values": [
+              -0.04999999999999993,
+              -0.030000000000000027,
+              -0.020000000000000018
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.07333333333333332,
+            "noise_seed_values": [
+              -0.010000000000000009,
+              -0.09999999999999998,
+              -0.10999999999999999
+            ],
+            "training_seed": 300
+          }
+        ]
+      }
+    },
+    "combined": {
+      "distance_to_goal": {
+        "mean_over_training_seeds": -0.07728638362734472,
+        "positive_training_seed_count": 0,
+        "sample_std_over_training_seeds": 0.09235340479089063,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": -0.1834421517777567,
+            "noise_seed_values": [
+              -0.24960760764777662,
+              -0.16517780149355527,
+              -0.13554104619193824
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.033004296432870096,
+            "noise_seed_values": [
+              0.054536615652032244,
+              -0.040047328253276615,
+              -0.11350217669736593
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.015412702671407366,
+            "noise_seed_values": [
+              -0.06416061328025532,
+              0.025181208134163247,
+              -0.007258702868130018
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "non_stop_failure": {
+        "mean_over_training_seeds": -0.007777777777777777,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.01018350154434631,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": -0.016666666666666666,
+            "noise_seed_values": [
+              -0.030000000000000002,
+              -0.01,
+              -0.01
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.009999999999999997,
+            "noise_seed_values": [
+              1.734723475976807e-18,
+              -0.009999999999999995,
+              -0.019999999999999997
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": 0.0033333333333333327,
+            "noise_seed_values": [
+              0.0,
+              0.01,
+              -1.734723475976807e-18
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "premature_stop": {
+        "mean_over_training_seeds": 0.03333333333333333,
+        "positive_training_seed_count": 2,
+        "sample_std_over_training_seeds": 0.061101009266077866,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": -0.03333333333333333,
+            "noise_seed_values": [
+              -0.06999999999999999,
+              -0.010000000000000002,
+              -0.020000000000000004
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": 0.04666666666666667,
+            "noise_seed_values": [
+              0.030000000000000013,
+              0.04000000000000001,
+              0.07
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": 0.08666666666666667,
+            "noise_seed_values": [
+              0.07,
+              0.1,
+              0.09
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "reward": {
+        "mean_over_training_seeds": 0.04548638362734398,
+        "positive_training_seed_count": 2,
+        "sample_std_over_training_seeds": 0.2586837135161627,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.31657548511108935,
+            "noise_seed_values": [
+              0.5252076076477756,
+              0.23777780149355365,
+              0.18674104619193876
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": 0.018570963099534172,
+            "noise_seed_values": [
+              -0.04003661565203487,
+              -0.012952671746725208,
+              0.1087021766973626
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.19868729732859158,
+            "noise_seed_values": [
+              -0.05213938671974461,
+              -0.3517812081341605,
+              -0.19214129713186967
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "spl": {
+        "mean_over_training_seeds": -0.02042174943589665,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.058587738047169005,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.04187242552549553,
+            "noise_seed_values": [
+              0.08690783915442357,
+              0.018398783414739217,
+              0.020310654007323792
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.02871933202275993,
+            "noise_seed_values": [
+              -0.012431514885591688,
+              -0.03145422068577375,
+              -0.04227226049691435
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.07441834181042555,
+            "noise_seed_values": [
+              -0.0494628198344933,
+              -0.09713891905828231,
+              -0.07665328653850101
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "stop_called": {
+        "mean_over_training_seeds": 0.007777777777777784,
+        "positive_training_seed_count": 2,
+        "sample_std_over_training_seeds": 0.010183501544346319,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.01666666666666668,
+            "noise_seed_values": [
+              0.030000000000000027,
+              0.010000000000000009,
+              0.010000000000000009
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": 0.010000000000000009,
+            "noise_seed_values": [
+              0.0,
+              0.010000000000000009,
+              0.020000000000000018
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.003333333333333336,
+            "noise_seed_values": [
+              0.0,
+              -0.010000000000000009,
+              0.0
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "success": {
+        "mean_over_training_seeds": -0.025555555555555606,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.0706582804248206,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.0499999999999999,
+            "noise_seed_values": [
+              0.09999999999999987,
+              0.019999999999999907,
+              0.029999999999999916
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.0366666666666667,
+            "noise_seed_values": [
+              -0.030000000000000027,
+              -0.030000000000000027,
+              -0.050000000000000044
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.09000000000000001,
+            "noise_seed_values": [
+              -0.07000000000000006,
+              -0.10999999999999999,
+              -0.08999999999999997
+            ],
+            "training_seed": 300
+          }
+        ]
+      }
+    },
+    "localization": {
+      "distance_to_goal": {
+        "mean_over_training_seeds": -0.013282157249696959,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.024304987512469012,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": -0.04034790080661575,
+            "noise_seed_values": [
+              -0.039331771079450836,
+              -0.02976433270610873,
+              -0.05194759863428769
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.006177081537122514,
+            "noise_seed_values": [
+              0.20253205437678848,
+              -0.2383647521445528,
+              0.01730145315639678
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": 0.006678510594647395,
+            "noise_seed_values": [
+              0.01133089377311991,
+              0.008126520707737672,
+              0.0005781173030846021
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "non_stop_failure": {
+        "mean_over_training_seeds": -0.00888888888888889,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.011706281947614154,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": -0.010000000000000002,
+            "noise_seed_values": [
+              -0.010000000000000002,
+              -0.01,
+              -0.010000000000000002
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.02,
+            "noise_seed_values": [
+              0.0,
+              -0.04,
+              -0.020000000000000004
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": 0.0033333333333333322,
+            "noise_seed_values": [
+              0.01,
+              -1.734723475976807e-18,
+              -1.734723475976807e-18
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "premature_stop": {
+        "mean_over_training_seeds": 0.007777777777777782,
+        "positive_training_seed_count": 2,
+        "sample_std_over_training_seeds": 0.051026500014244594,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": -0.049999999999999996,
+            "noise_seed_values": [
+              -0.049999999999999996,
+              -0.03,
+              -0.07
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": 0.04666666666666667,
+            "noise_seed_values": [
+              0.030000000000000013,
+              0.04000000000000001,
+              0.07
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": 0.026666666666666672,
+            "noise_seed_values": [
+              -0.009999999999999988,
+              0.05000000000000001,
+              0.04
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "reward": {
+        "mean_over_training_seeds": 0.0688599350274736,
+        "positive_training_seed_count": 2,
+        "sample_std_over_training_seeds": 0.14109747629877814,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.21558123413994768,
+            "noise_seed_values": [
+              0.21323177107944957,
+              0.17806433270610622,
+              0.25544759863428723
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": 0.05684374820378638,
+            "noise_seed_values": [
+              -0.20863205437679078,
+              0.3920647521445497,
+              -0.01290145315639979
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.06584517726131327,
+            "noise_seed_values": [
+              -0.07493089377311879,
+              -0.1376265207077365,
+              0.015021882696915512
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "spl": {
+        "mean_over_training_seeds": 0.0010739488391028594,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.044204985560150456,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.05168084132370121,
+            "noise_seed_values": [
+              0.06261528634392666,
+              0.03605081071225802,
+              0.05637642691491895
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.01845995901937932,
+            "noise_seed_values": [
+              -0.015608600873080247,
+              -0.0010920479332703348,
+              -0.03867922825178738
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.029999035787013312,
+            "noise_seed_values": [
+              -0.017578777257615252,
+              -0.05398950110434275,
+              -0.018428828999081937
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "stop_called": {
+        "mean_over_training_seeds": 0.008888888888888872,
+        "positive_training_seed_count": 2,
+        "sample_std_over_training_seeds": 0.01170628194761413,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.010000000000000009,
+            "noise_seed_values": [
+              0.010000000000000009,
+              0.010000000000000009,
+              0.010000000000000009
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": 0.019999999999999945,
+            "noise_seed_values": [
+              0.0,
+              0.039999999999999925,
+              0.019999999999999907
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.003333333333333336,
+            "noise_seed_values": [
+              -0.010000000000000009,
+              0.0,
+              0.0
+            ],
+            "training_seed": 300
+          }
+        ]
+      },
+      "success": {
+        "mean_over_training_seeds": 0.0011111111111110617,
+        "positive_training_seed_count": 1,
+        "sample_std_over_training_seeds": 0.051026500014244525,
+        "training_seed_rows": [
+          {
+            "mean_over_noise_seeds": 0.059999999999999866,
+            "noise_seed_values": [
+              0.05999999999999983,
+              0.039999999999999925,
+              0.07999999999999985
+            ],
+            "training_seed": 100
+          },
+          {
+            "mean_over_noise_seeds": -0.026666666666666655,
+            "noise_seed_values": [
+              -0.029999999999999916,
+              0.0,
+              -0.050000000000000044
+            ],
+            "training_seed": 200
+          },
+          {
+            "mean_over_noise_seeds": -0.030000000000000027,
+            "noise_seed_values": [
+              0.0,
+              -0.050000000000000044,
+              -0.040000000000000036
+            ],
+            "training_seed": 300
+          }
+        ]
+      }
+    }
+  },
+  "generated_utc": "2026-08-11T16:35:22.319982+00:00",
+  "paired_cells": [
+    {
+      "condition": "localization",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.12020426481962204,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.763095155727869,
+            "spl": 0.8225619221333029,
+            "stop_called": 1.0,
+            "success": 0.94
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.0013306245207786588,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.03,
+            "reward": -0.05956937547922081,
+            "spl": -0.03130927080699453,
+            "stop_called": 0.0,
+            "success": -0.029999999999999916
+          },
+          "noisy": {
+            "distance_to_goal": 0.11887364029884338,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.09,
+            "reward": 7.703525780248648,
+            "spl": 0.7912526513263084,
+            "stop_called": 1.0,
+            "success": 0.91
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.48627869395539164,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.984520726592104,
+            "spl": 0.7590199476801888,
+            "stop_called": 0.95,
+            "success": 0.92
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.040662395600229495,
+            "non_stop_failure": -0.010000000000000002,
+            "premature_stop": -0.019999999999999997,
+            "reward": 0.15366239560022876,
+            "spl": 0.03130601553693213,
+            "stop_called": 0.010000000000000009,
+            "success": 0.029999999999999916
+          },
+          "noisy": {
+            "distance_to_goal": 0.44561629835516214,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.01,
+            "reward": 7.138183122192332,
+            "spl": 0.7903259632171209,
+            "stop_called": 0.96,
+            "success": 0.95
+          }
+        }
+      },
+      "noise_seed": 41001,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.039331771079450836,
+        "non_stop_failure": -0.010000000000000002,
+        "premature_stop": -0.049999999999999996,
+        "reward": 0.21323177107944957,
+        "spl": 0.06261528634392666,
+        "stop_called": 0.010000000000000009,
+        "success": 0.05999999999999983
+      },
+      "training_seed": 100
+    },
+    {
+      "condition": "localization",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.12020426481962204,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.763095155727869,
+            "spl": 0.8225619221333029,
+            "stop_called": 1.0,
+            "success": 0.94
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.06952945644035935,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": -0.20232945644035905,
+            "spl": -0.03282593098252862,
+            "stop_called": -0.010000000000000009,
+            "success": -0.039999999999999925
+          },
+          "noisy": {
+            "distance_to_goal": 0.1897337212599814,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.09,
+            "reward": 7.56076569928751,
+            "spl": 0.7897359911507743,
+            "stop_called": 0.99,
+            "success": 0.9
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.48627869395539164,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.984520726592104,
+            "spl": 0.7590199476801888,
+            "stop_called": 0.95,
+            "success": 0.92
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.03976512373425062,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.0,
+            "reward": -0.024265123734252825,
+            "spl": 0.003224879729729402,
+            "stop_called": 0.0,
+            "success": 0.0
+          },
+          "noisy": {
+            "distance_to_goal": 0.5260438176896423,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.960255602857851,
+            "spl": 0.7622448274099182,
+            "stop_called": 0.95,
+            "success": 0.92
+          }
+        }
+      },
+      "noise_seed": 41002,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.02976433270610873,
+        "non_stop_failure": -0.01,
+        "premature_stop": -0.03,
+        "reward": 0.17806433270610622,
+        "spl": 0.03605081071225802,
+        "stop_called": 0.010000000000000009,
+        "success": 0.039999999999999925
+      },
+      "training_seed": 100
+    },
+    {
+      "condition": "localization",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.12020426481962204,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.763095155727869,
+            "spl": 0.8225619221333029,
+            "stop_called": 1.0,
+            "success": 0.94
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.016912892907857885,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.05,
+            "reward": -0.11991289290785812,
+            "spl": -0.03718469352988296,
+            "stop_called": 0.0,
+            "success": -0.04999999999999993
+          },
+          "noisy": {
+            "distance_to_goal": 0.13711715772747993,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.11,
+            "reward": 7.643182262820011,
+            "spl": 0.78537722860342,
+            "stop_called": 1.0,
+            "success": 0.89
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.48627869395539164,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.984520726592104,
+            "spl": 0.7590199476801888,
+            "stop_called": 0.95,
+            "success": 0.92
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.035034705726429805,
+            "non_stop_failure": -0.010000000000000002,
+            "premature_stop": -0.019999999999999997,
+            "reward": 0.13553470572642912,
+            "spl": 0.01919173338503599,
+            "stop_called": 0.010000000000000009,
+            "success": 0.029999999999999916
+          },
+          "noisy": {
+            "distance_to_goal": 0.45124398822896183,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.01,
+            "reward": 7.120055432318533,
+            "spl": 0.7782116810652248,
+            "stop_called": 0.96,
+            "success": 0.95
+          }
+        }
+      },
+      "noise_seed": 41003,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.05194759863428769,
+        "non_stop_failure": -0.010000000000000002,
+        "premature_stop": -0.07,
+        "reward": 0.25544759863428723,
+        "spl": 0.05637642691491895,
+        "stop_called": 0.010000000000000009,
+        "success": 0.07999999999999985
+      },
+      "training_seed": 100
+    },
+    {
+      "condition": "localization",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.5468892046157271,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.07,
+            "reward": 6.968810215931765,
+            "spl": 0.7733425321867822,
+            "stop_called": 0.95,
+            "success": 0.88
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.0651991607714445,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.04999999999999999,
+            "reward": -0.07980083922855474,
+            "spl": -0.050369604111581534,
+            "stop_called": 0.0,
+            "success": -0.050000000000000044
+          },
+          "noisy": {
+            "distance_to_goal": 0.4816900438442826,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.12,
+            "reward": 6.889009376703211,
+            "spl": 0.7229729280752006,
+            "stop_called": 0.95,
+            "success": 0.83
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.10375589902978391,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.0,
+            "reward": 7.795043521517709,
+            "spl": 0.8776292383049382,
+            "stop_called": 0.99,
+            "success": 0.99
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.13733289360534398,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.08,
+            "reward": -0.2884328936053455,
+            "spl": -0.06597820498466178,
+            "stop_called": 0.0,
+            "success": -0.07999999999999996
+          },
+          "noisy": {
+            "distance_to_goal": 0.2410887926351279,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.08,
+            "reward": 7.506610627912363,
+            "spl": 0.8116510333202764,
+            "stop_called": 0.99,
+            "success": 0.91
+          }
+        }
+      },
+      "noise_seed": 41001,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.20253205437678848,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.030000000000000013,
+        "reward": -0.20863205437679078,
+        "spl": -0.015608600873080247,
+        "stop_called": 0.0,
+        "success": -0.029999999999999916
+      },
+      "training_seed": 200
+    },
+    {
+      "condition": "localization",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.5468892046157271,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.07,
+            "reward": 6.968810215931765,
+            "spl": 0.7733425321867822,
+            "stop_called": 0.95,
+            "success": 0.88
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.22044948521070185,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.01999999999999999,
+            "reward": -0.46124948521069964,
+            "spl": -0.04735668113498992,
+            "stop_called": -0.029999999999999916,
+            "success": -0.050000000000000044
+          },
+          "noisy": {
+            "distance_to_goal": 0.7673386898264289,
+            "non_stop_failure": 0.08,
+            "premature_stop": 0.09,
+            "reward": 6.507560730721066,
+            "spl": 0.7259858510517923,
+            "stop_called": 0.92,
+            "success": 0.83
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.10375589902978391,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.0,
+            "reward": 7.795043521517709,
+            "spl": 0.8776292383049382,
+            "stop_called": 0.99,
+            "success": 0.99
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.017915266933850954,
+            "non_stop_failure": -0.01,
+            "premature_stop": 0.06,
+            "reward": -0.06918473306614992,
+            "spl": -0.048448729068260254,
+            "stop_called": 0.010000000000000009,
+            "success": -0.050000000000000044
+          },
+          "noisy": {
+            "distance_to_goal": 0.08584063209593296,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.725858788451559,
+            "spl": 0.829180509236678,
+            "stop_called": 1.0,
+            "success": 0.94
+          }
+        }
+      },
+      "noise_seed": 41002,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.2383647521445528,
+        "non_stop_failure": -0.04,
+        "premature_stop": 0.04000000000000001,
+        "reward": 0.3920647521445497,
+        "spl": -0.0010920479332703348,
+        "stop_called": 0.039999999999999925,
+        "success": 0.0
+      },
+      "training_seed": 200
+    },
+    {
+      "condition": "localization",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.5468892046157271,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.07,
+            "reward": 6.968810215931765,
+            "spl": 0.7733425321867822,
+            "stop_called": 0.95,
+            "success": 0.88
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.11924370323307809,
+            "non_stop_failure": 0.020000000000000004,
+            "premature_stop": -0.04000000000000001,
+            "reward": -0.1535437032330771,
+            "spl": 0.011655743222800496,
+            "stop_called": -0.019999999999999907,
+            "success": 0.020000000000000018
+          },
+          "noisy": {
+            "distance_to_goal": 0.6661329078488052,
+            "non_stop_failure": 0.07,
+            "premature_stop": 0.03,
+            "reward": 6.815266512698688,
+            "spl": 0.7849982754095827,
+            "stop_called": 0.93,
+            "success": 0.9
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.10375589902978391,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.0,
+            "reward": 7.795043521517709,
+            "spl": 0.8776292383049382,
+            "stop_called": 0.99,
+            "success": 0.99
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.13654515638947487,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.03,
+            "reward": -0.16644515638947688,
+            "spl": -0.027023485028986882,
+            "stop_called": 0.0,
+            "success": -0.030000000000000027
+          },
+          "noisy": {
+            "distance_to_goal": 0.24030105541925878,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.628598365128232,
+            "spl": 0.8506057532759513,
+            "stop_called": 0.99,
+            "success": 0.96
+          }
+        }
+      },
+      "noise_seed": 41003,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.01730145315639678,
+        "non_stop_failure": -0.020000000000000004,
+        "premature_stop": 0.07,
+        "reward": -0.01290145315639979,
+        "spl": -0.03867922825178738,
+        "stop_called": 0.019999999999999907,
+        "success": -0.050000000000000044
+      },
+      "training_seed": 200
+    },
+    {
+      "condition": "localization",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.3644495571218431,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.13,
+            "reward": 7.050249863425651,
+            "spl": 0.70362464248799,
+            "stop_called": 0.97,
+            "success": 0.84
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.06832377526909111,
+            "non_stop_failure": 0.0,
+            "premature_stop": -0.010000000000000009,
+            "reward": -0.06252377526909125,
+            "spl": 0.01234209123020269,
+            "stop_called": 0.0,
+            "success": 0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.43277333239093424,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.12,
+            "reward": 6.98772608815656,
+            "spl": 0.7159667337181926,
+            "stop_called": 0.97,
+            "success": 0.85
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.23720039911800994,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.673499021429481,
+            "spl": 0.8646328665926406,
+            "stop_called": 0.99,
+            "success": 0.96
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.07965466904221102,
+            "non_stop_failure": 0.01,
+            "premature_stop": -0.019999999999999997,
+            "reward": -0.13745466904221004,
+            "spl": -0.005236686027412563,
+            "stop_called": -0.010000000000000009,
+            "success": 0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.31685506816022097,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.01,
+            "reward": 7.536044352387271,
+            "spl": 0.859396180565228,
+            "stop_called": 0.98,
+            "success": 0.97
+          }
+        }
+      },
+      "noise_seed": 41001,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.01133089377311991,
+        "non_stop_failure": 0.01,
+        "premature_stop": -0.009999999999999988,
+        "reward": -0.07493089377311879,
+        "spl": -0.017578777257615252,
+        "stop_called": -0.010000000000000009,
+        "success": 0.0
+      },
+      "training_seed": 300
+    },
+    {
+      "condition": "localization",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.3644495571218431,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.13,
+            "reward": 7.050249863425651,
+            "spl": 0.70362464248799,
+            "stop_called": 0.97,
+            "success": 0.84
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.079731179587543,
+            "non_stop_failure": 0.010000000000000002,
+            "premature_stop": -0.04000000000000001,
+            "reward": -0.09303117958754292,
+            "spl": 0.022921691615452655,
+            "stop_called": -0.010000000000000009,
+            "success": 0.030000000000000027
+          },
+          "noisy": {
+            "distance_to_goal": 0.4441807367093861,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.09,
+            "reward": 6.957218683838108,
+            "spl": 0.7265463341034426,
+            "stop_called": 0.96,
+            "success": 0.87
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.23720039911800994,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.673499021429481,
+            "spl": 0.8646328665926406,
+            "stop_called": 0.99,
+            "success": 0.96
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.08785770029528067,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.010000000000000002,
+            "reward": -0.23065770029527943,
+            "spl": -0.031067809488890097,
+            "stop_called": -0.010000000000000009,
+            "success": -0.020000000000000018
+          },
+          "noisy": {
+            "distance_to_goal": 0.3250580994132906,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.04,
+            "reward": 7.4428413211342015,
+            "spl": 0.8335650571037505,
+            "stop_called": 0.98,
+            "success": 0.94
+          }
+        }
+      },
+      "noise_seed": 41002,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.008126520707737672,
+        "non_stop_failure": -1.734723475976807e-18,
+        "premature_stop": 0.05000000000000001,
+        "reward": -0.1376265207077365,
+        "spl": -0.05398950110434275,
+        "stop_called": 0.0,
+        "success": -0.050000000000000044
+      },
+      "training_seed": 300
+    },
+    {
+      "condition": "localization",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.3644495571218431,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.13,
+            "reward": 7.050249863425651,
+            "spl": 0.70362464248799,
+            "stop_called": 0.97,
+            "success": 0.84
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.09582137132063506,
+            "non_stop_failure": 0.010000000000000002,
+            "premature_stop": -0.03,
+            "reward": -0.18812137132063445,
+            "spl": 0.011770033548068048,
+            "stop_called": -0.010000000000000009,
+            "success": 0.020000000000000018
+          },
+          "noisy": {
+            "distance_to_goal": 0.4602709284424782,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.1,
+            "reward": 6.8621284921050165,
+            "spl": 0.715394676036058,
+            "stop_called": 0.96,
+            "success": 0.86
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.23720039911800994,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.673499021429481,
+            "spl": 0.8646328665926406,
+            "stop_called": 0.99,
+            "success": 0.96
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.09639948862371966,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.010000000000000002,
+            "reward": -0.17309948862371893,
+            "spl": -0.006658795451013888,
+            "stop_called": -0.010000000000000009,
+            "success": -0.020000000000000018
+          },
+          "noisy": {
+            "distance_to_goal": 0.3335998877417296,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.04,
+            "reward": 7.500399532805762,
+            "spl": 0.8579740711416267,
+            "stop_called": 0.98,
+            "success": 0.94
+          }
+        }
+      },
+      "noise_seed": 41003,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.0005781173030846021,
+        "non_stop_failure": -1.734723475976807e-18,
+        "premature_stop": 0.04,
+        "reward": 0.015021882696915512,
+        "spl": -0.018428828999081937,
+        "stop_called": 0.0,
+        "success": -0.040000000000000036
+      },
+      "training_seed": 300
+    },
+    {
+      "condition": "actuation",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.12020426481962204,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.763095155727869,
+            "spl": 0.8225619221333029,
+            "stop_called": 1.0,
+            "success": 0.94
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.003567829597741365,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.03,
+            "reward": -0.06846782959774078,
+            "spl": -0.023492188947266568,
+            "stop_called": 0.0,
+            "success": -0.029999999999999916
+          },
+          "noisy": {
+            "distance_to_goal": 0.1237720944173634,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.09,
+            "reward": 7.694627326130128,
+            "spl": 0.7990697331860364,
+            "stop_called": 1.0,
+            "success": 0.91
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.48627869395539164,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.984520726592104,
+            "spl": 0.7590199476801888,
+            "stop_called": 0.95,
+            "success": 0.92
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.17580695839598776,
+            "non_stop_failure": 0.03,
+            "premature_stop": -0.019999999999999997,
+            "reward": -0.3455069583959869,
+            "spl": -0.0004169687031403413,
+            "stop_called": -0.029999999999999916,
+            "success": -0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.6620856523513794,
+            "non_stop_failure": 0.08,
+            "premature_stop": 0.01,
+            "reward": 6.639013768196117,
+            "spl": 0.7586029789770484,
+            "stop_called": 0.92,
+            "success": 0.91
+          }
+        }
+      },
+      "noise_seed": 41001,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.17223912879824638,
+        "non_stop_failure": 0.03,
+        "premature_stop": -0.049999999999999996,
+        "reward": -0.2770391287982461,
+        "spl": 0.023075220244126227,
+        "stop_called": -0.029999999999999916,
+        "success": 0.019999999999999907
+      },
+      "training_seed": 100
+    },
+    {
+      "condition": "actuation",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.12020426481962204,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.763095155727869,
+            "spl": 0.8225619221333029,
+            "stop_called": 1.0,
+            "success": 0.94
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.2085989283397794,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.06,
+            "reward": -0.47769892833977856,
+            "spl": -0.07176380511596281,
+            "stop_called": -0.020000000000000018,
+            "success": -0.07999999999999996
+          },
+          "noisy": {
+            "distance_to_goal": 0.32880319315940143,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.12,
+            "reward": 7.28539622738809,
+            "spl": 0.7507981170173401,
+            "stop_called": 0.98,
+            "success": 0.86
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.48627869395539164,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.984520726592104,
+            "spl": 0.7590199476801888,
+            "stop_called": 0.95,
+            "success": 0.92
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.02279766910709441,
+            "non_stop_failure": -0.010000000000000002,
+            "premature_stop": -0.019999999999999997,
+            "reward": 0.07969766910709453,
+            "spl": 0.024996585468675225,
+            "stop_called": 0.010000000000000009,
+            "success": 0.029999999999999916
+          },
+          "noisy": {
+            "distance_to_goal": 0.46348102484829723,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.01,
+            "reward": 7.064218395699198,
+            "spl": 0.784016533148864,
+            "stop_called": 0.96,
+            "success": 0.95
+          }
+        }
+      },
+      "noise_seed": 41002,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.2313965974468738,
+        "non_stop_failure": -0.030000000000000002,
+        "premature_stop": -0.07999999999999999,
+        "reward": 0.5573965974468731,
+        "spl": 0.09676039058463803,
+        "stop_called": 0.030000000000000027,
+        "success": 0.10999999999999988
+      },
+      "training_seed": 100
+    },
+    {
+      "condition": "actuation",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.12020426481962204,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.763095155727869,
+            "spl": 0.8225619221333029,
+            "stop_called": 1.0,
+            "success": 0.94
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.1574383415468037,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": -0.298938341546803,
+            "spl": -0.02940813726267022,
+            "stop_called": -0.010000000000000009,
+            "success": -0.039999999999999925
+          },
+          "noisy": {
+            "distance_to_goal": 0.27764260636642574,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.09,
+            "reward": 7.464156814181066,
+            "spl": 0.7931537848706327,
+            "stop_called": 0.99,
+            "success": 0.9
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.48627869395539164,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.984520726592104,
+            "spl": 0.7590199476801888,
+            "stop_called": 0.95,
+            "success": 0.92
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.07785113646648828,
+            "non_stop_failure": 0.009999999999999995,
+            "premature_stop": 0.03,
+            "reward": -0.23665113646648717,
+            "spl": -0.03252237684193471,
+            "stop_called": -0.010000000000000009,
+            "success": -0.040000000000000036
+          },
+          "noisy": {
+            "distance_to_goal": 0.5641298304218799,
+            "non_stop_failure": 0.06,
+            "premature_stop": 0.06,
+            "reward": 6.7478695901256165,
+            "spl": 0.7264975708382541,
+            "stop_called": 0.94,
+            "success": 0.88
+          }
+        }
+      },
+      "noise_seed": 41003,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.07958720508031542,
+        "non_stop_failure": -5.204170427930421e-18,
+        "premature_stop": 0.0,
+        "reward": 0.06228720508031582,
+        "spl": -0.0031142395792644884,
+        "stop_called": 0.0,
+        "success": -1.1102230246251565e-16
+      },
+      "training_seed": 100
+    },
+    {
+      "condition": "actuation",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.5468892046157271,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.07,
+            "reward": 6.968810215931765,
+            "spl": 0.7733425321867822,
+            "stop_called": 0.95,
+            "success": 0.88
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.16683343572542075,
+            "non_stop_failure": -0.020000000000000004,
+            "premature_stop": -0.04000000000000001,
+            "reward": 0.2886334357254219,
+            "spl": 0.03556434532652686,
+            "stop_called": 0.020000000000000018,
+            "success": 0.05999999999999994
+          },
+          "noisy": {
+            "distance_to_goal": 0.38005576889030634,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.03,
+            "reward": 7.257443651657187,
+            "spl": 0.808906877513309,
+            "stop_called": 0.97,
+            "success": 0.94
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.10375589902978391,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.0,
+            "reward": 7.795043521517709,
+            "spl": 0.8776292383049382,
+            "stop_called": 0.99,
+            "success": 0.99
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.01941494289319963,
+            "non_stop_failure": -0.01,
+            "premature_stop": 0.0,
+            "reward": 0.0787149428931988,
+            "spl": 0.003926314533684305,
+            "stop_called": 0.010000000000000009,
+            "success": 0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.08434095613658428,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.0,
+            "reward": 7.8737584644109075,
+            "spl": 0.8815555528386225,
+            "stop_called": 1.0,
+            "success": 1.0
+          }
+        }
+      },
+      "noise_seed": 41001,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.14741849283222114,
+        "non_stop_failure": 0.010000000000000004,
+        "premature_stop": 0.04000000000000001,
+        "reward": -0.20991849283222308,
+        "spl": -0.03163803079284255,
+        "stop_called": -0.010000000000000009,
+        "success": -0.04999999999999993
+      },
+      "training_seed": 200
+    },
+    {
+      "condition": "actuation",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.5468892046157271,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.07,
+            "reward": 6.968810215931765,
+            "spl": 0.7733425321867822,
+            "stop_called": 0.95,
+            "success": 0.88
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.0720571558829397,
+            "non_stop_failure": 0.020000000000000004,
+            "premature_stop": -0.010000000000000009,
+            "reward": -0.2012571558829377,
+            "spl": -0.015122193479823798,
+            "stop_called": -0.019999999999999907,
+            "success": -0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.6189463604986668,
+            "non_stop_failure": 0.07,
+            "premature_stop": 0.06,
+            "reward": 6.767553060048828,
+            "spl": 0.7582203387069584,
+            "stop_called": 0.93,
+            "success": 0.87
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.10375589902978391,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.0,
+            "reward": 7.795043521517709,
+            "spl": 0.8776292383049382,
+            "stop_called": 0.99,
+            "success": 0.99
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.14645630477927626,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": -0.21555630477927767,
+            "spl": -0.03782348490673948,
+            "stop_called": -0.010000000000000009,
+            "success": -0.040000000000000036
+          },
+          "noisy": {
+            "distance_to_goal": 0.2502122038090602,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.03,
+            "reward": 7.579487216738431,
+            "spl": 0.8398057533981987,
+            "stop_called": 0.98,
+            "success": 0.95
+          }
+        }
+      },
+      "noise_seed": 41002,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.07439914889633656,
+        "non_stop_failure": -0.010000000000000004,
+        "premature_stop": 0.04000000000000001,
+        "reward": -0.014299148896339986,
+        "spl": -0.022701291426915682,
+        "stop_called": 0.009999999999999898,
+        "success": -0.030000000000000027
+      },
+      "training_seed": 200
+    },
+    {
+      "condition": "actuation",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.5468892046157271,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.07,
+            "reward": 6.968810215931765,
+            "spl": 0.7733425321867822,
+            "stop_called": 0.95,
+            "success": 0.88
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.10133359682746224,
+            "non_stop_failure": 0.020000000000000004,
+            "premature_stop": -0.030000000000000006,
+            "reward": -0.20543359682745965,
+            "spl": -0.0004851300751781418,
+            "stop_called": -0.019999999999999907,
+            "success": 0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.6482228014431893,
+            "non_stop_failure": 0.07,
+            "premature_stop": 0.04,
+            "reward": 6.763376619104306,
+            "spl": 0.772857402111604,
+            "stop_called": 0.93,
+            "success": 0.89
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.10375589902978391,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.0,
+            "reward": 7.795043521517709,
+            "spl": 0.8776292383049382,
+            "stop_called": 0.99,
+            "success": 0.99
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.12513269732240587,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.01,
+            "reward": -0.10213269732240704,
+            "spl": -0.011016780832543205,
+            "stop_called": 0.0,
+            "success": -0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.22888859635218978,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.01,
+            "reward": 7.692910824195302,
+            "spl": 0.866612457472395,
+            "stop_called": 0.99,
+            "success": 0.98
+          }
+        }
+      },
+      "noise_seed": 41003,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.02379910049494363,
+        "non_stop_failure": -0.020000000000000004,
+        "premature_stop": 0.04000000000000001,
+        "reward": 0.10330089950505261,
+        "spl": -0.010531650757365063,
+        "stop_called": 0.019999999999999907,
+        "success": -0.020000000000000018
+      },
+      "training_seed": 200
+    },
+    {
+      "condition": "actuation",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.3644495571218431,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.13,
+            "reward": 7.050249863425651,
+            "spl": 0.70362464248799,
+            "stop_called": 0.97,
+            "success": 0.84
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.07814122753217811,
+            "non_stop_failure": 0.010000000000000002,
+            "premature_stop": -0.03,
+            "reward": -0.0816412275321774,
+            "spl": 0.01831160970306478,
+            "stop_called": -0.010000000000000009,
+            "success": 0.020000000000000018
+          },
+          "noisy": {
+            "distance_to_goal": 0.44259078465402124,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.1,
+            "reward": 6.968608635893474,
+            "spl": 0.7219362521910547,
+            "stop_called": 0.96,
+            "success": 0.86
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.23720039911800994,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.673499021429481,
+            "spl": 0.8646328665926406,
+            "stop_called": 0.99,
+            "success": 0.96
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.008051002582069477,
+            "non_stop_failure": 0.0,
+            "premature_stop": -0.009999999999999998,
+            "reward": 0.014751002582070072,
+            "spl": 0.006744636313867791,
+            "stop_called": 0.0,
+            "success": 0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.22914939653594046,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.02,
+            "reward": 7.688250024011551,
+            "spl": 0.8713775029065084,
+            "stop_called": 0.99,
+            "success": 0.97
+          }
+        }
+      },
+      "noise_seed": 41001,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.08619223011424759,
+        "non_stop_failure": -0.010000000000000002,
+        "premature_stop": 0.02,
+        "reward": 0.09639223011424747,
+        "spl": -0.011566973389196988,
+        "stop_called": 0.010000000000000009,
+        "success": -0.010000000000000009
+      },
+      "training_seed": 300
+    },
+    {
+      "condition": "actuation",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.3644495571218431,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.13,
+            "reward": 7.050249863425651,
+            "spl": 0.70362464248799,
+            "stop_called": 0.97,
+            "success": 0.84
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.04884216863662,
+            "non_stop_failure": 0.0,
+            "premature_stop": -0.06,
+            "reward": 0.052557831363379215,
+            "spl": 0.04707070958255011,
+            "stop_called": 0.0,
+            "success": 0.06000000000000005
+          },
+          "noisy": {
+            "distance_to_goal": 0.4132917257584631,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.07,
+            "reward": 7.10280769478903,
+            "spl": 0.7506953520705401,
+            "stop_called": 0.97,
+            "success": 0.9
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.23720039911800994,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.673499021429481,
+            "spl": 0.8646328665926406,
+            "stop_called": 0.99,
+            "success": 0.96
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.0062686825613491315,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.04000000000000001,
+            "reward": -0.1159686825613484,
+            "spl": -0.0321021608023665,
+            "stop_called": 0.0,
+            "success": -0.039999999999999925
+          },
+          "noisy": {
+            "distance_to_goal": 0.24346908167935907,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.07,
+            "reward": 7.5575303388681325,
+            "spl": 0.8325307057902741,
+            "stop_called": 0.99,
+            "success": 0.92
+          }
+        }
+      },
+      "noise_seed": 41002,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.04257348607527087,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.1,
+        "reward": -0.16852651392472762,
+        "spl": -0.0791728703849166,
+        "stop_called": 0.0,
+        "success": -0.09999999999999998
+      },
+      "training_seed": 300
+    },
+    {
+      "condition": "actuation",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.3644495571218431,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.13,
+            "reward": 7.050249863425651,
+            "spl": 0.70362464248799,
+            "stop_called": 0.97,
+            "success": 0.84
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.11340880639851092,
+            "non_stop_failure": 0.010000000000000002,
+            "premature_stop": -0.07,
+            "reward": -0.05640880639850998,
+            "spl": 0.05439567406300405,
+            "stop_called": -0.010000000000000009,
+            "success": 0.06000000000000005
+          },
+          "noisy": {
+            "distance_to_goal": 0.47785836352035405,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.06,
+            "reward": 6.993841057027141,
+            "spl": 0.758020316550994,
+            "stop_called": 0.96,
+            "success": 0.9
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.23720039911800994,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.673499021429481,
+            "spl": 0.8646328665926406,
+            "stop_called": 0.99,
+            "success": 0.96
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.09212076872354374,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.04000000000000001,
+            "reward": -0.28712076872354153,
+            "spl": -0.04710586420724838,
+            "stop_called": -0.010000000000000009,
+            "success": -0.04999999999999993
+          },
+          "noisy": {
+            "distance_to_goal": 0.3293211678415537,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.07,
+            "reward": 7.386378252705939,
+            "spl": 0.8175270023853922,
+            "stop_called": 0.98,
+            "success": 0.91
+          }
+        }
+      },
+      "noise_seed": 41003,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.021288037674967175,
+        "non_stop_failure": -1.734723475976807e-18,
+        "premature_stop": 0.11000000000000001,
+        "reward": -0.23071196232503155,
+        "spl": -0.10150153827025243,
+        "stop_called": 0.0,
+        "success": -0.10999999999999999
+      },
+      "training_seed": 300
+    },
+    {
+      "condition": "combined",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.12020426481962204,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.763095155727869,
+            "spl": 0.8225619221333029,
+            "stop_called": 1.0,
+            "success": 0.94
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.165914595592767,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.06,
+            "reward": -0.4203145955927665,
+            "spl": -0.07247805284574327,
+            "stop_called": -0.020000000000000018,
+            "success": -0.07999999999999996
+          },
+          "noisy": {
+            "distance_to_goal": 0.28611886041238904,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.12,
+            "reward": 7.342780560135102,
+            "spl": 0.7500838692875597,
+            "stop_called": 0.98,
+            "success": 0.86
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.48627869395539164,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.984520726592104,
+            "spl": 0.7590199476801888,
+            "stop_called": 0.95,
+            "success": 0.92
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.08369301205500962,
+            "non_stop_failure": -0.010000000000000002,
+            "premature_stop": -0.009999999999999998,
+            "reward": 0.10489301205500912,
+            "spl": 0.014429786308680304,
+            "stop_called": 0.010000000000000009,
+            "success": 0.019999999999999907
+          },
+          "noisy": {
+            "distance_to_goal": 0.402585681900382,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.02,
+            "reward": 7.089413738647113,
+            "spl": 0.7734497339888691,
+            "stop_called": 0.96,
+            "success": 0.94
+          }
+        }
+      },
+      "noise_seed": 41001,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.24960760764777662,
+        "non_stop_failure": -0.030000000000000002,
+        "premature_stop": -0.06999999999999999,
+        "reward": 0.5252076076477756,
+        "spl": 0.08690783915442357,
+        "stop_called": 0.030000000000000027,
+        "success": 0.09999999999999987
+      },
+      "training_seed": 100
+    },
+    {
+      "condition": "combined",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.12020426481962204,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.763095155727869,
+            "spl": 0.8225619221333029,
+            "stop_called": 1.0,
+            "success": 0.94
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.1444883070886135,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.020000000000000004,
+            "reward": -0.23098830708861318,
+            "spl": -0.02187044878757871,
+            "stop_called": -0.010000000000000009,
+            "success": -0.029999999999999916
+          },
+          "noisy": {
+            "distance_to_goal": 0.26469257190823553,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.08,
+            "reward": 7.5321068486392555,
+            "spl": 0.8006914733457242,
+            "stop_called": 0.99,
+            "success": 0.91
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.48627869395539164,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.984520726592104,
+            "spl": 0.7590199476801888,
+            "stop_called": 0.95,
+            "success": 0.92
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.020689494404941777,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.010000000000000002,
+            "reward": 0.006789494404940477,
+            "spl": -0.003471665372839494,
+            "stop_called": 0.0,
+            "success": -0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.46558919955044986,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.04,
+            "reward": 6.991310220997044,
+            "spl": 0.7555482823073493,
+            "stop_called": 0.95,
+            "success": 0.91
+          }
+        }
+      },
+      "noise_seed": 41002,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.16517780149355527,
+        "non_stop_failure": -0.01,
+        "premature_stop": -0.010000000000000002,
+        "reward": 0.23777780149355365,
+        "spl": 0.018398783414739217,
+        "stop_called": 0.010000000000000009,
+        "success": 0.019999999999999907
+      },
+      "training_seed": 100
+    },
+    {
+      "condition": "combined",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.12020426481962204,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.06,
+            "reward": 7.763095155727869,
+            "spl": 0.8225619221333029,
+            "stop_called": 1.0,
+            "success": 0.94
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.15517355827614665,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.020000000000000004,
+            "reward": -0.23597355827614663,
+            "spl": -0.023454210130170017,
+            "stop_called": -0.010000000000000009,
+            "success": -0.029999999999999916
+          },
+          "noisy": {
+            "distance_to_goal": 0.2753778230957687,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.08,
+            "reward": 7.527121597451722,
+            "spl": 0.7991077120031329,
+            "stop_called": 0.99,
+            "success": 0.91
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.48627869395539164,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.984520726592104,
+            "spl": 0.7590199476801888,
+            "stop_called": 0.95,
+            "success": 0.92
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.01963251208420841,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.0,
+            "reward": -0.04923251208420787,
+            "spl": -0.003143556122846225,
+            "stop_called": 0.0,
+            "success": 0.0
+          },
+          "noisy": {
+            "distance_to_goal": 0.5059112060396,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.03,
+            "reward": 6.935288214507896,
+            "spl": 0.7558763915573425,
+            "stop_called": 0.95,
+            "success": 0.92
+          }
+        }
+      },
+      "noise_seed": 41003,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.13554104619193824,
+        "non_stop_failure": -0.01,
+        "premature_stop": -0.020000000000000004,
+        "reward": 0.18674104619193876,
+        "spl": 0.020310654007323792,
+        "stop_called": 0.010000000000000009,
+        "success": 0.029999999999999916
+      },
+      "training_seed": 100
+    },
+    {
+      "condition": "combined",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.5468892046157271,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.07,
+            "reward": 6.968810215931765,
+            "spl": 0.7733425321867822,
+            "stop_called": 0.95,
+            "success": 0.88
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.058913865191862036,
+            "non_stop_failure": -0.010000000000000002,
+            "premature_stop": 0.01999999999999999,
+            "reward": 0.02331386519186296,
+            "spl": -0.019773090063169296,
+            "stop_called": 0.010000000000000009,
+            "success": -0.010000000000000009
+          },
+          "noisy": {
+            "distance_to_goal": 0.48797533942386506,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.09,
+            "reward": 6.992124081123628,
+            "spl": 0.7535694421236129,
+            "stop_called": 0.96,
+            "success": 0.87
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.10375589902978391,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.0,
+            "reward": 7.795043521517709,
+            "spl": 0.8776292383049382,
+            "stop_called": 0.99,
+            "success": 0.99
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.004377249539829792,
+            "non_stop_failure": -0.01,
+            "premature_stop": 0.05,
+            "reward": -0.01672275046017191,
+            "spl": -0.032204604948760984,
+            "stop_called": 0.010000000000000009,
+            "success": -0.040000000000000036
+          },
+          "noisy": {
+            "distance_to_goal": 0.09937864948995412,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.05,
+            "reward": 7.778320771057537,
+            "spl": 0.8454246333561772,
+            "stop_called": 1.0,
+            "success": 0.95
+          }
+        }
+      },
+      "noise_seed": 41001,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.054536615652032244,
+        "non_stop_failure": 1.734723475976807e-18,
+        "premature_stop": 0.030000000000000013,
+        "reward": -0.04003661565203487,
+        "spl": -0.012431514885591688,
+        "stop_called": 0.0,
+        "success": -0.030000000000000027
+      },
+      "training_seed": 200
+    },
+    {
+      "condition": "combined",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.5468892046157271,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.07,
+            "reward": 6.968810215931765,
+            "spl": 0.7733425321867822,
+            "stop_called": 0.95,
+            "success": 0.88
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.1007615366671234,
+            "non_stop_failure": 0.009999999999999995,
+            "premature_stop": 0.009999999999999995,
+            "reward": -0.22066153666712207,
+            "spl": -0.026997581608233956,
+            "stop_called": -0.010000000000000009,
+            "success": -0.020000000000000018
+          },
+          "noisy": {
+            "distance_to_goal": 0.6476507412828505,
+            "non_stop_failure": 0.06,
+            "premature_stop": 0.08,
+            "reward": 6.748148679264643,
+            "spl": 0.7463449505785482,
+            "stop_called": 0.94,
+            "success": 0.86
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.10375589902978391,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.0,
+            "reward": 7.795043521517709,
+            "spl": 0.8776292383049382,
+            "stop_called": 0.99,
+            "success": 0.99
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.06071420841384678,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.05,
+            "reward": -0.23361420841384728,
+            "spl": -0.058451802294007704,
+            "stop_called": 0.0,
+            "success": -0.050000000000000044
+          },
+          "noisy": {
+            "distance_to_goal": 0.1644701074436307,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.05,
+            "reward": 7.5614293131038615,
+            "spl": 0.8191774360109305,
+            "stop_called": 0.99,
+            "success": 0.94
+          }
+        }
+      },
+      "noise_seed": 41002,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.040047328253276615,
+        "non_stop_failure": -0.009999999999999995,
+        "premature_stop": 0.04000000000000001,
+        "reward": -0.012952671746725208,
+        "spl": -0.03145422068577375,
+        "stop_called": 0.010000000000000009,
+        "success": -0.030000000000000027
+      },
+      "training_seed": 200
+    },
+    {
+      "condition": "combined",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.5468892046157271,
+            "non_stop_failure": 0.05,
+            "premature_stop": 0.07,
+            "reward": 6.968810215931765,
+            "spl": 0.7733425321867822,
+            "stop_called": 0.95,
+            "success": 0.88
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.10039550837129352,
+            "non_stop_failure": 0.009999999999999995,
+            "premature_stop": -0.030000000000000006,
+            "reward": -0.12799550837129203,
+            "spl": 0.009763678554167932,
+            "stop_called": -0.010000000000000009,
+            "success": 0.020000000000000018
+          },
+          "noisy": {
+            "distance_to_goal": 0.6472847129870206,
+            "non_stop_failure": 0.06,
+            "premature_stop": 0.04,
+            "reward": 6.840814707560473,
+            "spl": 0.7831062107409501,
+            "stop_called": 0.94,
+            "success": 0.9
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.10375589902978391,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.0,
+            "reward": 7.795043521517709,
+            "spl": 0.8776292383049382,
+            "stop_called": 0.99,
+            "success": 0.99
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.013106668326072407,
+            "non_stop_failure": -0.01,
+            "premature_stop": 0.04,
+            "reward": -0.019293331673929437,
+            "spl": -0.03250858194274642,
+            "stop_called": 0.010000000000000009,
+            "success": -0.030000000000000027
+          },
+          "noisy": {
+            "distance_to_goal": 0.0906492307037115,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.04,
+            "reward": 7.775750189843779,
+            "spl": 0.8451206563621918,
+            "stop_called": 1.0,
+            "success": 0.96
+          }
+        }
+      },
+      "noise_seed": 41003,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.11350217669736593,
+        "non_stop_failure": -0.019999999999999997,
+        "premature_stop": 0.07,
+        "reward": 0.1087021766973626,
+        "spl": -0.04227226049691435,
+        "stop_called": 0.020000000000000018,
+        "success": -0.050000000000000044
+      },
+      "training_seed": 200
+    },
+    {
+      "condition": "combined",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.3644495571218431,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.13,
+            "reward": 7.050249863425651,
+            "spl": 0.70362464248799,
+            "stop_called": 0.97,
+            "success": 0.84
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.05589473214931784,
+            "non_stop_failure": 0.0,
+            "premature_stop": -0.05,
+            "reward": 0.01640526785068186,
+            "spl": 0.033613193831697585,
+            "stop_called": 0.0,
+            "success": 0.050000000000000044
+          },
+          "noisy": {
+            "distance_to_goal": 0.42034428927116096,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.08,
+            "reward": 7.066655131276333,
+            "spl": 0.7372378363196875,
+            "stop_called": 0.97,
+            "success": 0.89
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.23720039911800994,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.673499021429481,
+            "spl": 0.8646328665926406,
+            "stop_called": 0.99,
+            "success": 0.96
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": -0.008265881130937486,
+            "non_stop_failure": 0.0,
+            "premature_stop": 0.020000000000000004,
+            "reward": -0.03573411886906275,
+            "spl": -0.015849626002795714,
+            "stop_called": 0.0,
+            "success": -0.020000000000000018
+          },
+          "noisy": {
+            "distance_to_goal": 0.22893451798707246,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.05,
+            "reward": 7.637764902560418,
+            "spl": 0.8487832405898449,
+            "stop_called": 0.99,
+            "success": 0.94
+          }
+        }
+      },
+      "noise_seed": 41001,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.06416061328025532,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.07,
+        "reward": -0.05213938671974461,
+        "spl": -0.0494628198344933,
+        "stop_called": 0.0,
+        "success": -0.07000000000000006
+      },
+      "training_seed": 300
+    },
+    {
+      "condition": "combined",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.3644495571218431,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.13,
+            "reward": 7.050249863425651,
+            "spl": 0.70362464248799,
+            "stop_called": 0.97,
+            "success": 0.84
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.055393491038121245,
+            "non_stop_failure": 0.0,
+            "premature_stop": -0.07,
+            "reward": 0.0761065089618782,
+            "spl": 0.04991011726782435,
+            "stop_called": 0.0,
+            "success": 0.07000000000000006
+          },
+          "noisy": {
+            "distance_to_goal": 0.41984304815996437,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.06,
+            "reward": 7.126356372387529,
+            "spl": 0.7535347597558143,
+            "stop_called": 0.97,
+            "success": 0.91
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.23720039911800994,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.673499021429481,
+            "spl": 0.8646328665926406,
+            "stop_called": 0.99,
+            "success": 0.96
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.08057469917228449,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": -0.27567469917228227,
+            "spl": -0.047228801790457964,
+            "stop_called": -0.010000000000000009,
+            "success": -0.039999999999999925
+          },
+          "noisy": {
+            "distance_to_goal": 0.31777509829029443,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.06,
+            "reward": 7.397824322257199,
+            "spl": 0.8174040648021826,
+            "stop_called": 0.98,
+            "success": 0.92
+          }
+        }
+      },
+      "noise_seed": 41002,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": 0.025181208134163247,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.1,
+        "reward": -0.3517812081341605,
+        "spl": -0.09713891905828231,
+        "stop_called": -0.010000000000000009,
+        "success": -0.10999999999999999
+      },
+      "training_seed": 300
+    },
+    {
+      "condition": "combined",
+      "methods": {
+        "baseline": {
+          "clean": {
+            "distance_to_goal": 0.3644495571218431,
+            "non_stop_failure": 0.03,
+            "premature_stop": 0.13,
+            "reward": 7.050249863425651,
+            "spl": 0.70362464248799,
+            "stop_called": 0.97,
+            "success": 0.84
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.09313453937880695,
+            "non_stop_failure": 0.010000000000000002,
+            "premature_stop": -0.06,
+            "reward": -0.03533453937880626,
+            "spl": 0.038215708826923156,
+            "stop_called": -0.010000000000000009,
+            "success": 0.050000000000000044
+          },
+          "noisy": {
+            "distance_to_goal": 0.4575840965006501,
+            "non_stop_failure": 0.04,
+            "premature_stop": 0.07,
+            "reward": 7.014915324046845,
+            "spl": 0.7418403513149131,
+            "stop_called": 0.96,
+            "success": 0.89
+          }
+        },
+        "dsr": {
+          "clean": {
+            "distance_to_goal": 0.23720039911800994,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": 7.673499021429481,
+            "spl": 0.8646328665926406,
+            "stop_called": 0.99,
+            "success": 0.96
+          },
+          "drop_noisy_minus_clean": {
+            "distance_to_goal": 0.08587583651067693,
+            "non_stop_failure": 0.01,
+            "premature_stop": 0.03,
+            "reward": -0.22747583651067593,
+            "spl": -0.03843757771157785,
+            "stop_called": -0.010000000000000009,
+            "success": -0.039999999999999925
+          },
+          "noisy": {
+            "distance_to_goal": 0.32307623562868687,
+            "non_stop_failure": 0.02,
+            "premature_stop": 0.06,
+            "reward": 7.446023184918805,
+            "spl": 0.8261952888810628,
+            "stop_called": 0.98,
+            "success": 0.92
+          }
+        }
+      },
+      "noise_seed": 41003,
+      "robustness_advantage_dsr_drop_minus_baseline_drop": {
+        "distance_to_goal": -0.007258702868130018,
+        "non_stop_failure": -1.734723475976807e-18,
+        "premature_stop": 0.09,
+        "reward": -0.19214129713186967,
+        "spl": -0.07665328653850101,
+        "stop_called": 0.0,
+        "success": -0.08999999999999997
+      },
+      "training_seed": 300
+    }
+  ],
+  "primary_interpretation": "未观察到DSR鲁棒优势。",
+  "protocol": {
+    "conditions": [
+      "localization",
+      "actuation",
+      "combined"
+    ],
+    "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+    "episodes_total": 6000,
+    "formal_noisy_runs": 54,
+    "noise_seeds": [
+      41001,
+      41002,
+      41003
+    ],
+    "statistics": "mean over three noise seeds within each training seed, then mean and sample SD over three training seeds",
+    "training_seeds": [
+      100,
+      200,
+      300
+    ],
+    "zero_noise_runs": 6
+  },
+  "records": [
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "clean",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.12020426481962204,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.06,
+        "reward": 7.763095155727869,
+        "spl": 0.8225619221333029,
+        "stop_called": 1.0,
+        "success": 0.94
+      },
+      "noise_seed": 0,
+      "phase": "zero_noise",
+      "run_identity_sha256": "396f0c6ff5d2a41576622da399bd475330b315e0c95d7dbbc5614309bdc0a8c6",
+      "source": "src/results/closeout_dsr_robustness/zero_noise/baseline_trainseed100_clean_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "clean",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.5468892046157271,
+        "non_stop_failure": 0.05,
+        "premature_stop": 0.07,
+        "reward": 6.968810215931765,
+        "spl": 0.7733425321867822,
+        "stop_called": 0.95,
+        "success": 0.88
+      },
+      "noise_seed": 0,
+      "phase": "zero_noise",
+      "run_identity_sha256": "860d270aef700fab3e24c9674b2e749d7a6301f43c46abb52060e1c53ab1a393",
+      "source": "src/results/closeout_dsr_robustness/zero_noise/baseline_trainseed200_clean_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "clean",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.3644495571218431,
+        "non_stop_failure": 0.03,
+        "premature_stop": 0.13,
+        "reward": 7.050249863425651,
+        "spl": 0.70362464248799,
+        "stop_called": 0.97,
+        "success": 0.84
+      },
+      "noise_seed": 0,
+      "phase": "zero_noise",
+      "run_identity_sha256": "a1a58323c6171fd54cf42fee34da6570913f1e48ee95650413402e29b997dff0",
+      "source": "src/results/closeout_dsr_robustness/zero_noise/baseline_trainseed300_clean_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "clean",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.48627869395539164,
+        "non_stop_failure": 0.05,
+        "premature_stop": 0.03,
+        "reward": 6.984520726592104,
+        "spl": 0.7590199476801888,
+        "stop_called": 0.95,
+        "success": 0.92
+      },
+      "noise_seed": 0,
+      "phase": "zero_noise",
+      "run_identity_sha256": "8d12d57992cfd77e2f30335becec026f1e81031e8c1121324efd0e446ce81409",
+      "source": "src/results/closeout_dsr_robustness/zero_noise/dsr_trainseed100_clean_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "clean",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.10375589902978391,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.0,
+        "reward": 7.795043521517709,
+        "spl": 0.8776292383049382,
+        "stop_called": 0.99,
+        "success": 0.99
+      },
+      "noise_seed": 0,
+      "phase": "zero_noise",
+      "run_identity_sha256": "c1a1b783ea1f4fba9aff5fa374ea49c42c644186027f0b4a8fac65929738118c",
+      "source": "src/results/closeout_dsr_robustness/zero_noise/dsr_trainseed200_clean_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "clean",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.23720039911800994,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.03,
+        "reward": 7.673499021429481,
+        "spl": 0.8646328665926406,
+        "stop_called": 0.99,
+        "success": 0.96
+      },
+      "noise_seed": 0,
+      "phase": "zero_noise",
+      "run_identity_sha256": "774f45baeba882f3e0fb24b9bba1ad6da0ebd23922e69df0694fe7766bb935ed",
+      "source": "src/results/closeout_dsr_robustness/zero_noise/dsr_trainseed300_clean_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.11887364029884338,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.09,
+        "reward": 7.703525780248648,
+        "spl": 0.7912526513263084,
+        "stop_called": 1.0,
+        "success": 0.91
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "3d39bcd6b1f774334c58ff85088a7972f4a2989175212d27de287544d1040774",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/baseline_trainseed100_noise41001_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.1897337212599814,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.09,
+        "reward": 7.56076569928751,
+        "spl": 0.7897359911507743,
+        "stop_called": 0.99,
+        "success": 0.9
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "dc708892abc832ddb4240f97fec783879727ca1a6418a251fce086c74aa61249",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/baseline_trainseed100_noise41002_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.13711715772747993,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.11,
+        "reward": 7.643182262820011,
+        "spl": 0.78537722860342,
+        "stop_called": 1.0,
+        "success": 0.89
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "485b8b7e5665177d2d03482073cbbecad88609cfffe88fba368176ad97a97148",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/baseline_trainseed100_noise41003_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.4816900438442826,
+        "non_stop_failure": 0.05,
+        "premature_stop": 0.12,
+        "reward": 6.889009376703211,
+        "spl": 0.7229729280752006,
+        "stop_called": 0.95,
+        "success": 0.83
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "434d4284c85709ad01bb60b6e8656d2a0868168a9926b99bbd5f427043e45402",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/baseline_trainseed200_noise41001_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.7673386898264289,
+        "non_stop_failure": 0.08,
+        "premature_stop": 0.09,
+        "reward": 6.507560730721066,
+        "spl": 0.7259858510517923,
+        "stop_called": 0.92,
+        "success": 0.83
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "aaf811b45edeee913d7c036e4aab6ed8bae04c32cc80d5187dbb9eede59324ba",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/baseline_trainseed200_noise41002_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.6661329078488052,
+        "non_stop_failure": 0.07,
+        "premature_stop": 0.03,
+        "reward": 6.815266512698688,
+        "spl": 0.7849982754095827,
+        "stop_called": 0.93,
+        "success": 0.9
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "1411c5dfebfaa63b62c0d68e0ce3beaf60e968824e66a818036d1a9f90650b1a",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/baseline_trainseed200_noise41003_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.43277333239093424,
+        "non_stop_failure": 0.03,
+        "premature_stop": 0.12,
+        "reward": 6.98772608815656,
+        "spl": 0.7159667337181926,
+        "stop_called": 0.97,
+        "success": 0.85
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "311007e6963e1aa7dc3ffb95d2d07f134a1c7fa5390be940cb4011207d321707",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/baseline_trainseed300_noise41001_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.4441807367093861,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.09,
+        "reward": 6.957218683838108,
+        "spl": 0.7265463341034426,
+        "stop_called": 0.96,
+        "success": 0.87
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "2be9c7be527ecf53cb40620701c4241a1e02cd62535b94812e078a693fcfa2f6",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/baseline_trainseed300_noise41002_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.4602709284424782,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.1,
+        "reward": 6.8621284921050165,
+        "spl": 0.715394676036058,
+        "stop_called": 0.96,
+        "success": 0.86
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "01125ec04a123da64065455e0500572cea0fe4088da800ff14c6578a300bf6fd",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/baseline_trainseed300_noise41003_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.44561629835516214,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.01,
+        "reward": 7.138183122192332,
+        "spl": 0.7903259632171209,
+        "stop_called": 0.96,
+        "success": 0.95
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "298d6363b0fcb6b7fe00f87613d8890d7131f0fc4728180de713c20daed6e09f",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/dsr_trainseed100_noise41001_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.5260438176896423,
+        "non_stop_failure": 0.05,
+        "premature_stop": 0.03,
+        "reward": 6.960255602857851,
+        "spl": 0.7622448274099182,
+        "stop_called": 0.95,
+        "success": 0.92
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "b970097bc1d70a908b2d79a2b98a01cd04f7eaa0652c1a5c3442150de3af6dd4",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/dsr_trainseed100_noise41002_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.45124398822896183,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.01,
+        "reward": 7.120055432318533,
+        "spl": 0.7782116810652248,
+        "stop_called": 0.96,
+        "success": 0.95
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "ec00f8614e8ed1a094371f513f7db1077ba1992c290c59ac9596986808e87984",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/dsr_trainseed100_noise41003_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.2410887926351279,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.08,
+        "reward": 7.506610627912363,
+        "spl": 0.8116510333202764,
+        "stop_called": 0.99,
+        "success": 0.91
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "f5989f2a2fbb549192d6f9b9f46e5818e98bfa5507421805f65d22ce14e88d34",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/dsr_trainseed200_noise41001_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.08584063209593296,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.06,
+        "reward": 7.725858788451559,
+        "spl": 0.829180509236678,
+        "stop_called": 1.0,
+        "success": 0.94
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "391327388757d4bf3cfcc1c9b998ede554dd9a082cd1768c4b1d008a55703f6a",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/dsr_trainseed200_noise41002_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.24030105541925878,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.03,
+        "reward": 7.628598365128232,
+        "spl": 0.8506057532759513,
+        "stop_called": 0.99,
+        "success": 0.96
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "b7d89f3fed45b8d4d77436839b0a8634c238b1fa338f4261a36da226e63206c7",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/dsr_trainseed200_noise41003_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.31685506816022097,
+        "non_stop_failure": 0.02,
+        "premature_stop": 0.01,
+        "reward": 7.536044352387271,
+        "spl": 0.859396180565228,
+        "stop_called": 0.98,
+        "success": 0.97
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "2eb46fc18c2f94fc0320a245a223c9261095ad13b6db0705b58c1e0b596740f4",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/dsr_trainseed300_noise41001_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.3250580994132906,
+        "non_stop_failure": 0.02,
+        "premature_stop": 0.04,
+        "reward": 7.4428413211342015,
+        "spl": 0.8335650571037505,
+        "stop_called": 0.98,
+        "success": 0.94
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "4c142436adeaa617b9175e2cbe050b938300e9e3e7f9df8ea8482c3a61379e47",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/dsr_trainseed300_noise41002_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "localization",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.3335998877417296,
+        "non_stop_failure": 0.02,
+        "premature_stop": 0.04,
+        "reward": 7.500399532805762,
+        "spl": 0.8579740711416267,
+        "stop_called": 0.98,
+        "success": 0.94
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "2d9b013ddc1fd62853dd0d12d7172ae460ef0689f16d7494c245921497959d20",
+      "source": "src/results/closeout_dsr_robustness/formal/localization/dsr_trainseed300_noise41003_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.1237720944173634,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.09,
+        "reward": 7.694627326130128,
+        "spl": 0.7990697331860364,
+        "stop_called": 1.0,
+        "success": 0.91
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "3448a2c2fb7891d47c2a1afa186a7aa89b9af7ac17713ecf5a48a6bfc8d6ad0b",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed100_noise41001_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.32880319315940143,
+        "non_stop_failure": 0.02,
+        "premature_stop": 0.12,
+        "reward": 7.28539622738809,
+        "spl": 0.7507981170173401,
+        "stop_called": 0.98,
+        "success": 0.86
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "008a34de9175e0b391d88fe6d8410d3d5b32fbdc08c9c653206d093c21caa0a4",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed100_noise41002_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.27764260636642574,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.09,
+        "reward": 7.464156814181066,
+        "spl": 0.7931537848706327,
+        "stop_called": 0.99,
+        "success": 0.9
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "d63e95c9cedfa2f4f2afdd7c4b8e56402cc0c4db144cce456c80a0618b9acfe2",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed100_noise41003_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.38005576889030634,
+        "non_stop_failure": 0.03,
+        "premature_stop": 0.03,
+        "reward": 7.257443651657187,
+        "spl": 0.808906877513309,
+        "stop_called": 0.97,
+        "success": 0.94
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "0cb3ff07db805afe1554bb3763c21b2ee5205c6ff432f075d5f10c319f60c80c",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed200_noise41001_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.6189463604986668,
+        "non_stop_failure": 0.07,
+        "premature_stop": 0.06,
+        "reward": 6.767553060048828,
+        "spl": 0.7582203387069584,
+        "stop_called": 0.93,
+        "success": 0.87
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "dd54c59ae5a871e03267e2ac932ba3fdc4d5cdda6a13ec517a2689f8aa0e3649",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed200_noise41002_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.6482228014431893,
+        "non_stop_failure": 0.07,
+        "premature_stop": 0.04,
+        "reward": 6.763376619104306,
+        "spl": 0.772857402111604,
+        "stop_called": 0.93,
+        "success": 0.89
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "699e95151f1c88e757c307eab9896bd16282398ba60f811d9c50eaa68db18c4a",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed200_noise41003_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.44259078465402124,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.1,
+        "reward": 6.968608635893474,
+        "spl": 0.7219362521910547,
+        "stop_called": 0.96,
+        "success": 0.86
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "a0a2a8959fde0c9d2750ff77b132c5bfb445ca0dccddc8c9408e530084c494b4",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed300_noise41001_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.4132917257584631,
+        "non_stop_failure": 0.03,
+        "premature_stop": 0.07,
+        "reward": 7.10280769478903,
+        "spl": 0.7506953520705401,
+        "stop_called": 0.97,
+        "success": 0.9
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "47411b58c9b0916b2cdfe96fc1b30a1778e1c5535ad44aea982b7d018ddd4ea2",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed300_noise41002_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.47785836352035405,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.06,
+        "reward": 6.993841057027141,
+        "spl": 0.758020316550994,
+        "stop_called": 0.96,
+        "success": 0.9
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "552073a3ce758e72bd111093d6aadcae959b6383db5495528f7e4cc1a8866d68",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/baseline_trainseed300_noise41003_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.6620856523513794,
+        "non_stop_failure": 0.08,
+        "premature_stop": 0.01,
+        "reward": 6.639013768196117,
+        "spl": 0.7586029789770484,
+        "stop_called": 0.92,
+        "success": 0.91
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "0fc9b4ff4ce521332b5c5d18742cd74aa9edbe902684ac2cd3027a92d3e3e1fb",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed100_noise41001_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.46348102484829723,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.01,
+        "reward": 7.064218395699198,
+        "spl": 0.784016533148864,
+        "stop_called": 0.96,
+        "success": 0.95
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "bdfc1f18025a6e1919b0889ef1f997e9d9424a2758cc7e4c51f279834aa8664b",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed100_noise41002_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.5641298304218799,
+        "non_stop_failure": 0.06,
+        "premature_stop": 0.06,
+        "reward": 6.7478695901256165,
+        "spl": 0.7264975708382541,
+        "stop_called": 0.94,
+        "success": 0.88
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "55b311d6243edd60e4bbc18cf94107b46dcd9703dfab976d9b22a7ef61e8e4b2",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed100_noise41003_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.08434095613658428,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.0,
+        "reward": 7.8737584644109075,
+        "spl": 0.8815555528386225,
+        "stop_called": 1.0,
+        "success": 1.0
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "e79ae1d18906c68bf23bc6f6a16e56f18f2f9bc6ca0906dbbd4ea726ef0df023",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed200_noise41001_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.2502122038090602,
+        "non_stop_failure": 0.02,
+        "premature_stop": 0.03,
+        "reward": 7.579487216738431,
+        "spl": 0.8398057533981987,
+        "stop_called": 0.98,
+        "success": 0.95
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "d6a1c83924bf162e947dce39e41483dac383002aeba413a08305ef596fb2922d",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed200_noise41002_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.22888859635218978,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.01,
+        "reward": 7.692910824195302,
+        "spl": 0.866612457472395,
+        "stop_called": 0.99,
+        "success": 0.98
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "c89c22b4c232166d4fb85794239832ce0ec8a41d1ce12e79813a88d5d490e1ac",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed200_noise41003_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.22914939653594046,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.02,
+        "reward": 7.688250024011551,
+        "spl": 0.8713775029065084,
+        "stop_called": 0.99,
+        "success": 0.97
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "fdc427d287a198e0e5b44d5d527c9a231a2b08da73711e164eab8fa4dc1f7425",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed300_noise41001_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.24346908167935907,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.07,
+        "reward": 7.5575303388681325,
+        "spl": 0.8325307057902741,
+        "stop_called": 0.99,
+        "success": 0.92
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "a75cd022c8e54ff70c0e537e11f81d9695c015a093746c2c382b7a73a159ca89",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed300_noise41002_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "actuation",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.3293211678415537,
+        "non_stop_failure": 0.02,
+        "premature_stop": 0.07,
+        "reward": 7.386378252705939,
+        "spl": 0.8175270023853922,
+        "stop_called": 0.98,
+        "success": 0.91
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "feafb1f82e8073590a5aef95172edbd89e0fdf87f74752870fefcd1359083cf1",
+      "source": "src/results/closeout_dsr_robustness/formal/actuation/dsr_trainseed300_noise41003_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.28611886041238904,
+        "non_stop_failure": 0.02,
+        "premature_stop": 0.12,
+        "reward": 7.342780560135102,
+        "spl": 0.7500838692875597,
+        "stop_called": 0.98,
+        "success": 0.86
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "b2bb4565f8021bef9d3cc310c288e695232d1827208dcf6b8578463608f800cd",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/baseline_trainseed100_noise41001_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.26469257190823553,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.08,
+        "reward": 7.5321068486392555,
+        "spl": 0.8006914733457242,
+        "stop_called": 0.99,
+        "success": 0.91
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "6b67e60d4ddc57c04d770168fe07ac8c635a0e38f8959f87312abead837753c6",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/baseline_trainseed100_noise41002_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "c1b6e8e2dc6b13c59bc8beb9b3de1368ac23098d16c5e1a9be640130e49f89a7",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.2753778230957687,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.08,
+        "reward": 7.527121597451722,
+        "spl": 0.7991077120031329,
+        "stop_called": 0.99,
+        "success": 0.91
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "165483b401ba38f831b694cb46aea93065a880cdb88097119be0d075b440d67c",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/baseline_trainseed100_noise41003_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.48797533942386506,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.09,
+        "reward": 6.992124081123628,
+        "spl": 0.7535694421236129,
+        "stop_called": 0.96,
+        "success": 0.87
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "66408b73316367ba65e3b9fa471900cc4602c4fa8b5e8ec4c9df098f4e3202a5",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/baseline_trainseed200_noise41001_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.6476507412828505,
+        "non_stop_failure": 0.06,
+        "premature_stop": 0.08,
+        "reward": 6.748148679264643,
+        "spl": 0.7463449505785482,
+        "stop_called": 0.94,
+        "success": 0.86
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "3559b44dce1b57c90dcbaa18b6dbdc4ebd062e2349eca1c329d064ad81aa8cb1",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/baseline_trainseed200_noise41002_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.6472847129870206,
+        "non_stop_failure": 0.06,
+        "premature_stop": 0.04,
+        "reward": 6.840814707560473,
+        "spl": 0.7831062107409501,
+        "stop_called": 0.94,
+        "success": 0.9
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "f16cee0e71f6e7481d379bc3b421ab3d3574ec3975796df7fed46083b116c2bb",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/baseline_trainseed200_noise41003_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.42034428927116096,
+        "non_stop_failure": 0.03,
+        "premature_stop": 0.08,
+        "reward": 7.066655131276333,
+        "spl": 0.7372378363196875,
+        "stop_called": 0.97,
+        "success": 0.89
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "67af61a1644bc555d22bd45c62ba88d96d175d6b042897d1c2a40faf4aa6437c",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/baseline_trainseed300_noise41001_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.41984304815996437,
+        "non_stop_failure": 0.03,
+        "premature_stop": 0.06,
+        "reward": 7.126356372387529,
+        "spl": 0.7535347597558143,
+        "stop_called": 0.97,
+        "success": 0.91
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "8e0811f35a41ed21541bf99b8346f663cf6d374a448ce56ce7439853f77b1ed9",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/baseline_trainseed300_noise41002_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "848555bba5a965552fea7b9ba92f37ec2d610eb1f02499cb8f4518819913dd2a",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "baseline",
+      "metrics": {
+        "distance_to_goal": 0.4575840965006501,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.07,
+        "reward": 7.014915324046845,
+        "spl": 0.7418403513149131,
+        "stop_called": 0.96,
+        "success": 0.89
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "f786d507306ad92b88890f1ab799b95201ad8430d67a24603b293ec89473c5b4",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/baseline_trainseed300_noise41003_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.402585681900382,
+        "non_stop_failure": 0.04,
+        "premature_stop": 0.02,
+        "reward": 7.089413738647113,
+        "spl": 0.7734497339888691,
+        "stop_called": 0.96,
+        "success": 0.94
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "d2e4e32be984351bfbeb1438c8bde6dd927676986a135e833cadcbf65a366a81",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/dsr_trainseed100_noise41001_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.46558919955044986,
+        "non_stop_failure": 0.05,
+        "premature_stop": 0.04,
+        "reward": 6.991310220997044,
+        "spl": 0.7555482823073493,
+        "stop_called": 0.95,
+        "success": 0.91
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "5dc00a63ec0d5642300af01cd4f59846129d1123e1270d325cef61d0e5bff4cc",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/dsr_trainseed100_noise41002_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "0ce83fd3945ea7a716889d1911b7c741d32893255f90c8470d11381e22e68816",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.5059112060396,
+        "non_stop_failure": 0.05,
+        "premature_stop": 0.03,
+        "reward": 6.935288214507896,
+        "spl": 0.7558763915573425,
+        "stop_called": 0.95,
+        "success": 0.92
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "d1e1b569915aaa1f92b281b1a3679c0fba2f67abd31e27b91fde07097f8ded4d",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/dsr_trainseed100_noise41003_100ep",
+      "training_seed": 100
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.09937864948995412,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.05,
+        "reward": 7.778320771057537,
+        "spl": 0.8454246333561772,
+        "stop_called": 1.0,
+        "success": 0.95
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "e789a720c6b2cf7f37d7ef91a2e7ad457530f6d0c56874dc62876b53b0d98723",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/dsr_trainseed200_noise41001_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.1644701074436307,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.05,
+        "reward": 7.5614293131038615,
+        "spl": 0.8191774360109305,
+        "stop_called": 0.99,
+        "success": 0.94
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "e93eb6cf9f94e1e5782260924f78a1288e1f939af2b7af79b700ab7767c14f10",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/dsr_trainseed200_noise41002_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "99525d206c846e9c827769070650eb7b397b6b9a401396e288a661a51a5c6449",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.0906492307037115,
+        "non_stop_failure": 0.0,
+        "premature_stop": 0.04,
+        "reward": 7.775750189843779,
+        "spl": 0.8451206563621918,
+        "stop_called": 1.0,
+        "success": 0.96
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "aa254b5af19a159b05647429ec84559b584d14432e8c41faf28d71eccd3ab7b8",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/dsr_trainseed200_noise41003_100ep",
+      "training_seed": 200
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.22893451798707246,
+        "non_stop_failure": 0.01,
+        "premature_stop": 0.05,
+        "reward": 7.637764902560418,
+        "spl": 0.8487832405898449,
+        "stop_called": 0.99,
+        "success": 0.94
+      },
+      "noise_seed": 41001,
+      "phase": "formal",
+      "run_identity_sha256": "5f923dc689fc29b2ff833d7e79fe4c9da3746509d4bca6965f0f67155f7a2aa0",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/dsr_trainseed300_noise41001_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.31777509829029443,
+        "non_stop_failure": 0.02,
+        "premature_stop": 0.06,
+        "reward": 7.397824322257199,
+        "spl": 0.8174040648021826,
+        "stop_called": 0.98,
+        "success": 0.92
+      },
+      "noise_seed": 41002,
+      "phase": "formal",
+      "run_identity_sha256": "bf345ba5ff0e746dcc46b35eb66ec6293282a5fe24ec02a7ce2e131f92fe4dea",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/dsr_trainseed300_noise41002_100ep",
+      "training_seed": 300
+    },
+    {
+      "checkpoint_sha256": "67dca5803a66db646cf7ce5a711740ed6b8b42861c0fbdc8672e797717070a3c",
+      "condition": "combined",
+      "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+      "episodes": 100,
+      "method": "dsr",
+      "metrics": {
+        "distance_to_goal": 0.32307623562868687,
+        "non_stop_failure": 0.02,
+        "premature_stop": 0.06,
+        "reward": 7.446023184918805,
+        "spl": 0.8261952888810628,
+        "stop_called": 0.98,
+        "success": 0.92
+      },
+      "noise_seed": 41003,
+      "phase": "formal",
+      "run_identity_sha256": "bacee27ae8796093b11e26f681e2dfe3adc0e9b098b8f9a0433ad7f92d32e63a",
+      "source": "src/results/closeout_dsr_robustness/formal/combined/dsr_trainseed300_noise41003_100ep",
+      "training_seed": 300
+    }
+  ],
+  "schema_version": 1,
+  "status": "complete"
+}

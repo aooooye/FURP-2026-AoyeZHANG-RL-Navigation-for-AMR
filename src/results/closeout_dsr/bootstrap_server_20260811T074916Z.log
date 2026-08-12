@@ -1,0 +1,647 @@
+⚠ Shard Index for aihabitat/linux-64 not available, falling back to flat repodata
+Using Flat Repodata for aihabitat/linux-64                                                      ✔ Starting
+Using Flat Repodata for aihabitat/linux-64                                                ✔ Done (0.0 sec)
+⚠ Shard Index for aihabitat/noarch not available, falling back to flat repodata
+Using Flat Repodata for aihabitat/noarch                                                        ✔ Starting
+Using Flat Repodata for aihabitat/noarch                                                  ✔ Done (0.0 sec)
+Fetch Shard Index for conda-forge/linux-64                                                      ⧖ Starting
+Fetch Shard Index for conda-forge/linux-64                                                ✔ Done (1.2 sec)
+Fetch Shard Index for conda-forge/noarch                                                        ⧖ Starting
+Fetch Shard Index for conda-forge/noarch                                                  ✔ Done (0.4 sec)
+Fetching and Parsing Packages' Shards                                                           ⧖ Starting
+Fetching and Parsing Packages' Shards                                                     ✔ Done (7.8 sec)
+Parsing Packages' Records                                                                 ✔ Done (9.6 sec)
+
+Resolving Environment                                                                           ⧖ Starting
+Resolving Environment                                                                     ✔ Done (0.3 sec)
+
+Transaction
+
+  Prefix: /home/furp/micromamba/envs/habitat
+
+  Updating specs:
+
+   - python=3.9.19
+   - pip
+   - cmake=3.14.0
+   - habitat-sim[version="=0.3.3",build="^py3.9_headless_bullet_linux_acbe6f4922e68145e401e55c30f9dfea460a3f24$"]
+   - withbullet
+   - headless
+
+
+  Package                   Version  Build                                                                 Channel          Size
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  Install:
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  + _openmp_mutex               4.5  20_gnu                                                                conda-forge      29kB
+  + attrs                    25.3.0  pyh71513ae_0                                                          conda-forge      57kB
+  + bzip2                     1.0.8  hda65f42_10                                                           conda-forge     258kB
+  + c-ares                   1.34.8  h280c20c_1                                                            conda-forge     227kB
+  + ca-certificates       2026.7.22  hbd8a1cb_0                                                            conda-forge     132kB
+  + certifi                2025.8.3  pyhd8ed1ab_0                                                          conda-forge     159kB
+  + cmake                    3.14.0  hf94ab9c_0                                                            conda-forge      13MB
+  + colorama                  0.4.6  pyhd8ed1ab_1                                                          conda-forge      27kB
+  + curl                      8.8.0  he654da7_1                                                            conda-forge     166kB
+  + cycler                   0.12.1  pyhd8ed1ab_1                                                          conda-forge      13kB
+  + expat                     2.8.1  hecca717_1                                                            conda-forge     148kB
+  + freetype                 2.12.1  h267a509_2                                                            conda-forge     635kB
+  + gitdb                    4.0.12  pyhd8ed1ab_0                                                          conda-forge      53kB
+  + gitpython                3.1.45  pyhff2d567_0                                                          conda-forge     158kB
+  + habitat-sim               0.3.3  py3.9_headless_bullet_linux_acbe6f4922e68145e401e55c30f9dfea460a3f24  aihabitat       203MB
+  + habitat-sim-mutex           1.0  headless_bullet                                                       aihabitat         4kB
+  + headless                    2.0  0                                                                     aihabitat         3kB
+  + imageio                  2.37.0  pyhfb79c49_0                                                          conda-forge     293kB
+  + jpeg                         9e  h0b41bf4_3                                                            conda-forge     240kB
+  + keyutils                  1.6.3  hb9d3cd8_0                                                            conda-forge     134kB
+  + kiwisolver                1.4.7  py39h74842e3_0                                                        conda-forge      72kB
+  + krb5                     1.21.3  h659f571_0                                                            conda-forge       1MB
+  + lcms2                      2.12  hddcbb42_0                                                            conda-forge     453kB
+  + ld_impl_linux-64         2.46.1  bootstrap_ha15bf96_2                                                  conda-forge     745kB
+  + lerc                        3.0  h9c3ff4c_0                                                            conda-forge     222kB
+  + libblas                  3.11.0  9_h4a7cf45_openblas                                                   conda-forge      18kB
+  + libcblas                 3.11.0  9_h0358290_openblas                                                   conda-forge      18kB
+  + libcurl                   8.8.0  hca28451_1                                                            conda-forge     410kB
+  + libdeflate                 1.25  hd45a770_1                                                            conda-forge      74kB
+  + libedit            3.1.20250104  pl5321h7949ede_0                                                      conda-forge     135kB
+  + libev                      4.33  h280c20c_3                                                            conda-forge      43kB
+  + libexpat                  2.8.1  hecca717_1                                                            conda-forge      78kB
+  + libffi                    3.7.0  h3435931_0                                                            conda-forge      68kB
+  + libgcc                   16.1.0  ha9f2e26_1                                                            conda-forge       1MB
+  + libgcc-ng                16.1.0  h69a702a_1                                                            conda-forge      28kB
+  + libgfortran              16.1.0  h69a702a_1                                                            conda-forge      28kB
+  + libgfortran-ng           16.1.0  h69a702a_1                                                            conda-forge      28kB
+  + libgfortran5             16.1.0  h79bb938_1                                                            conda-forge       3MB
+  + libgomp                  16.1.0  he0feb66_1                                                            conda-forge     640kB
+  + liblapack                3.11.0  9_h47877c9_openblas                                                   conda-forge      18kB
+  + libllvm14                14.0.6  hcd5def8_4                                                            conda-forge      31MB
+  + liblzma                   5.8.3  hb03c661_1                                                            conda-forge     113kB
+  + liblzma-devel             5.8.3  hb03c661_1                                                            conda-forge     492kB
+  + libnghttp2               1.58.0  h47da74e_1                                                            conda-forge     632kB
+  + libnsl                    2.0.1  hb9d3cd8_1                                                            conda-forge      34kB
+  + libopenblas              0.3.34  pthreads_h94d23a6_0                                                   conda-forge       6MB
+  + libpng                   1.6.43  h2797004_0                                                            conda-forge     288kB
+  + libsqlite                3.46.0  hde9e2c9_0                                                            conda-forge     865kB
+  + libssh2                  1.11.0  h0841786_0                                                            conda-forge     271kB
+  + libstdcxx                16.1.0  h934c35e_1                                                            conda-forge       7MB
+  + libstdcxx-ng             16.1.0  hdf11a46_1                                                            conda-forge      28kB
+  + libtiff                   4.3.0  h0fcbabc_4                                                            conda-forge     651kB
+  + libuuid                  2.42.2  h5347b49_0                                                            conda-forge      40kB
+  + libuv                    1.52.1  h280c20c_1                                                            conda-forge     420kB
+  + libwebp-base              1.6.0  hd42ef1d_1                                                            conda-forge     428kB
+  + libxcb                   1.17.0  h8a09558_0                                                            conda-forge     396kB
+  + libxcrypt                4.4.38  h280c20c_0                                                            conda-forge     102kB
+  + libzlib                  1.2.13  h4ab18f5_6                                                            conda-forge      62kB
+  + llvmlite                 0.42.0  py39h174d805_1                                                        conda-forge       3MB
+  + matplotlib                3.3.2  0                                                                     conda-forge       6kB
+  + matplotlib-base           3.3.2  py39h98787fa_1                                                        conda-forge       7MB
+  + ncurses                     6.6  hdb14827_1                                                            conda-forge     911kB
+  + numba                    0.59.1  py39h615d6bd_0                                                        conda-forge       4MB
+  + numpy                    1.26.4  py39h474f0d3_0                                                        conda-forge       7MB
+  + olefile                    0.47  pyhd8ed1ab_1                                                          conda-forge      39kB
+  + openjpeg                  2.5.0  h7d73246_0                                                            conda-forge     527kB
+  + openssl                   3.6.3  h35e630c_1                                                            conda-forge       3MB
+  + pillow                    8.4.0  py39ha612740_0                                                        conda-forge     723kB
+  + pip                        25.2  pyh8b19718_0                                                          conda-forge       1MB
+  + pthread-stubs               0.4  hb03c661_1003                                                         conda-forge       9kB
+  + pyparsing                 3.2.3  pyhe01879c_2                                                          conda-forge     102kB
+  + python                   3.9.19  h0755675_0_cpython                                                    conda-forge      24MB
+  + python-dateutil     2.9.0.post0  pyhe01879c_2                                                          conda-forge     233kB
+  + python_abi                  3.9  8_cp39                                                                conda-forge       7kB
+  + quaternion             2023.0.4  py39hf15bc26_0                                                        conda-forge      90kB
+  + readline                    8.3  h853b02a_0                                                            conda-forge     345kB
+  + rhash                     1.4.3  hd590300_2                                                            conda-forge     185kB
+  + scipy                    1.13.1  py39haf93ffa_0                                                        conda-forge      17MB
+  + setuptools               80.9.0  pyhff2d567_0                                                          conda-forge     749kB
+  + six                      1.17.0  pyhe01879c_1                                                          conda-forge      18kB
+  + smmap                     3.0.5  pyh44b312d_0                                                          conda-forge      23kB
+  + tk                       8.6.13  noxft_h4845f30_101                                                    conda-forge       3MB
+  + tornado                   6.5.2  py39hd399759_0                                                        conda-forge     652kB
+  + tqdm                     4.67.1  pyhd8ed1ab_1                                                          conda-forge      89kB
+  + typing_extensions        4.14.1  pyhe01879c_0                                                          conda-forge      51kB
+  + tzdata                    2026c  h151e31d_0                                                            conda-forge     119kB
+  + wheel                    0.45.1  pyhd8ed1ab_1                                                          conda-forge      63kB
+  + withbullet                  2.0  0                                                                     aihabitat         3kB
+  + xorg-libx11              1.8.13  he1eb515_0                                                            conda-forge     840kB
+  + xorg-libxau              1.0.12  hb03c661_2                                                            conda-forge      16kB
+  + xorg-libxcursor           1.2.3  hb9d3cd8_0                                                            conda-forge      33kB
+  + xorg-libxdmcp             1.1.5  hb03c661_2                                                            conda-forge      21kB
+  + xorg-libxext              1.3.7  hb03c661_0                                                            conda-forge      50kB
+  + xorg-libxfixes            6.0.2  hb03c661_0                                                            conda-forge      20kB
+  + xorg-libxi                1.8.3  hb03c661_0                                                            conda-forge      48kB
+  + xorg-libxinerama          1.1.6  hecca717_0                                                            conda-forge      15kB
+  + xorg-libxrandr            1.5.5  hb03c661_0                                                            conda-forge      30kB
+  + xorg-libxrender          0.9.12  hb9d3cd8_0                                                            conda-forge      33kB
+  + xz                        5.8.3  ha02ee65_1                                                            conda-forge      24kB
+  + xz-gpl-tools              5.8.3  ha02ee65_1                                                            conda-forge      40kB
+  + xz-tools                  5.8.3  hb03c661_1                                                            conda-forge      96kB
+  + zlib                     1.2.13  h4ab18f5_6                                                            conda-forge      93kB
+  + zstd                      1.5.6  ha6fb4c9_0                                                            conda-forge     555kB
+
+  Summary:
+
+  Install: 103 packages
+
+  Total download: 352MB
+
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+warning  libmamba Security Warning: This transaction includes executing package scripts (pre/post-link/unlink) if present. These scripts can contain arbitrary code. Please ensure you trust the package sources.
+
+Transaction starting
+Linking habitat-sim-mutex-1.0-headless_bullet
+Linking withbullet-2.0-0
+Linking headless-2.0-0
+Linking ld_impl_linux-64-2.46.1-bootstrap_ha15bf96_2
+Linking libgomp-16.1.0-he0feb66_1
+Linking _openmp_mutex-4.5-20_gnu
+Linking libgcc-16.1.0-ha9f2e26_1
+Linking libwebp-base-1.6.0-hd42ef1d_1
+Linking libdeflate-1.25-hd45a770_1
+Linking c-ares-1.34.8-h280c20c_1
+Linking libev-4.33-h280c20c_3
+Linking keyutils-1.6.3-hb9d3cd8_0
+Linking libgfortran5-16.1.0-h79bb938_1
+Linking libuv-1.52.1-h280c20c_1
+Linking libexpat-2.8.1-hecca717_1
+Linking libstdcxx-16.1.0-h934c35e_1
+Linking bzip2-1.0.8-hda65f42_10
+Linking libnsl-2.0.1-hb9d3cd8_1
+Linking libuuid-2.42.2-h5347b49_0
+Linking libffi-3.7.0-h3435931_0
+Linking libxcrypt-4.4.38-h280c20c_0
+Linking liblzma-5.8.3-hb03c661_1
+Linking ncurses-6.6-hdb14827_1
+Linking pthread-stubs-0.4-hb03c661_1003
+Linking xorg-libxau-1.0.12-hb03c661_2
+Linking xorg-libxdmcp-1.1.5-hb03c661_2
+Linking libgcc-ng-16.1.0-h69a702a_1
+Linking libgfortran-16.1.0-h69a702a_1
+Linking expat-2.8.1-hecca717_1
+Linking libstdcxx-ng-16.1.0-hdf11a46_1
+Linking xz-tools-5.8.3-hb03c661_1
+Linking liblzma-devel-5.8.3-hb03c661_1
+Linking xz-gpl-tools-5.8.3-ha02ee65_1
+Linking libedit-3.1.20250104-pl5321h7949ede_0
+Linking readline-8.3-h853b02a_0
+Linking libxcb-1.17.0-h8a09558_0
+Linking jpeg-9e-h0b41bf4_3
+Linking rhash-1.4.3-hd590300_2
+Linking libzlib-1.2.13-h4ab18f5_6
+Linking libopenblas-0.3.34-pthreads_h94d23a6_0
+Linking libgfortran-ng-16.1.0-h69a702a_1
+Linking lerc-3.0-h9c3ff4c_0
+Linking xz-5.8.3-ha02ee65_1
+Linking xorg-libx11-1.8.13-he1eb515_0
+Linking libpng-1.6.43-h2797004_0
+Linking libllvm14-14.0.6-hcd5def8_4
+Linking zstd-1.5.6-ha6fb4c9_0
+Linking zlib-1.2.13-h4ab18f5_6
+Linking libsqlite-3.46.0-hde9e2c9_0
+Linking tk-8.6.13-noxft_h4845f30_101
+Linking libblas-3.11.0-9_h4a7cf45_openblas
+Linking xorg-libxext-1.3.7-hb03c661_0
+Linking xorg-libxrender-0.9.12-hb9d3cd8_0
+Linking xorg-libxfixes-6.0.2-hb03c661_0
+Linking freetype-2.12.1-h267a509_2
+Linking libtiff-4.3.0-h0fcbabc_4
+Linking libcblas-3.11.0-9_h0358290_openblas
+Linking liblapack-3.11.0-9_h47877c9_openblas
+Linking xorg-libxinerama-1.1.6-hecca717_0
+Linking xorg-libxrandr-1.5.5-hb03c661_0
+Linking xorg-libxi-1.8.3-hb03c661_0
+Linking xorg-libxcursor-1.2.3-hb9d3cd8_0
+Linking openjpeg-2.5.0-h7d73246_0
+Linking lcms2-2.12-hddcbb42_0
+Linking tzdata-2026c-h151e31d_0
+Linking python_abi-3.9-8_cp39
+Linking ca-certificates-2026.7.22-hbd8a1cb_0
+Linking openssl-3.6.3-h35e630c_1
+Linking libnghttp2-1.58.0-h47da74e_1
+Linking libssh2-1.11.0-h0841786_0
+Linking krb5-1.21.3-h659f571_0
+Linking python-3.9.19-h0755675_0_cpython
+Linking libcurl-8.8.0-hca28451_1
+Linking kiwisolver-1.4.7-py39h74842e3_0
+Linking tornado-6.5.2-py39hd399759_0
+Linking llvmlite-0.42.0-py39h174d805_1
+Linking numpy-1.26.4-py39h474f0d3_0
+Linking curl-8.8.0-he654da7_1
+Linking numba-0.59.1-py39h615d6bd_0
+Linking scipy-1.13.1-py39haf93ffa_0
+Linking quaternion-2023.0.4-py39hf15bc26_0
+Linking cmake-3.14.0-hf94ab9c_0
+Linking six-1.17.0-pyhe01879c_1
+Linking cycler-0.12.1-pyhd8ed1ab_1
+Linking pyparsing-3.2.3-pyhe01879c_2
+Linking certifi-2025.8.3-pyhd8ed1ab_0
+Linking olefile-0.47-pyhd8ed1ab_1
+Linking colorama-0.4.6-pyhd8ed1ab_1
+Linking typing_extensions-4.14.1-pyhe01879c_0
+Linking smmap-3.0.5-pyh44b312d_0
+Linking attrs-25.3.0-pyh71513ae_0
+Linking wheel-0.45.1-pyhd8ed1ab_1
+Linking setuptools-80.9.0-pyhff2d567_0
+Linking python-dateutil-2.9.0.post0-pyhe01879c_2
+Linking tqdm-4.67.1-pyhd8ed1ab_1
+Linking gitdb-4.0.12-pyhd8ed1ab_0
+Linking pip-25.2-pyh8b19718_0
+Linking gitpython-3.1.45-pyhff2d567_0
+Linking pillow-8.4.0-py39ha612740_0
+Linking matplotlib-base-3.3.2-py39h98787fa_1
+Linking matplotlib-3.3.2-0
+Linking imageio-2.37.0-pyhfb79c49_0
+Linking habitat-sim-0.3.3-py3.9_headless_bullet_linux_acbe6f4922e68145e401e55c30f9dfea460a3f24
+
+Transaction finished
+
+
+To activate this environment, use:
+
+    micromamba activate habitat
+
+Or to execute a single command in this environment, use:
+
+    micromamba run -n habitat mycommand
+
+Collecting pip==26.0.1
+  Downloading pip-26.0.1-py3-none-any.whl.metadata (4.7 kB)
+Collecting setuptools==82.0.1
+  Downloading setuptools-82.0.1-py3-none-any.whl.metadata (6.5 kB)
+Collecting wheel==0.47.0
+  Downloading wheel-0.47.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting pillow==11.3.0
+  Downloading pillow-11.3.0-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (9.0 kB)
+Collecting packaging==26.2
+  Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Downloading pip-26.0.1-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 2.5 MB/s  0:00:01
+Downloading setuptools-82.0.1-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 3.7 MB/s  0:00:00
+Downloading wheel-0.47.0-py3-none-any.whl (32 kB)
+Downloading pillow-11.3.0-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (6.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 4.2 MB/s  0:00:01
+Downloading packaging-26.2-py3-none-any.whl (100 kB)
+Installing collected packages: setuptools, pip, pillow, packaging, wheel
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 80.9.0
+    Uninstalling setuptools-80.9.0:
+      Successfully uninstalled setuptools-80.9.0
+  Attempting uninstall: pip
+    Found existing installation: pip 25.2
+    Uninstalling pip-25.2:
+      Successfully uninstalled pip-25.2
+  Attempting uninstall: pillow
+    Found existing installation: Pillow 8.4.0
+    Uninstalling Pillow-8.4.0:
+      Successfully uninstalled Pillow-8.4.0
+  Attempting uninstall: wheel
+    Found existing installation: wheel 0.45.1
+    Uninstalling wheel-0.45.1:
+      Successfully uninstalled wheel-0.45.1
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+habitat-sim 0.3.3 requires imageio-ffmpeg, which is not installed.
+habitat-sim 0.3.3 requires pillow==10.4.0, but you have pillow 11.3.0 which is incompatible.
+Successfully installed packaging-26.2 pillow-11.3.0 pip-26.0.1 setuptools-82.0.1 wheel-0.47.0
+Looking in indexes: https://download.pytorch.org/whl/cu128
+Collecting torch==2.8.0
+  Downloading https://download-r2.pytorch.org/whl/cu128/torch-2.8.0%2Bcu128-cp39-cp39-manylinux_2_28_x86_64.whl.metadata (30 kB)
+Collecting torchvision==0.23.0
+  Downloading https://download-r2.pytorch.org/whl/cu128/torchvision-0.23.0%2Bcu128-cp39-cp39-manylinux_2_28_x86_64.whl.metadata (6.1 kB)
+Collecting torchaudio==2.8.0
+  Downloading https://download-r2.pytorch.org/whl/cu128/torchaudio-2.8.0%2Bcu128-cp39-cp39-manylinux_2_28_x86_64.whl.metadata (7.2 kB)
+Collecting filelock (from torch==2.8.0)
+  Downloading filelock-3.19.1-py3-none-any.whl.metadata (2.1 kB)
+Requirement already satisfied: typing-extensions>=4.10.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch==2.8.0) (4.14.1)
+Collecting sympy>=1.13.3 (from torch==2.8.0)
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch==2.8.0)
+  Downloading networkx-3.2.1-py3-none-any.whl.metadata (5.2 kB)
+Collecting jinja2 (from torch==2.8.0)
+  Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch==2.8.0)
+  Downloading fsspec-2025.10.0-py3-none-any.whl.metadata (10 kB)
+Collecting nvidia-cuda-nvrtc-cu12==12.8.93 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cuda-nvrtc-cu12/nvidia_cuda_nvrtc_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (88.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.0/88.0 MB 2.6 MB/s  0:00:34
+Collecting nvidia-cuda-runtime-cu12==12.8.90 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cuda-runtime-cu12/nvidia_cuda_runtime_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (954 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 954.8/954.8 kB 2.2 MB/s  0:00:00
+Collecting nvidia-cuda-cupti-cu12==12.8.90 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cuda-cupti-cu12/nvidia_cuda_cupti_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (10.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 2.7 MB/s  0:00:03
+Collecting nvidia-cudnn-cu12==9.10.2.21 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cudnn-cu12/nvidia_cudnn_cu12-9.10.2.21-py3-none-manylinux_2_27_x86_64.whl (706.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 706.8/706.8 MB 2.7 MB/s  0:04:28
+Collecting nvidia-cublas-cu12==12.8.4.1 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cublas-cu12/nvidia_cublas_cu12-12.8.4.1-py3-none-manylinux_2_27_x86_64.whl (594.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 594.3/594.3 MB 2.7 MB/s  0:03:37
+Collecting nvidia-cufft-cu12==11.3.3.83 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cufft-cu12/nvidia_cufft_cu12-11.3.3.83-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (193.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 193.1/193.1 MB 2.7 MB/s  0:01:10
+Collecting nvidia-curand-cu12==10.3.9.90 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-curand-cu12/nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl (63.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.6/63.6 MB 2.7 MB/s  0:00:23
+Collecting nvidia-cusolver-cu12==11.7.3.90 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cusolver-cu12/nvidia_cusolver_cu12-11.7.3.90-py3-none-manylinux_2_27_x86_64.whl (267.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 267.5/267.5 MB 2.7 MB/s  0:01:38
+Collecting nvidia-cusparse-cu12==12.5.8.93 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cusparse-cu12/nvidia_cusparse_cu12-12.5.8.93-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (288.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 288.2/288.2 MB 2.5 MB/s  0:01:46
+Collecting nvidia-cusparselt-cu12==0.7.1 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cusparselt-cu12/nvidia_cusparselt_cu12-0.7.1-py3-none-manylinux2014_x86_64.whl (287.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 287.2/287.2 MB 2.7 MB/s  0:01:46
+Collecting nvidia-nccl-cu12==2.27.3 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-nccl-cu12/nvidia_nccl_cu12-2.27.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (322.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 322.4/322.4 MB 2.3 MB/s  0:02:24
+Collecting nvidia-nvtx-cu12==12.8.90 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-nvtx-cu12/nvidia_nvtx_cu12-12.8.90-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (89 kB)
+Collecting nvidia-nvjitlink-cu12==12.8.93 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-nvjitlink-cu12/nvidia_nvjitlink_cu12-12.8.93-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (39.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.3/39.3 MB 11.0 MB/s  0:00:03
+Collecting nvidia-cufile-cu12==1.13.1.3 (from torch==2.8.0)
+  Downloading https://pypi.nvidia.com/nvidia-cufile-cu12/nvidia_cufile_cu12-1.13.1.3-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 10.3 MB/s  0:00:00
+Collecting triton==3.4.0 (from torch==2.8.0)
+  Downloading https://download-r2.pytorch.org/whl/triton-3.4.0-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.7 kB)
+Requirement already satisfied: numpy in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torchvision==0.23.0) (1.26.4)
+Requirement already satisfied: pillow!=8.3.*,>=5.3.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torchvision==0.23.0) (11.3.0)
+Requirement already satisfied: setuptools>=40.8.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from triton==3.4.0->torch==2.8.0) (82.0.1)
+Collecting importlib-metadata (from triton==3.4.0->torch==2.8.0)
+  Downloading https://download.pytorch.org/whl/importlib_metadata-7.1.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch==2.8.0)
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting zipp>=0.5 (from importlib-metadata->triton==3.4.0->torch==2.8.0)
+  Downloading https://download.pytorch.org/whl/zipp-3.19.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch==2.8.0)
+  Downloading https://download.pytorch.org/whl/MarkupSafe-3.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.0 kB)
+Downloading https://download-r2.pytorch.org/whl/cu128/torch-2.8.0%2Bcu128-cp39-cp39-manylinux_2_28_x86_64.whl (889.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 889.1/889.1 MB 8.8 MB/s  0:01:39
+Downloading https://download-r2.pytorch.org/whl/cu128/torchvision-0.23.0%2Bcu128-cp39-cp39-manylinux_2_28_x86_64.whl (8.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.6/8.6 MB 13.5 MB/s  0:00:00
+Downloading https://download-r2.pytorch.org/whl/cu128/torchaudio-2.8.0%2Bcu128-cp39-cp39-manylinux_2_28_x86_64.whl (3.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.9/3.9 MB 16.1 MB/s  0:00:00
+Downloading https://download-r2.pytorch.org/whl/triton-3.4.0-cp39-cp39-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (155.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 155.4/155.4 MB 8.9 MB/s  0:00:17
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Downloading filelock-3.19.1-py3-none-any.whl (15 kB)
+Downloading fsspec-2025.10.0-py3-none-any.whl (200 kB)
+Downloading https://download.pytorch.org/whl/importlib_metadata-7.1.0-py3-none-any.whl (24 kB)
+Downloading https://download.pytorch.org/whl/zipp-3.19.2-py3-none-any.whl (9.0 kB)
+Downloading https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (134 kB)
+Downloading https://download.pytorch.org/whl/MarkupSafe-3.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (20 kB)
+Downloading networkx-3.2.1-py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 9.7 MB/s  0:00:00
+Installing collected packages: nvidia-cusparselt-cu12, mpmath, zipp, sympy, nvidia-nvtx-cu12, nvidia-nvjitlink-cu12, nvidia-nccl-cu12, nvidia-curand-cu12, nvidia-cufile-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-cupti-cu12, nvidia-cublas-cu12, networkx, MarkupSafe, fsspec, filelock, nvidia-cusparse-cu12, nvidia-cufft-cu12, nvidia-cudnn-cu12, jinja2, importlib-metadata, triton, nvidia-cusolver-cu12, torch, torchvision, torchaudio
+
+Successfully installed MarkupSafe-3.0.2 filelock-3.19.1 fsspec-2025.10.0 importlib-metadata-7.1.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.2.1 nvidia-cublas-cu12-12.8.4.1 nvidia-cuda-cupti-cu12-12.8.90 nvidia-cuda-nvrtc-cu12-12.8.93 nvidia-cuda-runtime-cu12-12.8.90 nvidia-cudnn-cu12-9.10.2.21 nvidia-cufft-cu12-11.3.3.83 nvidia-cufile-cu12-1.13.1.3 nvidia-curand-cu12-10.3.9.90 nvidia-cusolver-cu12-11.7.3.90 nvidia-cusparse-cu12-12.5.8.93 nvidia-cusparselt-cu12-0.7.1 nvidia-nccl-cu12-2.27.3 nvidia-nvjitlink-cu12-12.8.93 nvidia-nvtx-cu12-12.8.90 sympy-1.14.0 torch-2.8.0+cu128 torchaudio-2.8.0+cu128 torchvision-0.23.0+cu128 triton-3.4.0 zipp-3.19.2
+Requirement already satisfied: numpy==1.26.4 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (1.26.4)
+Collecting gym==0.23.0
+  Downloading gym-0.23.0.tar.gz (624 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 624.4/624.4 kB 1.4 MB/s  0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting hydra-core==1.3.3
+  Downloading hydra_core-1.3.3-py3-none-any.whl.metadata (5.7 kB)
+Collecting omegaconf==2.3.1
+  Downloading omegaconf-2.3.1-py3-none-any.whl.metadata (4.5 kB)
+Collecting cloudpickle>=1.2.0 (from gym==0.23.0)
+  Downloading cloudpickle-3.1.2-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: importlib_metadata>=4.10.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from gym==0.23.0) (7.1.0)
+Collecting gym_notices>=0.0.4 (from gym==0.23.0)
+  Downloading gym_notices-0.1.0-py3-none-any.whl.metadata (1.2 kB)
+Collecting antlr4-python3-runtime==4.9.* (from hydra-core==1.3.3)
+  Downloading antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: packaging in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from hydra-core==1.3.3) (26.2)
+Collecting PyYAML>=5.1.0 (from omegaconf==2.3.1)
+  Downloading pyyaml-6.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Requirement already satisfied: zipp>=0.5 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from importlib_metadata>=4.10.0->gym==0.23.0) (3.19.2)
+Downloading hydra_core-1.3.3-py3-none-any.whl (154 kB)
+Downloading omegaconf-2.3.1-py3-none-any.whl (79 kB)
+Downloading cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Downloading gym_notices-0.1.0-py3-none-any.whl (3.3 kB)
+Downloading pyyaml-6.0.3-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (750 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 750.8/750.8 kB 2.5 MB/s  0:00:00
+Building wheels for collected packages: gym, antlr4-python3-runtime
+  Building wheel for gym (pyproject.toml): started
+  Building wheel for gym (pyproject.toml): finished with status 'done'
+  Created wheel for gym: filename=gym-0.23.0-py3-none-any.whl size=697738 sha256=dad8d00b622c7b0e9b24fbdfb3ff17706b197c61f1f2db3d15f0355f578e41f0
+  Stored in directory: /home/furp/.cache/pip/wheels/96/b9/bb/994c1324b65e39dd1cd7b8ba92e5fb766dd77980929414a866
+  Building wheel for antlr4-python3-runtime (pyproject.toml): started
+  Building wheel for antlr4-python3-runtime (pyproject.toml): finished with status 'done'
+  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144590 sha256=982367dba84c91a2402665d15dc45cc9eb50cf1110da6338efdd541ddeeaa652
+  Stored in directory: /home/furp/.cache/pip/wheels/23/cf/80/f3efa822e6ab23277902ee9165fe772eeb1dfb8014f359020a
+Successfully built gym antlr4-python3-runtime
+Installing collected packages: gym_notices, antlr4-python3-runtime, PyYAML, cloudpickle, omegaconf, gym, hydra-core
+
+Successfully installed PyYAML-6.0.3 antlr4-python3-runtime-4.9.3 cloudpickle-3.1.2 gym-0.23.0 gym_notices-0.1.0 hydra-core-1.3.3 omegaconf-2.3.1
+Cloning into '/home/furp/habitat-lab'...
+HEAD is now at cdbb48805 CI: pin numpy<2.4 to fix numba import error (#2227)
+Obtaining file:///home/furp/habitat-lab/habitat-lab
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: gym<0.23.1,>=0.22.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (0.23.0)
+Requirement already satisfied: numpy==1.26.4 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (1.26.4)
+Requirement already satisfied: numpy-quaternion>=2019.3.18.14.33.20 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (2023.0.4)
+Requirement already satisfied: attrs>=19.1.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (25.3.0)
+Collecting opencv-python>=3.3.0 (from habitat-lab==0.3.3)
+  Downloading opencv_python-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+Requirement already satisfied: hydra-core>=1.2.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (1.3.3)
+Requirement already satisfied: omegaconf>=2.2.3 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (2.3.1)
+Requirement already satisfied: numba>=0.44.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (0.59.1)
+Requirement already satisfied: imageio>=2.2.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (2.37.0)
+Collecting imageio-ffmpeg>=0.2.0 (from habitat-lab==0.3.3)
+  Downloading imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl.metadata (1.5 kB)
+Requirement already satisfied: scipy>=1.10.1 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (1.13.1)
+Requirement already satisfied: tqdm>=4.0.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-lab==0.3.3) (4.67.1)
+Requirement already satisfied: cloudpickle>=1.2.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from gym<0.23.1,>=0.22.0->habitat-lab==0.3.3) (3.1.2)
+Requirement already satisfied: importlib_metadata>=4.10.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from gym<0.23.1,>=0.22.0->habitat-lab==0.3.3) (7.1.0)
+Requirement already satisfied: gym_notices>=0.0.4 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from gym<0.23.1,>=0.22.0->habitat-lab==0.3.3) (0.1.0)
+Requirement already satisfied: antlr4-python3-runtime==4.9.* in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from hydra-core>=1.2.0->habitat-lab==0.3.3) (4.9.3)
+Requirement already satisfied: packaging in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from hydra-core>=1.2.0->habitat-lab==0.3.3) (26.2)
+Requirement already satisfied: PyYAML>=5.1.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from omegaconf>=2.2.3->habitat-lab==0.3.3) (6.0.3)
+Requirement already satisfied: pillow>=8.3.2 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from imageio>=2.2.0->habitat-lab==0.3.3) (11.3.0)
+Requirement already satisfied: zipp>=0.5 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from importlib_metadata>=4.10.0->gym<0.23.1,>=0.22.0->habitat-lab==0.3.3) (3.19.2)
+Requirement already satisfied: llvmlite<0.43,>=0.42.0dev0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from numba>=0.44.0->habitat-lab==0.3.3) (0.42.0)
+INFO: pip is looking at multiple versions of opencv-python to determine which version is compatible with other requirements. This could take a while.
+Collecting opencv-python>=3.3.0 (from habitat-lab==0.3.3)
+  Downloading opencv_python-4.14.0.94-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+  Downloading opencv_python-4.13.0.92-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+  Downloading opencv_python-4.13.0.90-cp37-abi3-manylinux_2_28_x86_64.whl.metadata (19 kB)
+  Downloading opencv_python-4.12.0.88-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (19 kB)
+  Downloading opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+Downloading imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl (29.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 29.5/29.5 MB 1.3 MB/s  0:00:22
+Downloading opencv_python-4.11.0.86-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (63.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.0/63.0 MB 1.4 MB/s  0:00:46
+Building wheels for collected packages: habitat-lab
+  Building editable for habitat-lab (pyproject.toml): started
+  Building editable for habitat-lab (pyproject.toml): finished with status 'done'
+  Created wheel for habitat-lab: filename=habitat_lab-0.3.3-0.editable-py3-none-any.whl size=4108 sha256=73480660295412b542e02953d848008a06b67b571b7bd0628b90d593042f9b78
+  Stored in directory: /tmp/pip-ephem-wheel-cache-nmizx_t3/wheels/6b/62/d5/f5cba722e47b2c1395a4a7c46a8f67ebc6d240cc9874c94863
+Successfully built habitat-lab
+Installing collected packages: opencv-python, imageio-ffmpeg, habitat-lab
+
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+habitat-sim 0.3.3 requires pillow==10.4.0, but you have pillow 11.3.0 which is incompatible.
+Successfully installed habitat-lab-0.3.3 imageio-ffmpeg-0.6.0 opencv-python-4.11.0.86
+Obtaining file:///home/furp/habitat-lab/habitat-baselines
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting tensorboard>=2.8.0 (from habitat-baselines==0.3.3)
+  Using cached tensorboard-2.21.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting moviepy>=1.0.1 (from habitat-baselines==0.3.3)
+  Downloading moviepy-2.2.1-py3-none-any.whl.metadata (6.9 kB)
+Collecting lmdb>=0.98 (from habitat-baselines==0.3.3)
+  Downloading lmdb-2.3.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (1.2 kB)
+Collecting faster_fifo>=1.4.2 (from habitat-baselines==0.3.3)
+  Downloading faster_fifo-1.5.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.9 kB)
+Requirement already satisfied: torchvision in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-baselines==0.3.3) (0.23.0+cu128)
+Requirement already satisfied: torch>=1.3.1 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from habitat-baselines==0.3.3) (2.8.0+cu128)
+Collecting threadpoolctl>=3.1.0 (from habitat-baselines==0.3.3)
+  Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting ifcfg (from habitat-baselines==0.3.3)
+  Downloading ifcfg-0.24-py2.py3-none-any.whl.metadata (7.9 kB)
+Collecting webdataset==0.1.40 (from habitat-baselines==0.3.3)
+  Downloading webdataset-0.1.40-py3-none-any.whl.metadata (21 kB)
+Requirement already satisfied: Pillow in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from webdataset==0.1.40->habitat-baselines==0.3.3) (11.3.0)
+Collecting simplejson (from webdataset==0.1.40->habitat-baselines==0.3.3)
+  Downloading simplejson-4.1.1-cp39-cp39-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.8 kB)
+Collecting braceexpand (from webdataset==0.1.40->habitat-baselines==0.3.3)
+  Downloading braceexpand-0.1.7-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting msgpack (from webdataset==0.1.40->habitat-baselines==0.3.3)
+  Downloading msgpack-1.1.2-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Requirement already satisfied: pyyaml in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from webdataset==0.1.40->habitat-baselines==0.3.3) (6.0.3)
+Requirement already satisfied: numpy in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from webdataset==0.1.40->habitat-baselines==0.3.3) (1.26.4)
+Collecting objectio (from webdataset==0.1.40->habitat-baselines==0.3.3)
+  Downloading objectio-0.2.29-py3-none-any.whl.metadata (2.8 kB)
+Collecting decorator<6.0,>=4.0.2 (from moviepy>=1.0.1->habitat-baselines==0.3.3)
+  Downloading decorator-5.3.1-py3-none-any.whl.metadata (3.9 kB)
+Requirement already satisfied: imageio<3.0,>=2.5 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from moviepy>=1.0.1->habitat-baselines==0.3.3) (2.37.0)
+Requirement already satisfied: imageio_ffmpeg>=0.2.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from moviepy>=1.0.1->habitat-baselines==0.3.3) (0.6.0)
+Collecting proglog<=1.0.0 (from moviepy>=1.0.1->habitat-baselines==0.3.3)
+  Downloading proglog-0.1.12-py3-none-any.whl.metadata (794 bytes)
+Collecting python-dotenv>=0.10 (from moviepy>=1.0.1->habitat-baselines==0.3.3)
+  Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+Requirement already satisfied: tqdm in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from proglog<=1.0.0->moviepy>=1.0.1->habitat-baselines==0.3.3) (4.67.1)
+Collecting absl-py>=0.4 (from tensorboard>=2.8.0->habitat-baselines==0.3.3)
+  Downloading absl_py-2.3.1-py3-none-any.whl.metadata (3.3 kB)
+Collecting grpcio<2.0,>=1.74.0 (from tensorboard>=2.8.0->habitat-baselines==0.3.3)
+  Downloading grpcio-1.80.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (3.8 kB)
+Collecting markdown>=2.6.8 (from tensorboard>=2.8.0->habitat-baselines==0.3.3)
+  Downloading markdown-3.9-py3-none-any.whl.metadata (5.1 kB)
+Requirement already satisfied: packaging in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from tensorboard>=2.8.0->habitat-baselines==0.3.3) (26.2)
+Collecting protobuf<8.0.0,>=6.31.1 (from tensorboard>=2.8.0->habitat-baselines==0.3.3)
+  Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Requirement already satisfied: setuptools>=41.0.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from tensorboard>=2.8.0->habitat-baselines==0.3.3) (82.0.1)
+Collecting tensorboard-data-server<0.8.0,>=0.7.0 (from tensorboard>=2.8.0->habitat-baselines==0.3.3)
+  Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl.metadata (1.1 kB)
+Collecting werkzeug>=1.0.1 (from tensorboard>=2.8.0->habitat-baselines==0.3.3)
+  Using cached werkzeug-3.1.8-py3-none-any.whl.metadata (4.0 kB)
+Requirement already satisfied: typing-extensions~=4.12 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from grpcio<2.0,>=1.74.0->tensorboard>=2.8.0->habitat-baselines==0.3.3) (4.14.1)
+Requirement already satisfied: importlib-metadata>=4.4 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from markdown>=2.6.8->tensorboard>=2.8.0->habitat-baselines==0.3.3) (7.1.0)
+Requirement already satisfied: zipp>=0.5 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from importlib-metadata>=4.4->markdown>=2.6.8->tensorboard>=2.8.0->habitat-baselines==0.3.3) (3.19.2)
+Requirement already satisfied: filelock in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (3.19.1)
+Requirement already satisfied: sympy>=1.13.3 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (1.14.0)
+Requirement already satisfied: networkx in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (3.2.1)
+Requirement already satisfied: jinja2 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (3.1.6)
+Requirement already satisfied: fsspec in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (2025.10.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.8.93 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (12.8.93)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.8.90 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (12.8.90)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.8.90 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (12.8.90)
+Requirement already satisfied: nvidia-cudnn-cu12==9.10.2.21 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (9.10.2.21)
+Requirement already satisfied: nvidia-cublas-cu12==12.8.4.1 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (12.8.4.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.3.3.83 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (11.3.3.83)
+Requirement already satisfied: nvidia-curand-cu12==10.3.9.90 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (10.3.9.90)
+Requirement already satisfied: nvidia-cusolver-cu12==11.7.3.90 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (11.7.3.90)
+Requirement already satisfied: nvidia-cusparse-cu12==12.5.8.93 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (12.5.8.93)
+Requirement already satisfied: nvidia-cusparselt-cu12==0.7.1 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (0.7.1)
+Requirement already satisfied: nvidia-nccl-cu12==2.27.3 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (2.27.3)
+Requirement already satisfied: nvidia-nvtx-cu12==12.8.90 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (12.8.90)
+Requirement already satisfied: nvidia-nvjitlink-cu12==12.8.93 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (12.8.93)
+Requirement already satisfied: nvidia-cufile-cu12==1.13.1.3 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (1.13.1.3)
+Requirement already satisfied: triton==3.4.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from torch>=1.3.1->habitat-baselines==0.3.3) (3.4.0)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from sympy>=1.13.3->torch>=1.3.1->habitat-baselines==0.3.3) (1.3.0)
+Requirement already satisfied: markupsafe>=2.1.1 in /home/furp/micromamba/envs/habitat/lib/python3.9/site-packages (from werkzeug>=1.0.1->tensorboard>=2.8.0->habitat-baselines==0.3.3) (3.0.2)
+Collecting typer (from objectio->webdataset==0.1.40->habitat-baselines==0.3.3)
+  Downloading typer-0.23.2-py3-none-any.whl.metadata (16 kB)
+Collecting click>=8.0.0 (from typer->objectio->webdataset==0.1.40->habitat-baselines==0.3.3)
+  Downloading click-8.1.8-py3-none-any.whl.metadata (2.3 kB)
+Collecting shellingham>=1.3.0 (from typer->objectio->webdataset==0.1.40->habitat-baselines==0.3.3)
+  Downloading shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting rich>=12.3.0 (from typer->objectio->webdataset==0.1.40->habitat-baselines==0.3.3)
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting annotated-doc>=0.0.2 (from typer->objectio->webdataset==0.1.40->habitat-baselines==0.3.3)
+  Downloading annotated_doc-0.0.5-py3-none-any.whl.metadata (6.5 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=12.3.0->typer->objectio->webdataset==0.1.40->habitat-baselines==0.3.3)
+  Downloading markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=12.3.0->typer->objectio->webdataset==0.1.40->habitat-baselines==0.3.3)
+  Using cached pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=12.3.0->typer->objectio->webdataset==0.1.40->habitat-baselines==0.3.3)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading webdataset-0.1.40-py3-none-any.whl (32 kB)
+Downloading faster_fifo-1.5.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (388 kB)
+Downloading lmdb-2.3.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (333 kB)
+Downloading moviepy-2.2.1-py3-none-any.whl (129 kB)
+Downloading decorator-5.3.1-py3-none-any.whl (10 kB)
+Downloading proglog-0.1.12-py3-none-any.whl (6.3 kB)
+Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+Using cached tensorboard-2.21.0-py3-none-any.whl (5.5 MB)
+Downloading grpcio-1.80.0-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (6.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.8/6.8 MB 6.2 MB/s  0:00:01
+Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+Using cached tensorboard_data_server-0.7.2-py3-none-manylinux_2_31_x86_64.whl (6.6 MB)
+Downloading absl_py-2.3.1-py3-none-any.whl (135 kB)
+Downloading markdown-3.9-py3-none-any.whl (107 kB)
+Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Using cached werkzeug-3.1.8-py3-none-any.whl (226 kB)
+Downloading braceexpand-0.1.7-py2.py3-none-any.whl (5.9 kB)
+Downloading ifcfg-0.24-py2.py3-none-any.whl (10 kB)
+Downloading msgpack-1.1.2-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (404 kB)
+Downloading objectio-0.2.29-py3-none-any.whl (7.8 kB)
+Downloading simplejson-4.1.1-cp39-cp39-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (168 kB)
+Downloading typer-0.23.2-py3-none-any.whl (56 kB)
+Downloading annotated_doc-0.0.5-py3-none-any.whl (5.3 kB)
+Downloading click-8.1.8-py3-none-any.whl (98 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached pygments-2.20.0-py3-none-any.whl (1.2 MB)
+Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Building wheels for collected packages: habitat-baselines
+  Building editable for habitat-baselines (pyproject.toml): started
+  Building editable for habitat-baselines (pyproject.toml): finished with status 'done'
+  Created wheel for habitat-baselines: filename=habitat_baselines-0.3.3-0.editable-py3-none-any.whl size=8050 sha256=cd5fc31b3f0237c8de9e3dd7f3e1ce9c6dd9572d47f55329a580eeb36f31cb0e
+  Stored in directory: /tmp/pip-ephem-wheel-cache-f6rf14sj/wheels/42/6f/c2/a18c63c9333fdd88eb6735b6a77c2f58469952a9efe51fa63e
+Successfully built habitat-baselines
+Installing collected packages: ifcfg, braceexpand, werkzeug, threadpoolctl, tensorboard-data-server, simplejson, shellingham, python-dotenv, pygments, protobuf, proglog, msgpack, mdurl, lmdb, grpcio, faster_fifo, decorator, click, annotated-doc, absl-py, moviepy, markdown-it-py, markdown, tensorboard, rich, typer, objectio, webdataset, habitat-baselines
+
+Successfully installed absl-py-2.3.1 annotated-doc-0.0.5 braceexpand-0.1.7 click-8.1.8 decorator-5.3.1 faster_fifo-1.5.2 grpcio-1.80.0 habitat-baselines-0.3.3 ifcfg-0.24 lmdb-2.3.0 markdown-3.9 markdown-it-py-3.0.0 mdurl-0.1.2 moviepy-2.2.1 msgpack-1.1.2 objectio-0.2.29 proglog-0.1.12 protobuf-6.33.6 pygments-2.20.0 python-dotenv-1.2.1 rich-15.0.0 shellingham-1.5.4 simplejson-4.1.1 tensorboard-2.21.0 tensorboard-data-server-0.7.2 threadpoolctl-3.6.0 typer-0.23.2 webdataset-0.1.40 werkzeug-3.1.8
+habitat-sim 0.3.3 has requirement pillow==10.4.0, but you have pillow 11.3.0.
+Bootstrap stopped with partial state preserved. After fixing infrastructure, resume with:
+  BOOTSTRAP_RESUME=1 bash src/experiments/closeout_dsr/bootstrap_server.sh

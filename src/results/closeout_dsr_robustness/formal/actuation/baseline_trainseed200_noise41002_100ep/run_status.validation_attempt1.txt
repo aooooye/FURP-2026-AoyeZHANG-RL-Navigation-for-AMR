@@ -1,0 +1,4 @@
+status=failed
+exit_code=1
+reason=episode_evidence_validation_failed
+utc_end=2026-08-11T16:08:33+00:00

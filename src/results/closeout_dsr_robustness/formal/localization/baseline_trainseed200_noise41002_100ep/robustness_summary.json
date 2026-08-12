@@ -1,0 +1,46 @@
+{
+  "episode_set_sha256": "8806f60a2dd9ab662a2175818e339c7c0083b665d75eebbafa9c173da4146965",
+  "episodes": 100,
+  "episodes_jsonl_sha256": "8ceac915c3081a6e26daa56aeded64371a857093913f547690215e4a8b82d9b7",
+  "evaluator_rounding_absolute_differences": {
+    "distance_to_goal": 3.868982642896146e-05,
+    "non_stop_failure": 0.0,
+    "premature_stop": 0.0,
+    "reward": 3.926927893438403e-05,
+    "spl": 1.4148948207726164e-05,
+    "stop_called": 0.0,
+    "success": 0.0
+  },
+  "generated_utc": "2026-08-11T15:55:36.239020+00:00",
+  "metrics": {
+    "distance_to_goal": 0.7673386898264289,
+    "non_stop_failure": 0.08,
+    "premature_stop": 0.09,
+    "reward": 6.507560730721066,
+    "spl": 0.7259858510517923,
+    "stop_called": 0.92,
+    "success": 0.83
+  },
+  "run": {
+    "actuation_enabled": false,
+    "checkpoint": "/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_baseline_trainseed200_1m_env5/checkpoints/ckpt.9.pth",
+    "checkpoint_manifest_sha256": "95dc6b1e8340388f0ccb2e564f94733f273c9051ec0d705e9630470855794ce9",
+    "checkpoint_relative_path": "src/results/closeout_dsr/closeout_baseline_trainseed200_1m_env5/checkpoints/ckpt.9.pth",
+    "checkpoint_sha256": "5f66e962d19a534fca9cac76c684d349ef9f77660cc225174def8dd6537d3566",
+    "condition": "localization",
+    "episodes": 100,
+    "evaluation_num_environments": 2,
+    "evaluation_seed": 2026,
+    "evaluation_split": "val",
+    "localization_enabled": true,
+    "noise_manifest_sha256": "75e71d6815a5c903169422172062287135a8c2d696c637e8aa175a3dd702ac4b",
+    "noise_seed": 41002,
+    "phase": "formal",
+    "protocol_sha256": "76668a728cf58e85bfb123283ba668b71dd2ff86eeb523da47e7d708abf0596e",
+    "run_identity_sha256": "aaf811b45edeee913d7c036e4aab6ed8bae04c32cc80d5187dbb9eede59324ba",
+    "training_method": "baseline",
+    "training_seed": 200
+  },
+  "schema_version": 1,
+  "status": "complete"
+}

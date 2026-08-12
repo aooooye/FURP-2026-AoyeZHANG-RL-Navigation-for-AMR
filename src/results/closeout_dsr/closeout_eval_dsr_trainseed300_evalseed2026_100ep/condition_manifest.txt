@@ -1,0 +1,8 @@
+training_condition=dsr
+training_seed=300
+evaluation_role=main
+evaluation_seed=2026
+evaluation_environment=standard Habitat 0.3.3 reward/dynamics plus STOP diagnostics
+evaluation_reward=standard Habitat 0.3.3 reward
+diagnostics=stop_called,premature_stop,non_stop_failure
+save_video=0

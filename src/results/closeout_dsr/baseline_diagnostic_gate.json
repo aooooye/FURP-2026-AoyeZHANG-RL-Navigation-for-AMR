@@ -1,0 +1,26 @@
+{
+  "failure_decomposition_error": 5.551115123125783e-17,
+  "failure_decomposition_passed": true,
+  "failure_decomposition_tolerance": 0.0002,
+  "failure_rate": 0.06999999999999995,
+  "mechanism_gate": "premature_stop_rate > non_stop_failure_rate",
+  "mechanism_passed": true,
+  "metric_differences_new_minus_old": {
+    "distance_to_goal": 0.0020999999999999908,
+    "reward": 0.02289999999999992,
+    "spl": 0.01429999999999998,
+    "success": 0.010000000000000009
+  },
+  "metric_tolerances": {
+    "distance_to_goal": 0.02,
+    "reward": 0.1,
+    "spl": 0.02,
+    "success": 0.02
+  },
+  "new_summary": "src/results/closeout_dsr/closeout_diagnostic_oldbaseline_trainseed100_evalseed2026_100ep/summary.json",
+  "non_stop_failure_rate": 0.0,
+  "old_summary": "src/results/week03/remote_20260716T074249Z/week03_eval_habitat_test_seed2026_100ep_ckpt9_env2/summary.json",
+  "premature_stop_rate": 0.07,
+  "reproduction_passed": true,
+  "status": "passed"
+}

@@ -1,0 +1,3 @@
+condition=dsr
+purpose=execution integrity only; not a performance result
+performance_based_decision_allowed=false

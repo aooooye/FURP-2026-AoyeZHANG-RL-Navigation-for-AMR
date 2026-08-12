@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-08-11T12:39:43.543963+00:00",
+  "protocol": {
+    "profile": "habitat_test",
+    "training_seeds": [
+      100,
+      200,
+      300
+    ],
+    "evaluation_seed": 2026,
+    "episodes_per_policy": 100,
+    "evaluation_environment": "standard Habitat 0.3.3 reward/dynamics plus numeric STOP diagnostics"
+  },
+  "records": [
+    {
+      "condition": "baseline",
+      "training_seed": 100,
+      "evaluation_seed": 2026,
+      "episodes": 100,
+      "source": "src/results/closeout_dsr/closeout_eval_baseline_trainseed100_evalseed2026_100ep/summary.json",
+      "metrics": {
+        "success": 0.94,
+        "spl": 0.8226,
+        "distance_to_goal": 0.1202,
+        "reward": 7.7631,
+        "stop_called": 1.0,
+        "premature_stop": 0.06,
+        "non_stop_failure": 0.0
+      }
+    },
+    {
+      "condition": "baseline",
+      "training_seed": 200,
+      "evaluation_seed": 2026,
+      "episodes": 100,
+      "source": "src/results/closeout_dsr/closeout_eval_baseline_trainseed200_evalseed2026_100ep/summary.json",
+      "metrics": {
+        "success": 0.88,
+        "spl": 0.7733,
+        "distance_to_goal": 0.5469,
+        "reward": 6.9688,
+        "stop_called": 0.95,
+        "premature_stop": 0.07,
+        "non_stop_failure": 0.05
+      }
+    },
+    {
+      "condition": "baseline",
+      "training_seed": 300,
+      "evaluation_seed": 2026,
+      "episodes": 100,
+      "source": "src/results/closeout_dsr/closeout_eval_baseline_trainseed300_evalseed2026_100ep/summary.json",
+      "metrics": {
+        "success": 0.84,
+        "spl": 0.7036,
+        "distance_to_goal": 0.3644,
+        "reward": 7.0502,
+        "stop_called": 0.97,
+        "premature_stop": 0.13,
+        "non_stop_failure": 0.03
+      }
+    },
+    {
+      "condition": "dsr",
+      "training_seed": 100,
+      "evaluation_seed": 2026,
+      "episodes": 100,
+      "source": "src/results/closeout_dsr/closeout_eval_dsr_trainseed100_evalseed2026_100ep/summary.json",
+      "metrics": {
+        "success": 0.92,
+        "spl": 0.759,
+        "distance_to_goal": 0.4863,
+        "reward": 6.9845,
+        "stop_called": 0.95,
+        "premature_stop": 0.03,
+        "non_stop_failure": 0.05
+      }
+    },
+    {
+      "condition": "dsr",
+      "training_seed": 200,
+      "evaluation_seed": 2026,
+      "episodes": 100,
+      "source": "src/results/closeout_dsr/closeout_eval_dsr_trainseed200_evalseed2026_100ep/summary.json",
+      "metrics": {
+        "success": 0.99,
+        "spl": 0.8776,
+        "distance_to_goal": 0.1038,
+        "reward": 7.795,
+        "stop_called": 0.99,
+        "premature_stop": 0.0,
+        "non_stop_failure": 0.01
+      }
+    },
+    {
+      "condition": "dsr",
+      "training_seed": 300,
+      "evaluation_seed": 2026,
+      "episodes": 100,
+      "source": "src/results/closeout_dsr/closeout_eval_dsr_trainseed300_evalseed2026_100ep/summary.json",
+      "metrics": {
+        "success": 0.96,
+        "spl": 0.8646,
+        "distance_to_goal": 0.2372,
+        "reward": 7.6735,
+        "stop_called": 0.99,
+        "premature_stop": 0.03,
+        "non_stop_failure": 0.01
+      }
+    }
+  ],
+  "condition_summaries": {
+    "baseline": {
+      "success": {
+        "mean": 0.8866666666666666,
+        "sample_std": 0.05033222956847165,
+        "values": [
+          0.94,
+          0.88,
+          0.84
+        ]
+      },
+      "spl": {
+        "mean": 0.7665,
+        "sample_std": 0.05979071834323451,
+        "values": [
+          0.8226,
+          0.7733,
+          0.7036
+        ]
+      },
+      "distance_to_goal": {
+        "mean": 0.3438333333333333,
+        "sample_std": 0.21409218419487747,
+        "values": [
+          0.1202,
+          0.5469,
+          0.3644
+        ]
+      },
+      "reward": {
+        "mean": 7.2607,
+        "sample_std": 0.43699062919014614,
+        "values": [
+          7.7631,
+          6.9688,
+          7.0502
+        ]
+      },
+      "stop_called": {
+        "mean": 0.9733333333333333,
+        "sample_std": 0.025166114784235853,
+        "values": [
+          1.0,
+          0.95,
+          0.97
+        ]
+      },
+      "premature_stop": {
+        "mean": 0.08666666666666667,
+        "sample_std": 0.03785938897200183,
+        "values": [
+          0.06,
+          0.07,
+          0.13
+        ]
+      },
+      "non_stop_failure": {
+        "mean": 0.02666666666666667,
+        "sample_std": 0.025166114784235832,
+        "values": [
+          0.0,
+          0.05,
+          0.03
+        ]
+      }
+    },
+    "dsr": {
+      "success": {
+        "mean": 0.9566666666666667,
+        "sample_std": 0.03511884584284244,
+        "values": [
+          0.92,
+          0.99,
+          0.96
+        ]
+      },
+      "spl": {
+        "mean": 0.8337333333333333,
+        "sample_std": 0.06504654743591957,
+        "values": [
+          0.759,
+          0.8776,
+          0.8646
+        ]
+      },
+      "distance_to_goal": {
+        "mean": 0.27576666666666666,
+        "sample_std": 0.1941445423732878,
+        "values": [
+          0.4863,
+          0.1038,
+          0.2372
+        ]
+      },
+      "reward": {
+        "mean": 7.484333333333333,
+        "sample_std": 0.4371104932775389,
+        "values": [
+          6.9845,
+          7.795,
+          7.6735
+        ]
+      },
+      "stop_called": {
+        "mean": 0.9766666666666667,
+        "sample_std": 0.023094010767585053,
+        "values": [
+          0.95,
+          0.99,
+          0.99
+        ]
+      },
+      "premature_stop": {
+        "mean": 0.02,
+        "sample_std": 0.017320508075688773,
+        "values": [
+          0.03,
+          0.0,
+          0.03
+        ]
+      },
+      "non_stop_failure": {
+        "mean": 0.023333333333333334,
+        "sample_std": 0.023094010767585032,
+        "values": [
+          0.05,
+          0.01,
+          0.01
+        ]
+      }
+    }
+  },
+  "delta_dsr_minus_baseline": {
+    "success": 0.07000000000000006,
+    "spl": 0.06723333333333337,
+    "distance_to_goal": -0.06806666666666666,
+    "reward": 0.2236333333333329,
+    "stop_called": 0.0033333333333334103,
+    "premature_stop": -0.06666666666666667,
+    "non_stop_failure": -0.003333333333333334
+  },
+  "claim_boundary": "Two-scene Habitat test-scenes fallback; controlled project ablation, not a Gibson/HM3D benchmark or statistical significance claim."
+}

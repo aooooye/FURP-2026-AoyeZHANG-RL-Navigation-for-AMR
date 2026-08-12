@@ -1,0 +1,1 @@
+events.out.tfevents.1786438278.furp.38708.0	86845 bytes

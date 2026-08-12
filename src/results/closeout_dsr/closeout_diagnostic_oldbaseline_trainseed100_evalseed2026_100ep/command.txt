@@ -1,0 +1,9 @@
+utc_start=2026-08-11T08:50:41+00:00
+run_id=closeout_diagnostic_oldbaseline_trainseed100_evalseed2026_100ep
+profile=habitat_test
+evaluation_seed=2026
+eval_split=val
+eval_episodes=100
+save_video=0
+checkpoint=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/week03/remote_20260716T074249Z/week03_habitat_test_seed100_1m_env5/checkpoints/ckpt.9.pth
+command=python -u /home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/experiments/closeout_dsr/run_habitat_with_dsr.py --config-name=pointnav/ppo_pointnav_example habitat.seed=2026 habitat_baselines.evaluate=True habitat_baselines.load_resume_state_config=False habitat_baselines.eval_ckpt_path_dir=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/week03/remote_20260716T074249Z/week03_habitat_test_seed100_1m_env5/checkpoints/ckpt.9.pth habitat_baselines.checkpoint_folder=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_diagnostic_oldbaseline_trainseed100_evalseed2026_100ep/eval_state habitat_baselines.tensorboard_dir=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_diagnostic_oldbaseline_trainseed100_evalseed2026_100ep/tb habitat_baselines.video_dir=/home/furp/FURP-2026-AoyeZHANG-RL-Navigation-for-AMR/src/results/closeout_dsr/closeout_diagnostic_oldbaseline_trainseed100_evalseed2026_100ep/video habitat_baselines.test_episode_count=100 habitat_baselines.num_environments=2 habitat_baselines.eval.split=val habitat_baselines.eval.video_option=\[\] habitat.env_task=StopDiagnosticGymHabitatEnv 

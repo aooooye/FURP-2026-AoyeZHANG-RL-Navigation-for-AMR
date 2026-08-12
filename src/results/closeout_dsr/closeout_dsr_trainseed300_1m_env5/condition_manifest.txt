@@ -1,0 +1,5 @@
+condition=dsr
+training_seed=300
+formula=success_reward * exp((success_distance - final_distance) / success_distance)
+failed_stop_penalty=none
+protocol_change_allowed=false
