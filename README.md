@@ -17,7 +17,7 @@ This is your project home for the FURP programme. **Fork this template**, rename
    ```
 3. **Give us access:** either make the repo **public**, or **share it** with the research group accounts (ask your project lead for the usernames to add as collaborators).
 4. **Fill in this README** — replace the placeholders in the *Project Info* section below.
-5. **Start your weekly log** in [`docs/00_weekly.md`](docs/00_weekly.md).
+5. **Start your weekly log** from the index in [`docs/00_weekly.md`](docs/00_weekly.md); each completed week is stored in a standalone file.
 
 ---
 
@@ -34,7 +34,20 @@ This is your project home for the FURP programme. **Fork this template**, rename
 | Team or individual | Individual |
 | Cited paper being replicated | *Habitat: A Platform for Embodied AI Research* (Savva et al., ICCV 2019), with PPO training context from *DD-PPO* (Wijmans et al., ICLR 2020) |
 
-**One-line summary:** This project will reproduce a Habitat PointNav navigation baseline for AMR-style navigation, then study how reward design, observations, and evaluation metrics affect success rate, SPL, collisions, and path efficiency.
+**One-line summary:** This project reproduces a controlled Habitat PointNav PPO baseline, evaluates Dynamic Success Reward across three training seeds, and tests whether its clean-condition benefit survives frozen synthetic localization and actuation errors.
+
+## Current result
+
+- In the clean controlled comparison, DSR improved mean Success from `88.67%` to `95.67%` (`+7.00` percentage points) and mean SPL from `76.65%` to `83.37%` (`+6.72` percentage points).
+- In the evaluation-only robustness study, the preregistered combined Success robustness advantage was `-2.56` percentage points, with only `1/3` training seeds favorable. The formal conclusion is: **No DSR robustness advantage was observed.**
+- Both stages use two Habitat `test-scenes`. The evidence is descriptive and is not a Gibson/HM3D benchmark, statistical-significance result, real-robot result, or Sim2Real validation.
+
+Start with [`src/README.md`](src/README.md) for the experiment/evidence map and [`docs/00_weekly.md`](docs/00_weekly.md) for the weekly-log index.
+
+Additional project-owned assets have been consolidated inside this repository:
+
+- [`docs/README.md`](docs/README.md): documentation, infrastructure, and reference index.
+- [`artifacts/README.md`](artifacts/README.md): local transfer/evidence archives and integrity records. Large archives remain intentionally ignored by Git.
 
 ---
 
@@ -44,16 +57,17 @@ This structure is **mandatory** — please keep it intact.
 
 ```
 /docs
- ├── 00_weekly.md         ← update EVERY week: progress, challenges, next steps
+ ├── 00_weekly.md         ← weekly-log index and template
+ ├── WeekNN.md            ← one standalone progress log per recorded week
  └── meeting_notes/       ← key takeaways from all team meetings
-/src                      ← your code / experiments / materials
-FURP_Showcase.pdf         ← your poster / presentation PDF, in the repo root
+/src                      ← implementation, protocols, and result evidence
+FURP_Showcase.pdf         ← required final poster; not yet present
 ```
 
-- **`docs/00_weekly.md`** — your weekly progress log. This is the first thing we check.
+- **`docs/00_weekly.md`** — index and template for the standalone weekly logs.
 - **`docs/meeting_notes/`** — one file per meeting with key takeaways and action items.
 - **`src/`** — all your code, scripts, notebooks, and experiment materials.
-- **`FURP_Showcase.pdf`** — your final poster, placed in the **repo root** with this exact filename.
+- **`FURP_Showcase.pdf`** — required final poster filename. The repository currently contains only `FURP_Showcase_PLACEHOLDER.md`, so poster delivery is not yet complete.
 
 ---
 
@@ -75,7 +89,7 @@ To earn your FURP certificate, **all three** must be satisfied:
 
 Every week, you should:
 
-- ✅ Update [`docs/00_weekly.md`](docs/00_weekly.md)
+- ✅ Add or update the appropriate standalone weekly file listed in [`docs/00_weekly.md`](docs/00_weekly.md)
 - ✅ Log meeting notes in [`docs/meeting_notes/`](docs/meeting_notes/)
 - ✅ Attend the weekly meeting (online or in person)
 
@@ -101,8 +115,7 @@ Any **leave of absence** or **withdrawal** must be notified to us **by email** �
 - [x] Made the repo public **or** shared it with the research group
 - [x] Filled in the *Project Info* table above
 - [x] Started `docs/00_weekly.md`
-- [X] Created my first file in `docs/meeting_notes/`
-- [X] (By Showcase) Added `FURP_Showcase.pdf` to the repo root
+- [ ] (By Showcase) Added `FURP_Showcase.pdf` to the repo root
 
 ---
 
