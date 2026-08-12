@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "protocol_name": "closeout_dsr_test_time_robustness_v1",
+  "profile": "habitat_test",
+  "expected_habitat_revision": "cdbb4880519505adf45fba0f0c0c3a3fd18a2a55",
+  "training_methods": ["baseline", "dsr"],
+  "training_seeds": [100, 200, 300],
+  "evaluation": {
+    "seed": 2026,
+    "split": "val",
+    "episodes": 100,
+    "num_environments": 2,
+    "max_episode_steps": 500,
+    "success_distance_m": 0.2
+  },
+  "conditions": ["clean", "localization", "actuation", "combined"],
+  "formal_noise_seeds": [41001, 41002, 41003],
+  "smoke": {
+    "training_seed": 100,
+    "noise_seed": 41001,
+    "episodes": 2
+  },
+  "pointgoal_sensor_uuid": "pointgoal_with_gps_compass",
+  "noise_models": {
+    "localization": {
+      "sampling_scope": "episode_constant",
+      "distance_bias_m": {"std": 0.05, "clip": [-0.15, 0.15]},
+      "bearing_bias_deg": {"std": 2.0, "clip": [-6.0, 6.0]},
+      "ground_truth_metrics_unchanged": true
+    },
+    "actuation": {
+      "sampling_scope": "per_action_step",
+      "forward_distance_m": {
+        "nominal": 0.25,
+        "std": 0.005,
+        "clip": [0.235, 0.265]
+      },
+      "turn_angle_deg": {
+        "nominal": 10.0,
+        "std": 0.16666666666666666,
+        "clip": [9.5, 10.5]
+      },
+      "stop_noise": false,
+      "lateral_slip": false,
+      "translation_during_turn": false
+    }
+  },
+  "rng": {
+    "algorithm": "sha256-box-muller-v1",
+    "canonical_key": ["noise_seed", "scene_id", "episode_id", "channel", "step_index"],
+    "step_index_origin": 0,
+    "method_and_training_seed_excluded": true,
+    "golden_vectors": [
+      {
+        "key": [41001, "data/scene_datasets/habitat-test-scenes/skokloster-castle.glb", "0", "localization_distance_bias", null],
+        "standard_normal": -0.8064582240748438
+      },
+      {
+        "key": [41001, "data/scene_datasets/habitat-test-scenes/skokloster-castle.glb", "0", "localization_bearing_bias", null],
+        "standard_normal": 0.8321207209220622
+      },
+      {
+        "key": [41003, "van-gogh-room.glb", "42", "forward_distance", 17],
+        "standard_normal": -0.541392817932682
+      },
+      {
+        "key": [41002, "van-gogh-room.glb", "42", "turn_angle", 17],
+        "standard_normal": 1.1261008713675578
+      }
+    ]
+  },
+  "metrics": [
+    "success",
+    "spl",
+    "distance_to_goal",
+    "reward",
+    "stop_called",
+    "premature_stop",
+    "non_stop_failure"
+  ],
+  "primary_endpoint": "combined_success_robustness_advantage",
+  "claim_boundary": "Controlled test-time robustness on two Habitat test scenes; not Gibson/HM3D, real-robot, or Sim2Real evidence."
+}
