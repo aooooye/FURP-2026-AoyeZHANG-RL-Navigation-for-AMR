@@ -32,13 +32,13 @@ case "$PROFILE" in
 esac
 
 checkpoint_stem="$(basename "$CHECKPOINT_PATH" .pth)"
-RUN_ID="${RUN_ID:-week3-4_eval_${PROFILE}_evalseed${EVAL_SEED}_${checkpoint_stem}_$(date -u +%Y%m%dT%H%M%SZ)}"
+RUN_ID="${RUN_ID:-week03_eval_${PROFILE}_evalseed${EVAL_SEED}_${checkpoint_stem}_$(date -u +%Y%m%dT%H%M%SZ)}"
 if [[ ! "$RUN_ID" =~ ^[A-Za-z0-9._-]+$ ]]; then
   printf 'RUN_ID may contain only letters, digits, dot, underscore, and hyphen: %s\n' "$RUN_ID" >&2
   exit 2
 fi
 
-RUN_ROOT="${2:-$REPO_ROOT/src/results/week3-4/$RUN_ID}"
+RUN_ROOT="${2:-$REPO_ROOT/src/results/week03/$RUN_ID}"
 if [[ -e "$RUN_ROOT/command.txt" ]] || [[ -e "$RUN_ROOT/run_status.txt" ]]; then
   printf 'Refusing to overwrite an existing evaluation: %s\n' "$RUN_ROOT" >&2
   exit 2
@@ -69,8 +69,18 @@ else
   video_option='[]'
 fi
 
+if [[ -n "${HABITAT_RUNNER_SCRIPT:-}" ]]; then
+  if [[ ! -f "$HABITAT_RUNNER_SCRIPT" ]]; then
+    printf 'HABITAT_RUNNER_SCRIPT does not exist: %s\n' "$HABITAT_RUNNER_SCRIPT" >&2
+    exit 2
+  fi
+  runner=("$PYTHON_BIN" -u "$(realpath "$HABITAT_RUNNER_SCRIPT")")
+else
+  runner=("$PYTHON_BIN" -u -m habitat_baselines.run)
+fi
+
 cmd=(
-  "$PYTHON_BIN" -u -m habitat_baselines.run
+  "${runner[@]}"
   "--config-name=$CONFIG_NAME"
   "habitat.seed=$EVAL_SEED"
   "habitat_baselines.evaluate=True"
@@ -84,6 +94,10 @@ cmd=(
   "habitat_baselines.eval.split=$EVAL_SPLIT"
   "habitat_baselines.eval.video_option=$video_option"
 )
+
+if [[ -n "${HABITAT_ENV_TASK_OVERRIDE:-}" ]]; then
+  cmd+=("habitat.env_task=$HABITAT_ENV_TASK_OVERRIDE")
+fi
 
 if [[ "$PROFILE" == "gibson" ]]; then
   if [[ "$SCENE_DATASET_CONFIG" = /* ]]; then

@@ -27,6 +27,8 @@ SEED=100 TOTAL_STEPS=1000 bash src/experiments/week02/run_tiny_ppo.sh
 
 Do not run the third command if either earlier command fails.
 
+`run_week02_days234.py` is the historical Windows-side orchestrator used to upload these scripts, execute the recorded sequence on the Habitat host, and recover the result archive. It reads the SSH password only from the current process environment (`VM_PASS`) and does not contain a saved credential. Direct execution on the Ubuntu host should continue to use the shell commands above.
+
 ## Outputs
 
 The scripts write under `src/results/week02/` by default:
